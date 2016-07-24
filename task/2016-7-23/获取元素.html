@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+	window.onload=function(){
+		var aOn=document.querySelectorAll('.on');
+		var aAct=document.querySelectorAll('.active');
+		var oAct=document.querySelector('.active');
+		oAct.style.background='green';
+		alert(aAct.length);
+		for(var i=0;i<aOn.length;i++){
+			aOn[i].style.background='red';	
+		}
+	};
+</script>
+</head>
+
+<body>
+<div id="box">
+	<ul>
+		<li class="on"><input type="text" /></li>
+		<li class="active"><input type="button" value="aa" /></li>
+		<li class="on"><input type="text" /></li>
+		<li class="active"><input type="button" value="aa" /></li>
+	</ul>
+	<ol>
+		<li class="on"><input type="text" /></li>
+		<li class="active"><input type="button" value="aa" /></li>
+		<li class="on"><input type="text" /></li>
+		<li class="active"><input type="button" value="aa" /></li>
+	</ol>
+</div>
+
+</body>
+</html>

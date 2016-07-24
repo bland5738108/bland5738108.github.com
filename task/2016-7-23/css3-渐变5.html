@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	div{ width:200px; height:200px; background:-webkit-linear-gradient(0deg,red,purple,#fff,pink,blue); border-radius:50%;}
+</style>
+<script>
+	window.onload=function(){
+		var oDiv=document.querySelector('div');
+		oDiv.onclick=function(){
+			var d=0;
+			setInterval(function(){
+				d+=100;
+				oDiv.style.background='-webkit-linear-gradient('+d+'deg,red,purple,#fff,pink,blue)';
+			},30);	
+		};	
+	};
+</script>
+</head>
+
+<body>
+	<div></div>
+</body>
+</html>
