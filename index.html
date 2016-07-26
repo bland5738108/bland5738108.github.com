@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>blandjunchang</title>
+<link rel="stylesheet" href="stylesheets/base.css">
 <style>
-	*{ margin:0; padding:0;}
 	body{ background:#055; font-family:'微软雅黑';}
 	.header{ color:#fff; font-size:80px; font-weight:bold; text-align:center; line-height:160px; text-shadow:10px 10px 20px #000; background:#033;}
 	.content{ height:250px;}
@@ -13,13 +13,160 @@
 	.article h2{ font-size:28px; color:#CCC;  text-align:center;}
 	.article span{ text-align:right; color:#333; display:inline-block; width:100%; height:30px; line-height:30px;}
 	.article p{ text-indent:2em; line-height:22px; font-weight:bold; color:#fff; text-shadow:3px 3px 3px #000; }
+	.showtime{ width:110px; height:50px; background:#09F; text-align:center; line-height:40px; font-size:20px; font-weight:bold; border-radius:20px; margin:20px; overflow:hidden;}
+	.showtime div{ width:100px; height:40px; background:#99C; border-radius:20px; margin:5px; color:#900;}
+/*css3时钟*/
+.column{ width:900px; height:600px; background:#699; position:relative;}
+.clock{ width:300px; height:300px; position:absolute; left:50%; top:50%; margin-left:-150px; margin-top:-150px; border:5px solid #000; border-radius:50%; }
+.hou{ width:10px; height:80px; background:#000; border-radius:50% 50% 0 0; position:absolute; left:50%; margin-left:-5px; top:70px; -webkit-transform-origin:bottom;}
+.min{ width:8px; height:100px; background:#000; border-radius:50% 50% 0 0; position:absolute; left:50%; margin-left:-4px; top:50px; -webkit-transform-origin:bottom;}
+.sec{width:6px; height:120px; background:red; border-radius:50% 50% 0 0; position:absolute; left:50%; margin-left:-3px; top:30px; -webkit-transform-origin:bottom;}
+.clock span{ width:4px; height:8px; background:#000; position:absolute; left:50%; margin-left:-2px; top:0; -webkit-transform-origin:center 150px; }
+span.big_scale{height:15px; width:6px; margin-left:-3px;}
+.big_scale em{ position:absolute; top:15px; left:50%; margin-left:-15px; font-style:normal; width:30px;  text-align:center; font-weight:bold;}
+.cap{ position:absolute; width:20px; height:20px; left:50%; top:50%; margin-left:-10px; margin-top:-10px; background:-webkit-radial-gradient(#fff,#000); border-radius:50%; display:none}
+/*3D图片环*/
+ul{ width:133px; height:200px; position:absolute; top:50%; left:50%; margin-left:-67px; margin-top:-100px; -webkit-transform-style:preserve-3d; -webkit-transform:perspective(800px) rotateY(0) ; -webkit-transition:6s all ease; display:none;}
+ul li{ position:absolute; top:0; top:0; width:100%; height:100%; box-shadow:0 0 5px #fff;}
+/*爆炸效果*/
+html,body{ overflow:hidden}
+
+.box{ width:700px; height:400px; background:url(img2/2.jpg) no-repeat; margin:100px auto; position:relative;}
+.box span{ position:absolute; top:0; left:0; background:url(img2/1.jpg) no-repeat;}
+
 </style>
+<script>
+window.onload=function(){
+	;(function(){
+		
+			var oShow=document.querySelector('.showtime');
+			var oDiv=document.querySelectorAll('.show div');
+			oShow.onmouseover=function(){
+				oShow.style.WebkitTransition='1s all ease';
+				oShow.style.height='185px';	
+			};
+			oShow.onmouseout=function(){
+				oShow.style.WebkitTransition='1s all ease';
+				oShow.style.height='50px';	
+			};
+			
+	})();
+
+	;(function(){
+	var oClock = document.querySelector('.clock');
+	var oHou = document.querySelector('.hou');
+	var oMin = document.querySelector('.min');
+	var oSec = document.querySelector('.sec');
+	var N = 60;
+	for(var i=0;i<N;i++){
+		var oS = document.createElement('span');
+		oS.style.WebkitTransform = 'rotate('+i*6+'deg)';
+		if(i%5==0){
+			oS.className = 'big_scale';
+			oS.innerHTML = '<em>'+(i/5||12)+'<\/em>'
+			var oEm = oS.children[0];
+			oEm.style.WebkitTransform = 'rotate('+-i*6+'deg)';
+		}
+		oClock.appendChild(oS);
+	}
+	
+	function tick(){
+		var oDate = new Date();
+		var h = oDate.getHours();
+		var m = oDate.getMinutes();
+		var s = oDate.getSeconds();
+		var ms = oDate.getMilliseconds();
+		oHou.style.WebkitTransform = 'rotate('+(h*30+m/60*30)+'deg)';
+		oMin.style.WebkitTransform = 'rotate('+(m*6+s/60*6)+'deg)';
+		oSec.style.WebkitTransform = 'rotate('+(s*6+ms/1000*6)+'deg)';
+	}
+	tick();
+	setInterval(tick,1);
+	})();
+	;(function(){
+		
+	var oUl=document.querySelector('ul');
+		var aLi=document.querySelectorAll('ul li');
+		var iNow=0;
+		var timer=null;
+		var len = aLi.length;
+		for(var i=0;i<len;i++){
+			aLi[i].style.WebkitTransition = '1s all ease '+((len-i)*100)+'ms';
+			aLi[i].style.WebkitTransform = 'rotateY('+360/len*i+'deg) translateZ(350px)';
+		}	
+		function tack(){
+			clearInterval(timer);
+			timer=setInterval(function(){
+				iNow+=5;
+				oUl.style.WebkitTransform='perspective(800px) rotateY('+iNow+'deg)';	
+			},100);		
+		}
+		tack();
+		oUl.onmouseover=function(){
+			clearInterval(timer);
+		};
+		oUl.onmouseout=function(){
+			tack();
+		};	
+	})();
+	;(function(){
+	function rnd(n,m){
+	return Math.floor(Math.random()*(m-n)+n);	
+}
+		var oBox=document.querySelector('.box');
+		var iNow=0;
+		var R=4;
+		var C=7;
+		var bOk=false;
+		for(var i=0;i<R;i++){
+			for(var j=0;j<C;j++){
+				var oS=document.createElement('span');
+				oS.style.width=oBox.offsetWidth/C+'px';	
+				oS.style.height=oBox.offsetHeight/R+'px';
+				oBox.appendChild(oS);
+				oS.style.left=j*oS.offsetWidth+'px';
+				oS.style.top=i*oS.offsetHeight+'px';
+				oS.style.backgroundPosition = '-'+oS.offsetLeft+'px -'+oS.offsetTop+'px';
+			}	
+		}
+		var aS=oBox.children;
+		oBox.onclick=function(){
+			if(bOk)return;
+			bOk=true;
+			iNow++;
+			for( var i=0;i<aS.length;i++){
+				aS[i].style.WebkitTransition='0.7s all ease';
+				var x=aS[i].offsetLeft+aS[i].offsetWidth/2-oBox.offsetWidth/2;	
+				var y=aS[i].offsetTop+aS[i].offsetHeight/2-oBox.offsetHeight/2;	
+				aS[i].style.WebkitTransform='perspective(800px) translate('+x+'px,'+y+'px) rotateX('+rnd(-360,360)+'deg) rotate('+rnd(-360,360)+'deg) scale('+rnd(1,3)+','+rnd(1,3)+')';
+				aS[i].style.opacity=0;
+				
+			}
+			function tranEnd(){
+				aS[aS.length-1].removeEventListener('transitionend',tranEnd,false);
+				for(var i=0;i<aS.length;i++){
+					aS[i].style.WebkitTransition='none';
+					aS[i].style.backgroundImage = 'url(img2/'+(iNow%3+1)+'.jpg)';
+					aS[i].style.WebkitTransform='perspective(800px) translate(0,0) rotateX(0) rotate(0) scale(1,1)';
+					aS[i].style.opacity = 1;
+				oBox.style.backgroundImage = 'url(img2/'+((iNow+1)%3+1)+'.jpg)';
+				bOk=false;		
+				}
+			}
+			aS[aS.length-1].addEventListener('transitionend',tranEnd,false);
+				
+		};	
+	
+	})();
+};
+
+</script>
 </head>
 
 <body>
 	<div class="header">Welcome to my website.</div>
-    <div class="content">
-    	<div class="article">
+    <div class="content clear">
+    	<div class="article fl">
         	<h2>人生教诲</h2>
             <span>--苏格拉底关于人生的教诲</span>
             <p>几个学生问哲学家苏格拉底：“人生是什么？”</p>
@@ -31,6 +178,34 @@
             <p>“老师，让我们再选择一次吧！”其他学生也不约而同地请求。</p>
             <p>苏格拉底笑了笑，语重心长地说：“孩子们，这就是人生——人生就是一次无法重复的选择。”</p>
             <p>面对无法回头的人生，我们只能做三件事：郑重的选择，争取不留下遗憾；如果遗憾了，就理智的面对它，然后争取改变；假若也不能改变，就勇敢地接受，不要后悔，继续朝前走。</p>
+        </div>
+        <div class="showtime fl clear">
+        	<div class="">CSS3效果</div>
+            <div class="">图片时钟</div>
+            <div class="">3D图片环</div>
+            <div class="">爆炸效果</div>
+        </div>
+        <div class="column fl">
+        	<div class="clock show">
+                <div class="hou"></div>
+                <div class="min"></div>
+                <div class="sec"></div>
+                <div class="cap"></div>
+			</div>
+            <ul>
+                <li><img src="img/1.jpg" ></li>
+                <li><img src="img/2.jpg" ></li>
+                <li><img src="img/3.jpg" ></li>
+                <li><img src="img/4.jpg" ></li>
+                <li><img src="img/5.jpg" ></li>
+                <li><img src="img/6.jpg" ></li>
+                <li><img src="img/7.jpg" ></li>
+                <li><img src="img/8.jpg" ></li>
+                <li><img src="img/9.jpg" ></li>
+                <li><img src="img/10.jpg" ></li>
+                <li><img src="img/11.jpg" ></li>
+   	 	</ul>
+		<div class="box"></div>
         </div>
     </div>
 </body>
