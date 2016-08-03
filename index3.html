@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<title>123</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+html,body{height:100%; overflow:hidden;}
+.box{
+	width:200px; 
+	height:200px;
+	background:red;
+	text-align:center;
+	line-height:200px;
+	margin:100px auto;
+	font-size:50px;
+	-webkit-transform:scale(1,1);
+	transform:scale(1,1);
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+	var oBox = document.querySelector('.box');
+	
+	function getS(ev){
+		var x1 = ev.targetTouches[0].pageX;
+		var y1 = ev.targetTouches[0].pageY;
+		var x2 = ev.targetTouches[1].pageX;
+		var y2 = ev.targetTouches[1].pageY;
+		
+		var a = x1-x2;
+		var b = y1-y2;
+		
+		
+		return Math.sqrt(a*a+b*b);
+	}
+	
+	var s = 1;
+	oBox.addEventListener('touchstart',function(ev){
+		if(ev.targetTouches.length==2){
+			
+			var oldS = s;
+			
+			var downS = getS(ev);
+			
+			function fnMove(ev){
+				if(ev.targetTouches.length==2){
+					s = oldS*(getS(ev)/downS);
+					oBox.style.WebkitTransform = 'scale('+s+','+s+')';
+					oBox.style.transform = 'scale('+s+','+s+')';
+					
+				}
+			}
+			
+			function fnEnd(ev){
+				document.removeEventListener('touchmove',fnMove,false);
+				document.removeEventListener('touchend',fnEnd,false);
+			}
+			
+			document.addEventListener('touchmove',fnMove,false);
+			document.addEventListener('touchend',fnEnd,false);
+			ev.preventDefault();
+		}
+	},false);
+},false);
+</script>
+</head>
+
+<body>
+<div class="box"></div>
+</body>
+</html>
