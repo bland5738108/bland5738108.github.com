@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style:none; text-decoration:none;}
+html{ font-size:20px;}
+.warp{ width:16rem;}
+header{ width:16rem; height:2.475rem; border-top:1px solid #c5c5c5; position:relative; background:#f3f3f3;}
+header a{ position:absolute; top:0.5rem; left:0.35rem; width:3.05rem; height:1.45rem;}
+header a img{ width:100%; height:100%;}
+header h1{ width:100%; height:100%; text-align:center; line-height:2.475rem; font-size:0.75rem;}
+section{ width:16rem;}
+.head,.head ul{ width:16rem; height:2rem; overflow:hidden;}
+.head ul li{ float:left; width:25%; height:2rem; text-align:center; line-height:2rem; font-size:0.55rem; color:#999; border-right:1px solid #dcdcdc; box-sizing:border-box;}
+.head ul li:nth-child(3){ color:#d51942;}
+.head ul li:nth-child(4){ border-right:none;}
+.infor,infor ul{ width:16rem;}
+.infor_in{ width:16rem; height:5rem; padding:0.7rem 0 0.75rem 0; border-top:2px solid #efefef; overflow:hidden;}
+.infor_in .left{ width:5.5rem; float:left;}
+.infor_in .left a{ width:5.5rem; height:1.925rem;}
+.infor_in .left a img{ width:5.5rem; height:1.925rem;}
+.infor_in .left p{ font-size:0.65rem; line-height:0.8rem; text-align:center; color:#666;}
+.number{ width:5.5rem; text-align:center;}
+.number .num{ font-size:1.8rem; color:#c7223d; font-weight:bold; font-family:微软雅黑;}
+.number .buck{ display:inline-block; font-size:0.6rem; width:1.2rem;}
+.number .buck b{ font-weight:normal;}
+.number .buck .hot{ color:#c7223d;}
+.infor_in .right{ float:left; width:10rem; height:5rem;}
+.infor_in .right img{ float:left; width:10rem; height:5rem;}
+</style>
+<script>
+;(function(win,doc){
+	function change (){
+		doc.documentElement.style.fontSize = 20*doc.documentElement.clientWidth/320+'px';
+	}
+	change();
+	win.addEventListener('resize',change,false);
+})(window,document);
+</script>
+
+</head>
+
+<body>
+	<div class="warp">
+    	<header>
+        	<a href="##"><img src="img/1.png" /></a>
+            <h1>品牌团</h1>
+        </header>
+        <section>
+        	<div class="head">
+            	<ul>
+                	<li>商品</li>
+                	<li>生活</li>
+                	<li>品牌</li>
+                	<li>聚宝盆</li>
+                </ul>
+            </div>
+            <div class="infor">
+            	<ul>
+                	<li class="infor_in">
+                    	<div class="left">
+                            <a href="##"><img src="img/7.png" /></a>
+                            <p>耐克</p>
+                            <div class="number">
+                                <span class="num">3.5</span>
+                                <span class="buck">
+                                    <b>全场</b>
+                                    <b class="hot">折起</b>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="##" class="right"><img src="img/8.png" /></a>
+                    </li>
+                	<li class="infor_in">
+                    	<div class="left">
+                            <a href="##"><img src="img/9.png" /></a>
+                            <p>only</p>
+                            <div class="number">
+                                <span class="num">5.5</span>
+                                <span class="buck">
+                                    <b>全场</b>
+                                    <b class="hot">折起</b>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="##" class="right"><img src="img/10.png" /></a>
+                    </li>
+                	<li class="infor_in">
+                    	<div class="left">
+                            <a href="##"><img src="img/7.png" /></a>
+                            <p>耐克</p>
+                            <div class="number">
+                                <span class="num">3.5</span>
+                                <span class="buck">
+                                    <b>全场</b>
+                                    <b class="hot">折起</b>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="##" class="right"><img src="img/8.png" /></a>
+                    </li>
+                	<li class="infor_in">
+                    	<div class="left">
+                            <a href="##"><img src="img/9.png" /></a>
+                            <p>only</p>
+                            <div class="number">
+                                <span class="num">5.5</span>
+                                <span class="buck">
+                                    <b>全场</b>
+                                    <b class="hot">折起</b>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="##" class="right"><img src="img/10.png" /></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
