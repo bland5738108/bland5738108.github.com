@@ -1,0 +1,2167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="img/base.css" />
+<style>
+/*head*/
+.head{background:#f1f1f1; min-width:990px;}
+.head_inl{margin-left:10px;}
+.head_inl span{ line-height:30px; color:#666666;}
+.head_inl i{width:10px; height:5px; background:url(img/xjt.png); margin-top:12px; margin-left:7px;}
+.head_inz{margin-left:89px; line-height:30px; color:#666666;}
+.head_inz .denglu{margin-right:7px;}
+.head_inz .zhuce{color:#c81623; margin-right:13px;}
+.head_inr .shouji{line-height:12px; margin-top:9px;}
+.shouji{padding-left:10px; padding-right:11px; border-left:1px solid #ccc;}
+.nol{border-left:none;}
+.borr{border-right:1px solid #ccc;}
+.shouji b{width:11px; height:16px; background:url(img/jd2015img.png) -2px -2px; margin:-2px 5px 0 0;}
+.shouji i{width:10px; height:5px; background:url(img/xjt.png); margin-top:3px; margin-left:7px;}
+/*logo*/
+h1 a{display:block; width:270px; height:60px; background:url(img/logo-201305.png); margin-top:29px; text-indent:-999em; margin-right:96px;}
+.search{width:462px;}
+.search_t{padding-top:25px;}
+.search_t .kk{width:373px; height:32px; border:2px solid #b61d1d; padding-left:5px;}
+.search_t .sous{ width:80px; height:36px; background:#b61d1d; font-size:16px; line-height:36px; text-align:center; color:#fff; cursor:pointer;}
+.seaarch_d a{line-height:28px; margin-right:9px; margin-bottom:11px; color:#666;}
+.shopcar{width:139px; height:34px; border:1px solid #ccc; background:#f9f9f9; margin-top:25px; line-height:34px; color:#666; margin-left:20px; position:relative;}
+.shopcar .car{width:16px; height:13px; background:url(img/jd2015img.png) -1px -59px; margin:10px 9px 0 19px;}
+.shopcar .yjt{ width:5px; height:9px; background:url(img/yjt.png); margin:13px 0 0 20px;}
+.shopcar b{ line-height:14px; padding:0 6px; color:#fff; background:#c81623; border-radius:5px; position:absolute; left:104px; top:-4px; border-bottom-left-radius:0;}
+/*code*/
+.code{ margin-bottom:9px;}
+.code_inl{width:210px; background:#c81623;}
+.code_inl .code_inhd{ height:46px; background:#b1191a;}
+.code_inhd h3{font-size:14px; line-height:46px; color:#fff; margin-left:10px;}
+.elect{padding-left:10px; line-height:31px;}
+.elect_list a{color:#fff; margin-right:5px;}
+.elect_list .gt{margin-right:11px;}
+.code_inr{width:780px;}
+.inr_nav{border-bottom:2px solid #b1191a; padding-left:20px;}
+.inr_nav a{font-size:14px; line-height:44px; margin-right:40px; color:#333; font-weight:bold;}
+.code_ind{margin-top:12px; margin-left:10px; width:770px;}
+.bull{width:248px; border:1px solid #ccc; border-bottom:none;}
+.bull_hd span{font-size:16px; line-height:43px; margin-left:15px; color:#666;}
+.bull_hd a{ line-height:43px; margin-right:15px; color:#666;}
+.news{padding:8px 0 12px 15px; border-top:1px dotted #ccc; border-bottom:1px dashed #ccc;}
+.news a{line-height:27px; color:#666;}
+.news span{font-weight:bold;}
+.bulld{width:249px; border-left:1px solid #ccc;}
+.bulld_hd{border-right:1px solid #ccc; border-bottom:1px dotted #ccc;}
+.bulld_hd span{font-size:16px; line-height:43px; margin-left:15px; color:#666;}
+.fuwu_in{width:62px; height:70px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; background:url(img/sj.png) no-repeat 21px 13px;}
+.kuan{width:59px;}
+.fuwu_in a{display:block; text-align:center; padding-top:49px; color:#666;}
+/*pic*/
+.pic{margin-bottom:20px;}
+.pic a{margin-right:1px;}
+.pic img{width:246px;}
+/*love*/
+.love_hd{overflow:hidden;}
+.love_hd h3{font-size:20px; line-height:43px; color:#666;}
+.love_hd a{line-height:38px; color:#666; background:url(img/xz.png) no-repeat right; padding-right:28px; margin-top:5px;}
+.love_in{ border:1px solid #ccc; padding-top:20px;}
+.love_ind{width:164px; padding-left:33px;}
+.love_ind a{display:block; margin-bottom:10px;}
+.love_ind .txt{width:160px; height:61px; border-right:1px solid #ccc; padding-left:4px; margin-bottom:7px;}
+.love_ind .tet{border-right:none;}
+.txt .txtt{width:120px; line-height:18px;}
+.txt .txtd{font-size:14px; line-height:27px; color:#b51d1a;}
+/*feature*/
+.feature{margin-bottom:20px;}
+.feature_hd h3{font-size:20px; line-height:36px; color:#666;}
+.feature_in{border-top:1px solid #ccc; border-left:1px solid #ccc; background:#f7f7f7;}
+.feature_in .feat_in{width:163px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; text-align:center;}
+.feat_in .jingpin{font-size:16px; line-height:26px; margin-top:18px;}
+.feat_in .dulun{line-height:22px; color:#c81623;}
+.feature_in .feat_ind{width:326px;}
+.feature_in .feat_ini{width:165px;}
+.feature_in .shangbiao{width:162px;}
+.shangbiao a{display:block; height:28px; border-bottom:1px dashed #ccc; padding-top:11px;}
+.shangbiao .prada{border-bottom:none; height:29px;}
+.product{width:331px; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+.product_hd{height:77px;}
+.hd_in{padding-top:23px; padding-left:116px;}
+.hd_in .yushou{width:30px; height:16px; background:#dd4957; color:#fff; line-height:16px; text-align:center; margin-right:5px;}
+.hd_in .xinpin{font-size:16px; line-height:16px; font-weight:bold;}
+.product_hd p{ line-height:34px; color:#dd4957; text-align:center;}
+.product_in .product_inl{height:102px; padding-top:9px; border-right:1px dashed #ccc;margin-bottom:12px;}
+.jianpan .zuk{ font-size:12px; line-height:30px; margin-right:6px; color:#c81623; margin-left:15px;}
+.jianpan .yuyue{line-height:30px;}
+/*guanggao*/
+.guanggao{ text-align:center; margin-bottom:23px;}
+/*dress*/
+.dress{margin-bottom:10px;}
+.dress_hd{border-bottom:1px solid red; height:35px;}
+.dress_hdl b{background:url(img/sprite_floor.png) 0 -38px; width:27px; height:22px; color:#fff; padding-left:4px; line-height:22px; margin-right:9px;}
+.dress_hdl span{font-size:20px; line-height:28px; color:#333;}
+.dress_hdr a{ line-height:14px; padding:0 17px; border-left:1px solid #ccc; margin-top:10px;}
+.dress_hdr .dapai{line-height:32px; border-right:1px solid #c81623; border-left:1px solid #c81623; color:#c81623; border-top:3px solid #c81623; border-bottom:1px solid #fff; margin-top:0px;}
+.dress_hdr .nanzhuang{border-left:none;}
+.dress_inl{width:769px;}
+.dress_inl .dress_inll{width:330px; height:473px; background:url(img/p.jpg) no-repeat; position:relative; overflow:hidden;}
+.dress_inll .pink{display:block;}
+.dress_inll .pink img{width:330px; height:345px;}
+.dress_inll .opc{width:330px; height:92px; background:#ccc; opacity:0.2; position:absolute; bottom:128px; left:0;}
+.dress_inll .zongd{width:305px; height:92px; position:absolute; bottom:128px; left:0; padding-left:25px;}
+.zongd a{width:69px; background:url(img/yf.png) no-repeat left; line-height:48px; padding-left:31px;}
+.dress_inlld{ margin-top:361px;}
+.inlld_l{width:135px; padding-left:25px;}
+.inlld_l a{line-height:24px; margin-right:10px;}
+.inlld_l .color{color:#c81623;}
+.dress_inlr a{display:block;}
+.dress_inlr .xz{border-bottom:1px solid #ccc;}
+.inlr_dt{position:relative;}
+.inlr_dtd{width:64px; height:9px; position:absolute; bottom:10px; left:191px;}
+.inlr_dtd span{width:9px; height:9px; background:url(img/ddd.png); margin-right:7px;}
+.inlr_dtd .red{background:url(img/ddd1.png);}
+.dress_ind{border-bottom:1px solid #ccc; border-top:1px solid #ccc;}
+.dress_ind .py{border-right:1px solid #ccc;}
+.dress_inr{width:221px;}
+.dress_inr a{border:1px solid #ccc; border-top:none;}
+/*gglist*/
+.gglist{background:#f7f7f7; padding:13px 0; margin-bottom:22px;}
+.gglist a{padding:0 10px; border-right:1px dashed #ccc;}
+.gglist .first{margin-left:11px;}
+.gglist .load{border-right:none;}
+/*2F*/
+.dress_inl .dress_inll2{width:210px; height:473px; background:url(img/jq.jpg) no-repeat; position:relative; overflow:hidden;}
+.dress_inl2{width:550px;}
+.dress_inll2 .opc2{width:210px; top:237px;}
+.dress_inll2 .zongd2{width:210px; padding-left:10px; top:237px;}
+.dress_inlld2{margin-top:351px; padding-left:25px;}
+.dress_inlld2_t a{line-height:24px; width:185px;}
+.dress_inlld2_d{padding-top:6px;}
+.dress_inlld2_d a{line-height:24px; margin-right:11px; color:#999;}
+.dress_inr2{border-right:1px solid #ccc;}
+.dress_inr2 .pant{display:block; border-bottom:1px dotted #ccc;}
+.inlr_dt2 img{width:339px; height:176px;}
+.inlr_dtd2{left:141px;}
+.dress_inder{width:440px;}
+/*6F*/
+.dress_inl6{width:770px;}
+.yundong{width:219px;}
+.yundong a{display:block; border-bottom:1px solid #ccc;}
+.inlr_dt6 img{width:339px; height:236px;}
+.inlr_dt6 a{border-bottom:1px solid #ccc; display:block;}
+.dress_6{width:220px;}
+.dress_6 a{border-right:1px solid #ccc; border-bottom:1px solid #ccc; display:block;}
+.dress_6 img{width:219px; height:236px;}
+/*10F*/
+.dress_inl10{width:650px;}
+.book{width:440px;}
+.book_t{position:relative; border-right:1px solid #ccc;}
+.book_pos{ width:64px; position:absolute; bottom:11px; left:191px;}
+.book_pos span{width:9px; height:9px; background:url(img/ddd.png); margin-right:7px; float:left;}
+.book_pos .red{background:url(img/ddd1.png);}
+.book_dl{border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+.writer{width:329px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; padding-left:10px;}
+.writer h3{font-size:20px; line-height:44px; padding-top:2px; border-bottom:1px solid #ccc; padding-left:5px;}
+.writer_in{padding-top:20px; position:relative;}
+.writer_in .writer_inl{ width:66px; text-align:center; border-right:1px dotted #ccc; padding-right:6px; padding-top:2px;}
+.writer_inl a{display:block;}
+.writer_inl p{line-height:30px;}
+.writer_inr a{display:block; margin:8px 29px 0 27px;}
+.writer_inr .jx{ line-height:20px; border-bottom:3px;}
+.writer_inr .nz{ width:120px; line-height:18px; padding:10px 24px 8px 5px; background:#f8f8f8;}
+.writer_in span{width:7px; height:13px; background:url(img/zsj.png); position:absolute; left:164px; bottom:27px;}
+.writer_ind{margin-bottom:25px;}
+/*today*/
+.today{margin-bottom:20px;}
+.today_hd h3{font-size:20px; line-height:43px;}
+.today_hd span{font-size:20px; line-height:43px; margin-right:232px;}
+.today_in{border-left:1px solid #ccc; border-top:1px solid #ccc;}
+.today_inl{width:680px;}
+.today_inl .xyj{width:239px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; overflow:hidden; padding-bottom:30px;}
+.xyj a{margin-top:20px; display:block; margin-bottom:30px; text-align:center;}
+.xyj p{line-height:24px; text-align:center;}
+.xyj span{ font-size:14px; color:#e12228; line-height:24px; padding-left:30px;}
+.today_inl .haier{width:219px; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+.haier a{display:block; margin:17px 5px 24px 10px;}
+.haier_in{width:104px;}
+.haier_in p{width:90px; line-height:20px; padding-top:17px;}
+.haier_in span{line-height:22px; font-size:14px; color:#e12228;}
+.today_in .yinyue{width:288px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; padding-left:20px;}
+.yinyue .yinyue_in{padding-top:40px;}
+.yinyue_inrt span{line-height:27px; margin-left:8px;}
+.yinyue_inr p{width:139px; height:36px; padding:10px 26px 8px 0; background:#f8f8f8; margin-top:5px;}
+/*dkhs*/
+.dkhs{height:94px; background:#f5f5f5;}
+.dkhs_in a{display:block; background:url(img/dkhs.png) no-repeat 0 25px; font-size:20px; line-height:94px; padding-left:49px; width:196px; color:#333;}
+.dkhs_ind{margin-left:10px;}
+/*zhinan*/
+.zhinan{height:187px; border-bottom:1px solid #ccc; padding-top:15px;}
+dl{width:144px;}
+dl dt{font-size:15px; line-height:35px;}
+dl dd{line-height:20px;}
+/*download*/
+.download{padding-top:23px; text-align:center;}
+.download a{font-size:12px; padding-right:12px; margin-right:11px; border-right:1px solid #ccc; text-align:center; margin-bottom:10px;}
+.download .hd{margin-left:110px;}
+.download .load{border-right:none;}
+.download p{line-height:18px;}
+.download_d{padding-top:10px; padding-left:170px;}
+.download_d span{width:63px; height:32px; background:#eee url(img/dp.png) no-repeat left center; padding-left:39px; line-height:16px; margin-right:13px;}
+.download_dd{width:185px; height:32px; background:#eee;}
+</style>
+</head>
+
+<body>
+	<!--head-->
+	<div class="head">
+    	<div class="head_in w clear">
+        	<div class="fl clear head_inl">
+            	<span class="fl">送至：</span>
+                <a href="#" class="fl clear">
+                	<span class="fl">河北</span>
+                    <i class="fl"></i>
+                </a>
+            </div>
+            <div class="fl head_inz clear">
+            	<a href="#" class="fl denglu">您好，请登录</a>
+                <a href="#" class="fl zhuce">免费注册</a>
+            </div>
+            <div class="head_inr fl clear">
+            	<a href="#" class="fl shouji clear">
+                    <span class="fl">我的订单</span>
+                </a>
+                <a href="#" class="fl shouji clear">
+                    <span class="fl">我的京东</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="#" class="fl shouji clear">
+                    <span class="fl">京东会员</span>
+                </a>
+                <a href="#" class="fl shouji borr clear">
+                    <span class="fl">企业采购</span>
+                </a>
+            	<a href="#" class="fl shouji nol clear">
+                	<b class="fl"></b>
+                    <span class="fl">手机京东</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="#" class="fl shouji clear">
+                    <span class="fl">关注京东</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="#" class="fl shouji clear">
+                    <span class="fl">客户服务</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="#" class="fl shouji clear">
+                    <span class="fl">网站导航</span>
+                    <i class="fl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--logo-->
+    <div class="logo w clear">
+    	<h1 class="fl">
+        	<a href="#">京东</a>
+        </h1>
+        <div class="fl search">
+        	<div class="search_t clear">
+            	<input type="text" placeholder="智能微投" class="fl kk" />
+                <input type="button" value="搜索" class="fl sous" />
+            </div>
+            <div class="seaarch_d clear">
+            	<a href="#" class="fl">魅蓝note2</a>
+                <a href="#" class="fl">送现金券</a>
+                <a href="#" class="fl">一元秒杀</a>
+                <a href="#" class="fl">品质童装</a>
+            	<a href="#" class="fl">9.9元秒杀</a>
+                <a href="#" class="fl">复读机</a>
+                <a href="#" class="fl">真丝丝巾</a>
+                <a href="#" class="fl">伊索寓言</a>
+            </div>
+        </div>
+        <a href="#" class="shopcar fl clear">
+        	<i class="fl car"></i>
+            <span class="fl">我的购物车</span>
+            <b>1</b>
+            <i class="yjt fl"></i>
+        </a>
+    </div>
+    <!--code-->
+    <div class="code w clear">
+    	<div class="code_inl fl">
+        	<div class="code_inhd">
+				<h3>全部商品分类</h3>
+			</div>
+            <ul class="elect">
+        		<li class="elect_list clear">
+                            <a href="#" class="fl">家用电器</a>
+                            <a href="#" class="fr gt">&gt;</a>
+                        </li>
+        		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+          		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+         		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+                <li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+                <li class="elect_list clear">
+                                <a href="#" class="fl">家用电器</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>             
+        		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+          		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+         		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+                <li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+                <li class="elect_list clear">
+                                <a href="#" class="fl">家用电器</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>             
+        		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+          		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+         		<li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>
+                <li class="elect_list clear">
+                                <a href="#" class="fl">手机、</a>
+                                <a href="#" class="fl">数码、</a>
+                                <a href="#" class="fl">京东通讯</a>
+                                <a href="#" class="fr gt">&gt;</a>
+                            </li>            
+                </ul>
+            </div>
+        <div class="code_inr fl">
+        	<div class="inr_nav clear">
+            	<a href="#" class="fl">服装城</a>
+                <a href="#" class="fl">美妆馆</a>
+                <a href="#" class="fl">美食</a>
+                <a href="#" class="fl">全球购</a>
+                <a href="#" class="fl">闪购</a>
+                <a href="#" class="fl">团购</a>
+                <a href="#" class="fl">拍卖</a>
+                <a href="#" class="fl">金融</a>
+                <a href="#" class="fl">智能</a>
+            </div>
+            <div class="code_ind clear">
+            	<div class="fl">
+                	<a href="#">
+                    	<img src="img/gg.png" />
+                    </a>
+                </div>
+                <div class="bulletin fr">
+                	<div class="bull">
+                    	<div class="bull_hd clear">
+                        	<span class="fl">京东快报</span>
+                            <a href="#" class="fr">更多 &gt;</a>
+                        </div>
+                        <div class="news clear">
+                        	<a href="#" class="fl clear"><span class="fl">[特惠]</span>亚瑟士运动鞋1元秒杀</a>
+                            <a href="#" class="fl clear"><span class="fl">[特惠]</span>亚瑟士运动鞋1元秒杀</a>
+                            <a href="#" class="fl clear"><span class="fl">[特惠]</span>亚瑟士运动鞋1元秒杀</a>
+                            <a href="#" class="fl clear"><span class="fl">[特惠]</span>亚瑟士运动鞋1元秒杀</a>
+                            <a href="#" class="fl clear"><span class="fl">[特惠]</span>亚瑟士运动鞋1元秒杀</a>
+                        </div>
+                    </div>
+                    <div class="bulld">
+                    	<div class="bulld_hd">
+                        	<span>生活服务</span>
+                        </div>
+                        <ul class="fuwu clear">
+                        	<li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in kuan fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in kuan fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in fl">
+                            	<a href="#">话费</a>
+                            </li>
+                            <li class="fuwu_in kuan fl">
+                            	<a href="#">话费</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+   	<!--pic-->
+    <div class="pic w clear">
+    	<a href="#" class="fl">
+        	<img src="img/55ee5193N8d85f781.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/55ee5193N8d85f781.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/55ee5193N8d85f781.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/55ee5193N8d85f781.jpg" />
+        </a>
+    </div>
+    <!--love-->
+    <div class="love w">
+    	<div class="love_hd">
+        	<h3 class="fl">猜你喜欢</h3>
+            <a href="#" class="fr">换一批</a>
+        </div>
+        <ul class="love_in cent-b clear">
+        	<li class="love_ind fl">
+            	<a href="#">
+                	<img src="img/cz.png" />
+                </a>
+                <div class="txt">
+                	<p class="txtt">迁度生活实木餐桌现代简约钢化玻璃烤漆餐</p>
+                    <p class="txtd">￥1280.00</p>
+                </div>
+            </li>
+            <li class="love_ind fl">
+            	<a href="#">
+                	<img src="img/cz.png" />
+                </a>
+                <div class="txt">
+                	<p class="txtt">迁度生活实木餐桌现代简约钢化玻璃烤漆餐</p>
+                    <p class="txtd">￥1280.00</p>
+                </div>
+            </li>
+            <li class="love_ind fl">
+            	<a href="#">
+                	<img src="img/cz.png" />
+                </a>
+                <div class="txt">
+                	<p class="txtt">迁度生活实木餐桌现代简约钢化玻璃烤漆餐</p>
+                    <p class="txtd">￥1280.00</p>
+                </div>
+            </li>
+            <li class="love_ind fl">
+            	<a href="#">
+                	<img src="img/cz.png" />
+                </a>
+                <div class="txt">
+                	<p class="txtt">迁度生活实木餐桌现代简约钢化玻璃烤漆餐</p>
+                    <p class="txtd">￥1280.00</p>
+                </div>
+            </li>
+            <li class="love_ind fl">
+            	<a href="#">
+                	<img src="img/cz.png" />
+                </a>
+                <div class="txt tet">
+                	<p class="txtt">迁度生活实木餐桌现代简约钢化玻璃烤漆餐</p>
+                    <p class="txtd">￥1280.00</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--feature-->
+    <div class="feature w">
+    	<div class="feature_hd">
+        	<h3>京东特色购</h3>
+        </div>
+        <div class="feature_in clear">
+        	<div class="fl feat_in">
+            	<p class="jingpin">科技精品</p>
+                <p class="dulun">智能独轮火星越野摩托车</p>
+                <a href="#">
+                	<img src="img/dl.png" />
+                </a>
+            </div>
+            <div class="fl feat_in feat_ind">
+                <a href="#">
+                	<img src="img/xz1.png" />
+                </a>
+            </div>
+            <div class="fl feat_in feat_ini">
+            	<p class="jingpin">科技精品</p>
+                <p class="dulun">智能独轮火星越野摩托车</p>
+                <a href="#">
+                	<img src="img/dl.png" />
+                </a>
+            </div>
+            <div class="fl feat_in feat_ini">
+            	<p class="jingpin">科技精品</p>
+                <p class="dulun">智能独轮火星越野摩托车</p>
+                <a href="#">
+                	<img src="img/dl.png" />
+                </a>
+            </div>
+            <div class="fl feat_in feat_ini">
+            	<p class="jingpin">科技精品</p>
+                <p class="dulun">智能独轮火星越野摩托车</p>
+                <a href="#">
+                	<img src="img/dl.png" />
+                </a>
+            </div>
+            <div class="fl feat_in">
+            	<p class="jingpin">科技精品</p>
+                <p class="dulun">智能独轮火星越野摩托车</p>
+                <a href="#">
+                	<img src="img/dl.png" />
+                </a>
+            </div>
+            <div class="fl feat_in">
+            	<p class="jingpin">科技精品</p>
+                <p class="dulun">智能独轮火星越野摩托车</p>
+                <a href="#">
+                	<img src="img/dl.png" />
+                </a>
+            </div>
+            <div class="fl feat_in shangbiao">
+            	<a href="#">
+                	<img src="img/len.png" />
+                </a>
+                <a href="#">
+                	<img src="img/len.png" />
+                </a>
+                <a href="#">
+                	<img src="img/len.png" />
+                </a>
+                <a href="#">
+                	<img src="img/len.png" />
+                </a>
+                <a href="#" class="prada">
+                	<img src="img/len.png" />
+                </a>
+            </div>
+            <div class="fl feat_in feat_ini">
+            	<p class="jingpin">科技精品</p>
+                <p class="dulun">智能独轮火星越野摩托车</p>
+                <a href="#">
+                	<img src="img/dl.png" />
+                </a>
+            </div>
+            <div class="fl product">
+            	<div class="product_hd">
+                	<div class="clear hd_in">
+                    	<span class="fl yushou">预售</span>
+                    	<span class="fl xinpin">新品抢先</span>
+                    </div>
+                    <p>青轴人教育局俞孔坚哭问问个人会员价看里</p>
+                </div>
+                <div class="product_in clear">
+                    	<div class="fl product_inl">
+                        	<a href="#">
+                            	<img src="img/jp.png" />
+                            </a>
+                        </div>
+                        <div class="fl product_inr">
+                        	<a href="#" class="clear jianpan">
+                            	<span class="fl zuk">ZUK Z1</span>
+                                <span class="fl yuyue">正在预约</span>
+                            </a>
+                            <a href="#" class="clear jianpan">
+                            	<span class="fl zuk">ZUK Z1</span>
+                                <span class="fl yuyue">正在预约</span>
+                            </a>
+                            <a href="#" class="clear jianpan">
+                            	<span class="fl zuk">ZUK Z1</span>
+                                <span class="fl yuyue">正在预约</span>
+                            </a>
+                            <a href="#" class="clear jianpan">
+                            	<span class="fl zuk">ZUK Z1</span>
+                                <span class="fl yuyue">正在预约</span>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--guanggao-->
+    <div class="w guanggao">
+    	<a href="#">
+        	<img src="img/ggd.png" />
+        </a>
+    </div>
+    <!--dress-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">1F</b>
+                <span class="fl">服装鞋包</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl fl clear">
+          		<div class="dress_inll fl">
+                    <span class="opc"></span>
+                    <div class="clear zongd">
+                    	<a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                    </div>
+                    <div class="dress_inlld clear">
+                    	<div class="fl inlld_l clear">
+                        	<a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上</a>
+                        </div>
+                        <div class="fr inlld_l clear">
+                        	<a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dress_inlr fl">
+                	<a href="#" class="xz">
+                    	<img src="img/xz.jpg" />
+                    </a>
+                    <div class="inlr_dt">
+                    	<a href="#">
+                        	<img src="img/xc.jpg" />
+                        </a>
+                        <div class="inlr_dtd clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dress_ind fl clear">
+                	<a href="#" class="fl py">
+                    	<img src="img/py.jpg" />
+                    </a>
+                    <a href="#" class="fl">
+                    	<img src="img/sb.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="dress_inr fl">
+            	<a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sn.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+    <!--2F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">2F</b>
+                <span class="fl">个护美妆</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl dress_inl2 fl clear">
+          		<div class="dress_inll dress_inll2 fl">
+                    <span class="opc opc2"></span>
+                    <div class="clear zongd zongd2">
+                    	<a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                    </div>
+                    <div class="dress_inlld dress_inlld2">
+                    	<div class="clear dress_inlld2_t">
+                        	<a href="#" class="fl">连月亮199减100&gt;</a>
+                            <a href="#" class="fl">连月亮199减100&gt;</a>
+                        </div>
+                        <div class="dress_inlld2_d clear">
+                        	<a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">全球购馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl dress_inr2">
+                	<a href="#" class="pant">
+                    	<img src="img/oly.png" />
+                    </a>
+                    <div class="inlr_dt inlr_dt2">
+                    	<a href="#">
+                        	<img src="img/xc.jpg" />
+                        </a>
+                        <div class="inlr_dtd inlr_dtd2 clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress_inder clear fl">
+            	<a href="#" class="fl">
+                	<img src="img/55ed377bN466eb0de.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/jk.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/xzm.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/xzm.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+    <!--3F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">3F</b>
+                <span class="fl">手机通讯</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl fl clear">
+          		<div class="dress_inll fl">
+                    <span class="opc"></span>
+                    <div class="clear zongd">
+                    	<a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                    </div>
+                    <div class="dress_inlld clear">
+                    	<div class="fl inlld_l clear">
+                        	<a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上</a>
+                        </div>
+                        <div class="fr inlld_l clear">
+                        	<a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dress_inlr fl">
+                	<a href="#" class="xz">
+                    	<img src="img/xz.jpg" />
+                    </a>
+                    <div class="inlr_dt">
+                    	<a href="#">
+                        	<img src="img/xc.jpg" />
+                        </a>
+                        <div class="inlr_dtd clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress_inr fl">
+            	<a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+     <!--4F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">4F</b>
+                <span class="fl">家用电器</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl fl clear">
+          		<div class="dress_inll fl">
+                    <span class="opc"></span>
+                    <div class="clear zongd">
+                    	<a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                    </div>
+                    <div class="dress_inlld clear">
+                    	<div class="fl inlld_l clear">
+                        	<a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上</a>
+                        </div>
+                        <div class="fr inlld_l clear">
+                        	<a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dress_inlr fl">
+                	<a href="#" class="xz">
+                    	<img src="img/xz.jpg" />
+                    </a>
+                    <div class="inlr_dt">
+                    	<a href="#">
+                        	<img src="img/xc.jpg" />
+                        </a>
+                        <div class="inlr_dtd clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress_inr fl">
+            	<a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+     <!--5F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">5F</b>
+                <span class="fl">电脑数码</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl fl clear">
+          		<div class="dress_inll fl">
+                    <span class="opc"></span>
+                    <div class="clear zongd">
+                    	<a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                        <a href="#" class="fl">男装</a>
+                    </div>
+                    <div class="dress_inlld clear">
+                    	<div class="fl inlld_l clear">
+                        	<a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上</a>
+                        </div>
+                        <div class="fr inlld_l clear">
+                        	<a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl color">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                            <a href="#" class="fl">女装上新</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dress_inlr fl">
+                	<a href="#" class="xz">
+                    	<img src="img/xz.jpg" />
+                    </a>
+                    <div class="inlr_dt">
+                    	<a href="#">
+                        	<img src="img/xc.jpg" />
+                        </a>
+                        <div class="inlr_dtd clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress_inr fl">
+            	<a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+                <a href="#" class="fl">
+                	<img src="img/sx.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+     <!--6F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">6F</b>
+                <span class="fl">运动健身</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl dress_inl2 dress_inl6 fl clear">
+          		<div class="dress_inll dress_inll2 fl">
+                    <span class="opc opc2"></span>
+                    <div class="clear zongd zongd2">
+                    	<a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                    </div>
+                    <div class="dress_inlld dress_inlld2">
+                    	<div class="clear dress_inlld2_t">
+                        	<a href="#" class="fl">连月亮199减100&gt;</a>
+                            <a href="#" class="fl">连月亮199减100&gt;</a>
+                        </div>
+                        <div class="dress_inlld2_d clear">
+                        	<a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">全球购馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="yundong fl">
+                	<a href="#">
+                    	<img src="img/js.jpg" />
+                    </a>
+                    <a href="#">
+                    	<img src="img/xz4.jpg" />
+                    </a>
+                </div>
+                <div class="fl dress_inr2">
+                	<a href="#" class="pant">
+                    	<img src="img/ymq.jpg" />
+                    </a>
+                    <div class="inlr_dt  inlr_dt2 inlr_dt6">
+                    	<a href="#">
+                        	<img src="img/dpj.jpg" />
+                        </a>
+                        <div class="inlr_dtd inlr_dtd2 clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl dress_6">
+            	<a href="#">
+                	<img src="img/hw.jpg" />
+                </a>
+                <a href="#">
+                	<img src="img/wyj.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+     <!--7F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">7F</b>
+                <span class="fl">居家生活</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl dress_inl2 dress_inl6 fl clear">
+          		<div class="dress_inll dress_inll2 fl">
+                    <span class="opc opc2"></span>
+                    <div class="clear zongd zongd2">
+                    	<a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                    </div>
+                    <div class="dress_inlld dress_inlld2">
+                    	<div class="clear dress_inlld2_t">
+                        	<a href="#" class="fl">连月亮199减100&gt;</a>
+                            <a href="#" class="fl">连月亮199减100&gt;</a>
+                        </div>
+                        <div class="dress_inlld2_d clear">
+                        	<a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">全球购馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="yundong fl">
+                	<a href="#">
+                    	<img src="img/js.jpg" />
+                    </a>
+                    <a href="#">
+                    	<img src="img/xz4.jpg" />
+                    </a>
+                </div>
+                <div class="fl dress_inr2">
+                	<a href="#" class="pant">
+                    	<img src="img/ymq.jpg" />
+                    </a>
+                    <div class="inlr_dt  inlr_dt2 inlr_dt6">
+                    	<a href="#">
+                        	<img src="img/dpj.jpg" />
+                        </a>
+                        <div class="inlr_dtd inlr_dtd2 clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl dress_6">
+            	<a href="#">
+                	<img src="img/hw.jpg" />
+                </a>
+                <a href="#">
+                	<img src="img/wyj.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+     <!--8F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">8F</b>
+                <span class="fl">母婴玩具</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl dress_inl2 dress_inl6 fl clear">
+          		<div class="dress_inll dress_inll2 fl">
+                    <span class="opc opc2"></span>
+                    <div class="clear zongd zongd2">
+                    	<a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                    </div>
+                    <div class="dress_inlld dress_inlld2">
+                    	<div class="clear dress_inlld2_t">
+                        	<a href="#" class="fl">连月亮199减100&gt;</a>
+                            <a href="#" class="fl">连月亮199减100&gt;</a>
+                        </div>
+                        <div class="dress_inlld2_d clear">
+                        	<a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">全球购馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="yundong fl">
+                	<a href="#">
+                    	<img src="img/js.jpg" />
+                    </a>
+                    <a href="#">
+                    	<img src="img/xz4.jpg" />
+                    </a>
+                </div>
+                <div class="fl dress_inr2">
+                	<a href="#" class="pant">
+                    	<img src="img/ymq.jpg" />
+                    </a>
+                    <div class="inlr_dt  inlr_dt2 inlr_dt6">
+                    	<a href="#">
+                        	<img src="img/dpj.jpg" />
+                        </a>
+                        <div class="inlr_dtd inlr_dtd2 clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl dress_6">
+            	<a href="#">
+                	<img src="img/hw.jpg" />
+                </a>
+                <a href="#">
+                	<img src="img/wyj.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+     <!--9F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">9F</b>
+                <span class="fl">食品保健</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl dress_inl2 dress_inl6 fl clear">
+          		<div class="dress_inll dress_inll2 fl">
+                    <span class="opc opc2"></span>
+                    <div class="clear zongd zongd2">
+                    	<a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                    </div>
+                    <div class="dress_inlld dress_inlld2">
+                    	<div class="clear dress_inlld2_t">
+                        	<a href="#" class="fl">连月亮199减100&gt;</a>
+                            <a href="#" class="fl">连月亮199减100&gt;</a>
+                        </div>
+                        <div class="dress_inlld2_d clear">
+                        	<a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">全球购馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="yundong fl">
+                	<a href="#">
+                    	<img src="img/js.jpg" />
+                    </a>
+                    <a href="#">
+                    	<img src="img/xz4.jpg" />
+                    </a>
+                </div>
+                <div class="fl dress_inr2">
+                	<a href="#" class="pant">
+                    	<img src="img/ymq.jpg" />
+                    </a>
+                    <div class="inlr_dt  inlr_dt2 inlr_dt6">
+                    	<a href="#">
+                        	<img src="img/dpj.jpg" />
+                        </a>
+                        <div class="inlr_dtd inlr_dtd2 clear">
+                        	<span class="fl red"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                            <span class="fl"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl dress_6">
+            	<a href="#">
+                	<img src="img/hw.jpg" />
+                </a>
+                <a href="#">
+                	<img src="img/wyj.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+     <!--10F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">10F</b>
+                <span class="fl">图书音像</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl dress_inl2 dress_inl6 dress_inl10 fl clear">
+          		<div class="dress_inll dress_inll2 fl">
+                    <span class="opc opc2"></span>
+                    <div class="clear zongd zongd2">
+                    	<a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                    </div>
+                    <div class="dress_inlld dress_inlld2">
+                    	<div class="clear dress_inlld2_t">
+                        	<a href="#" class="fl">连月亮199减100&gt;</a>
+                            <a href="#" class="fl">连月亮199减100&gt;</a>
+                        </div>
+                        <div class="dress_inlld2_d clear">
+                        	<a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">全球购馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl book">
+                	<div class="book_t">
+                    	<a href="#">
+                        	<img src="img/55e51fcfN96655f41.jpg" />
+                        </a>
+                        <div class="book_pos clear">
+                        	<span class="red"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book_d clear">
+                    	<div class="book_dl fl">
+                            <a href="#">
+                            	<img src="img/gh.jpg" />
+                            </a>
+                        </div>
+                        <div class="book_dl fl">
+                            <a href="#">
+                            	<img src="img/yb.jpg" />
+                            </a>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div class="writer fl">
+            	<h3>热门作者</h3>
+                <ul>
+                	<li class="writer_in clear">
+                    	<div class="fl writer_inl">
+                        	<a href="#">
+                            	<img src="img/zgp.png" />
+                            </a>
+                            <p>周国平</p>
+                        </div>
+                        <div class="writer_inr fl clear">
+                        	<a href="#" class="fl">
+                            	<img src="img/book1.png" />
+                            </a>
+                            <div class="fl">
+                            	<p class="jx">觉醒的力量</p>
+                                <p class="nz">“觉醒是一种巨大的内在力量”</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="writer_in clear">
+                    	<div class="fl writer_inl">
+                        	<a href="#">
+                            	<img src="img/zgp.png" />
+                            </a>
+                            <p>周国平</p>
+                        </div>
+                        <div class="writer_inr fl clear">
+                        	<a href="#" class="fl">
+                            	<img src="img/book1.png" />
+                            </a>
+                            <div class="fl">
+                            	<p class="jx">觉醒的力量</p>
+                                <p class="nz">“觉醒是一种巨大的内在力量”</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="writer_in clear">
+                    	<div class="fl writer_inl">
+                        	<a href="#">
+                            	<img src="img/zgp.png" />
+                            </a>
+                            <p>周国平</p>
+                        </div>
+                        <div class="writer_inr fl clear">
+                        	<a href="#" class="fl">
+                            	<img src="img/book1.png" />
+                            </a>
+                            <div class="fl">
+                            	<p class="jx">觉醒的力量</p>
+                                <p class="nz">“觉醒是一种巨大的内在力量”</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="writer_in writer_ind clear">
+                    	<div class="fl writer_inl">
+                        	<a href="#">
+                            	<img src="img/zgp.png" />
+                            </a>
+                            <p>周国平</p>
+                        </div>
+                        <div class="writer_inr fl clear">
+                        	<a href="#" class="fl">
+                            	<img src="img/book1.png" />
+                            </a>
+                            <div class="fl">
+                            	<p class="jx">觉醒的力量</p>
+                                <p class="nz">“觉醒是一种巨大的内在力量”</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+      <!--11F-->
+    <div class="dress w">
+    	<div class="dress_hd clear">
+        	<div class="dress_hdl fl clear">
+            	<b class="fl">11F</b>
+                <span class="fl">生活服务</span>
+            </div>
+            <div class="dress_hdr fr clear">
+            	<a href="#" class="fl dapai">大牌</a>
+            	<a href="#" class="fl nanzhuang">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">男装</a>
+                <a href="#" class="fl">内衣配饰</a>
+                <a href="#" class="fl">珠宝首饰</a>
+                <a href="#" class="fl">奢侈礼品</a>
+                <a href="#" class="fl">奢华腕表</a>
+            </div>
+        </div>
+        <div class="dress_in clear">
+        	<div class="dress_inl dress_inl2 dress_inl6 dress_inl10 fl clear">
+          		<div class="dress_inll dress_inll2 fl">
+                    <span class="opc opc2"></span>
+                    <div class="clear zongd zongd2">
+                    	<a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                        <a href="#" class="fl">美妆特卖</a>
+                    </div>
+                    <div class="dress_inlld dress_inlld2">
+                    	<div class="clear dress_inlld2_t">
+                        	<a href="#" class="fl">连月亮199减100&gt;</a>
+                            <a href="#" class="fl">连月亮199减100&gt;</a>
+                        </div>
+                        <div class="dress_inlld2_d clear">
+                        	<a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">全球购馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                            <a href="#" class="fl">国际馆</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl book">
+                	<div class="book_t">
+                    	<a href="#">
+                        	<img src="img/55e51fcfN96655f41.jpg" />
+                        </a>
+                        <div class="book_pos clear">
+                        	<span class="red"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book_d clear">
+                    	<div class="book_dl fl">
+                            <a href="#">
+                            	<img src="img/gh.jpg" />
+                            </a>
+                        </div>
+                        <div class="book_dl fl">
+                            <a href="#">
+                            	<img src="img/yb.jpg" />
+                            </a>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div class="writer fl">
+            	<h3>热门作者</h3>
+                <ul>
+                	<li class="writer_in clear">
+                    	<div class="fl writer_inl">
+                        	<a href="#">
+                            	<img src="img/zgp.png" />
+                            </a>
+                            <p>周国平</p>
+                        </div>
+                        <div class="writer_inr fl clear">
+                        	<a href="#" class="fl">
+                            	<img src="img/book1.png" />
+                            </a>
+                            <div class="fl">
+                            	<p class="jx">觉醒的力量</p>
+                                <p class="nz">“觉醒是一种巨大的内在力量”</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="writer_in clear">
+                    	<div class="fl writer_inl">
+                        	<a href="#">
+                            	<img src="img/zgp.png" />
+                            </a>
+                            <p>周国平</p>
+                        </div>
+                        <div class="writer_inr fl clear">
+                        	<a href="#" class="fl">
+                            	<img src="img/book1.png" />
+                            </a>
+                            <div class="fl">
+                            	<p class="jx">觉醒的力量</p>
+                                <p class="nz">“觉醒是一种巨大的内在力量”</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="writer_in clear">
+                    	<div class="fl writer_inl">
+                        	<a href="#">
+                            	<img src="img/zgp.png" />
+                            </a>
+                            <p>周国平</p>
+                        </div>
+                        <div class="writer_inr fl clear">
+                        	<a href="#" class="fl">
+                            	<img src="img/book1.png" />
+                            </a>
+                            <div class="fl">
+                            	<p class="jx">觉醒的力量</p>
+                                <p class="nz">“觉醒是一种巨大的内在力量”</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="writer_in writer_ind clear">
+                    	<div class="fl writer_inl">
+                        	<a href="#">
+                            	<img src="img/zgp.png" />
+                            </a>
+                            <p>周国平</p>
+                        </div>
+                        <div class="writer_inr fl clear">
+                        	<a href="#" class="fl">
+                            	<img src="img/book1.png" />
+                            </a>
+                            <div class="fl">
+                            	<p class="jx">觉醒的力量</p>
+                                <p class="nz">“觉醒是一种巨大的内在力量”</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--gglist-->
+    <div class="gglist w clear">
+    	<a href="#" class="fl first">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl">
+        	<img src="img/dzx.jpg" />
+        </a>
+        <a href="#" class="fl load">
+        	<img src="img/dzx.jpg" />
+        </a>
+    </div>
+    <!--today-->
+    <div class="today w">
+     <div class="today_hd clear">
+     	<h3 class="fl">今日抄底</h3>
+        <span class="fr">热门晒单</span>
+     </div>
+     <div class="today_in clear">
+     	<div class="today_inl clear fl">
+        	<div class="xyj fl">
+            	<a href="#">
+                	<img src="img/xyj.png" />
+                </a>
+                <p>TCL feg j sd fdgjkju公斤 大屏</p>
+                <span>￥1299.00</span>
+            </div>
+            <div class="haier fl clear">
+            	<a href="#" class="fl">
+                	<img src="img/hear.jpg" />
+                </a>
+                <div class="fr haier_in">
+                	<p>肥肉皇太极ne口语看葛瑞格</p>
+                    <span>￥259.00</span>
+                </div>
+            </div>
+            <div class="haier fl clear">
+            	<a href="#" class="fl">
+                	<img src="img/hear.jpg" />
+                </a>
+                <div class="fr haier_in">
+                	<p>肥肉皇太极ne口语看葛瑞格</p>
+                    <span>￥259.00</span>
+                </div>
+            </div>
+            <div class="haier fl clear">
+            	<a href="#" class="fl">
+                	<img src="img/hear.jpg" />
+                </a>
+                <div class="fr haier_in">
+                	<p>肥肉皇太极ne口语看葛瑞格</p>
+                    <span>￥259.00</span>
+                </div>
+            </div>
+            <div class="haier fl clear">
+            	<a href="#" class="fl">
+                	<img src="img/hear.jpg" />
+                </a>
+                <div class="fr haier_in">
+                	<p>肥肉皇太极ne口语看葛瑞格</p>
+                    <span>￥259.00</span>
+                </div>
+            </div>
+        </div>
+        <ul class="yinyue fl">
+        	<li class="yinyue_in clear">
+            	<a href="#" class="fl">
+                	<img src="img/yy.png" />
+                </a>
+                <div class="fl yinyue_inr">
+                	<div class="yinyue_inrt clear">
+                    	<a href="#" class="fl">
+                        	<img src="img/xty.png" />
+                        </a>
+                        <span class="fl">音域</span>
+                    </div>
+                    <p>“哈皮的过热恶风突然航天员将于”</p>
+                </div>
+            </li>
+            <li class="yinyue_in clear">
+            	<a href="#" class="fl">
+                	<img src="img/yy.png" />
+                </a>
+                <div class="fl yinyue_inr">
+                	<div class="yinyue_inrt clear">
+                    	<a href="#" class="fl">
+                        	<img src="img/xty.png" />
+                        </a>
+                        <span class="fl">音域</span>
+                    </div>
+                    <p>“哈皮的过热恶风突然航天员将于”</p>
+                </div>
+            </li>
+        </ul>
+     </div>
+    </div>
+    <!--dkhs-->
+    <div class="dkhs clear w">
+    	<div class="dkhs_in dkhs_ind fl">
+        	<a href="#">品类齐全 轻松购物</a>
+        </div>
+      	<div class="dkhs_in fl">
+        	<a href="#">品类齐全 轻松购物</a>
+        </div>
+        <div class="dkhs_in fl">
+        	<a href="#">品类齐全 轻松购物</a>
+        </div>
+        <div class="dkhs_in fl">
+        	<a href="#">品类齐全 轻松购物</a>
+        </div>
+    </div>
+    <!--zhinan-->
+    <div class="zhinan clear w">
+    	<dl class="fl">
+        	<dt>购物指南</dt>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+        </dl>
+        <dl class="fl">
+        	<dt>购物指南</dt>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+        </dl>
+        <dl class="fl">
+        	<dt>购物指南</dt>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+        </dl>
+        <dl class="fl">
+        	<dt>购物指南</dt>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+        </dl>
+        <dl class="fl">
+        	<dt>购物指南</dt>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+            <dd>购物流程</dd>
+        </dl>
+        <a href="#" class="fl">
+        	<img src="img/td.png" />
+        </a>
+    </div>
+    <!--download-->
+    <div class="download w">
+    	<div class="clear">
+            <a href="#" class="fl hd">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl">关于我们</a>
+            <a href="#" class="fl load">关于我们</a>
+        </div>
+        <div>
+            <p>个人画图然后教育局同居健康与育局同居健康与育局同居健康与教育加油加油桃花运航天员他回头还要体验借记卡</p>
+            <p>个人画教育加油加油桃育局同居健康与花运航天员他回头还要体验借记卡</p>
+            <p>个人画与教育花运航天育局同居健康与员他回头还要体验借记卡</p>
+            <p>个人画育育局同居健康与加</p>
+        </div>
+        <div class="clear download_d">
+        	<div class="clear fl">
+                <span class="fl">经营性网站备战信息</span>
+                <span class="fl">经营性网站备战信息</span>
+                <span class="fl">经营性网站备战信息</span>
+                <span class="fl">经营性网站备战信息</span>
+            </div>
+            <div class="fl download_dd">
+            	<p>暴恐音频举报区</p>
+                <p>互联网不良违法举报信息中心</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

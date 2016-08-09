@@ -1,0 +1,1370 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/css.css" />
+<style>
+body{background:#f2f2f3; padding-bottom:20px;}
+.head{height:77px; border-bottom:1px solid #ccc; min-width:1180px; background:#fff;}
+.head_in h1 a{display:block; width:144px; height:48px; background:url(img/index_sp.png) 0 -45px; text-indent:-999em; margin-top:15px; margin-right:40px;}
+.search input{width:388px; height:38px; border:1px solid #ccc; padding-left:10px; margin-right:11px;}
+.search{margin-top:19px;}
+.search a{line-height:40px;}
+.search a span{ float:left; width:17px; height:17px; background:url(img/index_sp.png) -210px -70px; margin-right:10px; margin-top:11px;}
+.head_nav{padding-top:15px;}
+.head_nav a{line-height:38px; margin-left:20px; text-align:center;}
+.head_nav a:hover{color:#24baf1; transition:all 1s;}
+.head_nav a span{display:block; width:24px; height:23px; background:url(img/index_sp.png) -162px -44px;  margin:0 auto;}
+.head_nav a .hy{background-position:-189px -44px;}
+.head_nav a .star{background-position:-216px -44px;}
+.head_nav a .jl{background-position:-243px -44px;}
+.head_nav a .kh{background-position:-177px -94px;}
+.head_nav a .app{background-position:-270px -44px;}
+/*nav*/
+.nav_l a{float:left; line-height:50px; font-size:16px; margin-right:20px;}
+.nav_r{padding-top:18px;}
+.nav_r a{float:left; line-height:16px; font-size:16px; border-left:1px solid #ccc; padding-left:15px; margin-left:15px;}
+.nav_r .hy{border-left:none; margin-left:0;}
+.nav_r .hy i{float:left; width:16px; height:16px; background:url(img/index_sp.png) -296px -43px; margin-right:5px;}
+/*focus*/
+.focus{border-top:1px solid #ccc; position:relative; overflow:hidden;}
+.focus_in>a{display:block; margin-left:-359px;}
+.focus_d{ width:1171px; height:88px; background:rgba(0,0,0,.5); position:absolute; bottom:0; left:0; padding-top:18px; padding-left:9px;}
+.focus_d a{float:left; margin-right:6px;}
+.focus_d a img{width:140px; height:70px;}
+.cut{width:142px; height:70px; border:3px solid #24baf1; box-sizing:border-box;}
+.focus_d .cut img{width:136px; height:64px;}
+/*supstar*/
+.supstar{padding-top:10px;}
+.star_l{width:940px;}
+.star_l h2{font-size:25px; line-height:70px;} 
+.star_lin .fsf{width:460px; background:#fff; padding-bottom:12px;}
+.fst_list span{width:76px; height:76px; background:url(img/hs.png); margin:12px 15px 0 16px;}
+.list_in{width:240px; position:relative;}
+.list_in h4{font-size:18px; line-height:42px; margin-top:4px;}
+.list_in p{ line-height:20px; color:#838383;}
+.list_in a{width:88px; height:28px; border:1px solid #777; text-align:center; line-height:28px; border-radius:1px; position:absolute; bottom:-1px; right:-97px;}
+.lwh{width:480px;}
+.lwh_in{width:220px; height:230px; background:#fff;}
+.lwh_ind p{ line-height:40px; font-size:16px; padding-top:10px; border-bottom:1px solid #f2f2f3; padding-left:15px;}
+.lwh_gz span{width:80px; background:url(img/rq.png) no-repeat left center; margin-left:15px; padding-left:42px; line-height:33px; margin-top:10px;}
+.lwh_gz a{width:46px; height:20px; border:1px solid #ccc; border-radius:2px; line-height:20px; text-align:center; margin-top:16px;}
+.star_r{width:220px;}
+.star_r h4{font-size:18px; line-height:70px;}
+.rzstar{ background:#fff; padding-left:15px; padding-top:20px; height:450px;}
+.rzstar a{text-align:center; line-height:36px; margin:0 13px 22px 0; position:relative;}
+.rzstar a span{display:block; width:54px; height:54px; border-radius:50%; background:url(img/lgx.jpg) -2px -2px;}
+.rzstar a i{width:31px; height:31px; background:url(img/index_sp.png) -375px -61px; position:absolute; right:-1px; top:33px;}
+/*teleplay*/
+.teleplay{padding-top:14px;}
+.tele_l{width:940px;}
+.tele_lhd h3{ line-height:66px; font-size:25px; margin-right:30px;}
+.tong{padding-top:21px;}
+.tong a{font-size:16px; line-height:24px; margin-right:20px;}
+.tong .hot,.tong a:hover{color:#21b7ef; border-bottom:2px solid #21b7ef;}
+.tele_lhd>a{ line-height:66px;}
+.tele_lin .shj{width:460px; position:relative;}
+.text{ width:100%; background:rgba(0,0,0,.1); position:absolute; bottom:0; left:0; padding-bottom:9px;}
+.text .hd{font-size:22px; line-height:34px; color:#fff; padding-left:23px;}
+.text .down{font-size:16px; line-height:28px; padding-left:23px; color:#ddd;}
+.text span{color:#fff; position:absolute; right:5px; bottom:46px;}
+.tv{width:480px;}
+.tv .tv_in{width:220px; position:relative;}
+.tv_list{height:54px; background:#fff; padding-left:14px; padding-top:11px;}
+.tv_list .tow{ font-size:15px; line-height:23px;}
+.tv_list .ren{ line-height:20px; color:#999;}
+.tv_in span{position:absolute; right:0; top:106px; line-height:19px; padding:0 5px; background:rgba(0,0,0,.7); color:#fff;}
+.tele_r h4{font-size:20px; line-height:66px;}
+
+.tele_rin{height:330px; background:#fff;}
+.tele_rin .top{padding-top:7px;}
+.rin_list{position:relative;}
+.rin_list a{display:block;}
+.rin_list .qqh{ position:absolute; bottom:0; left:0;}
+.qqh b{width:40px; height:36px; background:#24baf1; font-size:16px; text-align:center; line-height:36px; color:#fff; margin-right:17px;}
+.qqh span{font-size:16px; line-height:36px; color:#fff; margin-right:5px;}
+.qqh i{width:7px; height:8px; background:url(img/index_sp.png) -345px -43px; margin-top:15px;}
+.rin_listin a{line-height:30px;}
+.rin_listin a b{padding:0 16px;}
+.rin_listin a span{ margin-left:18px; width:134px;}
+.rin_listin a i{width:7px; height:8px; background:url(img/index_sp.png) -345px -43px; margin-top:11px;}
+.rin_listin a .down{ background-position:-353px -43px;}
+/*look*/
+.look .look_in{width:1180px;}
+.look_in .look_inr{width:720px;}
+/*space*/
+.tong p{line-height:23px; font-size:14px;}
+.space{width:220px;}
+.space_hd h3{font-size:20px; line-height:66px;}
+.space_hd a{line-height:66px;}
+.space_in{height:382px; background:#fff; padding-left:26px; padding-top:18px;}
+.cx a{margin-right:19px;}
+.cx a img{border-radius:50%; width:45px; height:45px;}
+.cx_in p{font-size:15px; line-height:23px;}
+.cx_in span{ display:block; width:44px; padding-top:5px; line-height:16px;}
+.cx_in span i{width:14px; height:16px; background:
+url(img/index_sp.png) -228px -70px; margin-right:8px;}
+.gg{display:block;}
+/*money*/
+.money_hd{padding-top:10px;}
+.money_hd h3{font-size:24px; line-height:70px; margin-right:30px;}
+.money_hd a{ width:86px; padding-left:15px; line-height:28px; color:#fff; font-size:15px; background:#24baf1; margin-top:21px;}
+.money_in .red{width:460px; position:relative;}
+.red .num{position:absolute; right:10px; bottom:15px;}
+.num span{ width:20px; height:20px; background:#fff; border-radius:50%; text-align:center; line-height:20px; margin-right:8px; float:left;}
+.num .hui{background:rgba(200,185,218,.9); color:#5a4b6c;}
+.money_r{width:720px; }
+.money_r a{float:left; margin-left:20px;}
+.money_r .one{margin-left:17px;}
+/*center*/
+.center_hd{padding-top:12px;}
+.center_hd h3{ font-size:24px; line-height:68px; margin-right:30px;}
+.center_hd div{padding-top:22px;}
+.center_hd div a{font-size:14px; line-height:22px; margin-right:20px; float:left;}
+.center_hd div .love,.center_hd div a:hover{ border-bottom:2px solid #24baf1; color:#24baf1;}
+.center_in .girl{width:220px; position:relative;}
+.infor{position:absolute; bottom:0; left:0; width:220px; padding-top:50px; padding-bottom:11px; background:rgba(0,0,0,.1);}
+.infor p{font-size:14px; line-height:24px; margin-left:22px;}
+.infor .for{color:#fff;}
+.infor .for span{float:right; margin-right:16px;}
+.infor .fore{color:#cacaca;}
+.center_down{background:#fff; line-height:58px;}
+.center_down span{margin-left:30px; margin-right:77px;}
+.center_down a{margin-right:25px;}
+.center_down a:hover{color:#24baf1;}
+.center_down p{margin-right:10px; color:#999;}
+/*vip*/
+.center_hd>a{ line-height:66px;}
+.girl b{position:absolute; top:0; left:0; width:45px; line-height:24px; font-size:14px; color:#fff; background:#e62b00; text-align:center;}
+/*film*/
+.film_hd a span{background:url(img/index_sp.png) -177px -70px; width:15px; height:15px; float:left; margin-top:27px; margin-right:7px;}
+.film_inr{width:220px; background:#fff;}
+.film_inr .film_down{padding-left:14px; padding-top:10px; height:55px;}
+.film_down p{line-height:20px; color:#999;}
+.film_down .st{font-size:16px; line-height:24px; color:#333;}
+/*mation*/
+.mation .mation_down{padding-top:11px; height:55px; padding-left:18px; background:#fff;}
+.mation_down .jl{ font-size:16px; line-height:24px; color:#333;}
+.mation_down .zd{line-height:20px; color:#777;}
+.ber{position:absolute; right:7px; bottom:0;}
+.ber span{ font-size:14px; line-height:42px; padding:0 9px; cursor:pointer;}
+.ber .cur{border-bottom:2px solid #000;}
+/*partner*/
+.partner{padding-top:19px; padding-bottom:90px;}
+.partner .par_l{width:940px;}
+.par_l h3{font-size:24px; line-height:68px;}
+.par_ld{padding-bottom:12px;}
+.par_ld a{line-height:40px; margin-right:19px;}
+.par_ld span{padding-top:15px; margin-right:18px;}
+.par_r{width:220px;}
+.par_r h3{font-size:20px; line-height:68px;}
+.par_r .par_rl{height:176px; background:#fff; padding-left:24px; padding-top:16px;}
+.par_rl a{display:block; line-height:32px; color:#333;}
+/*footer*/
+.footer{height:268px; background:#fff; min-width:1180px; text-align:center;}
+.footer_t{padding-top:36px; width:1180px; text-align:center;}
+.footer_t a{margin:0 4px;}
+.footer_t span{line-height:24px;}
+.footer_d{margin-bottom:21px;}
+.footer_d p{line-height:26px; color:#999;}
+.fix{position:fixed; right:0; bottom:50px;}
+.fix a{display:block; width:58px; height:58px; border:1px solid #ccc; background:url(img/index_sp.png) -58px -155px; margin-bottom:2px; transition:all 0.5s;}
+.fix .fh:hover{ background-position:0 -96px;}
+.fix .dh:hover{ background-position:0 -155px;}
+.fix .sj:hover{ background-position:0 -214px;}
+.fix .dn:hover{ background-position:0 -273px;}
+.fix .fh{background-position:-58px -96px;}
+.fix .sj{background-position:-58px -214px;}
+.fix .dn{background-position:-58px -273px;}
+</style>
+</head>
+
+<body>
+	<!--head-->
+	<div class="head">
+    	<div class="head_in w clear">
+        	<h1 class="fl"><a href="#">响巢</a></h1>
+            <div class="search fl clear"> 
+            	<input type="text" placeholder="爱的追踪" class="fl" />
+                <a href="#" class="fl clear"><span></span>排行榜</a>
+            </div>
+            <div class="fr head_nav clear">
+            	<a href="#" class="fl"><span></span>登录/注册</a>
+                <a href="#" class="fl"><span class="hy"></span>开通会员</a>
+                <a href="#" class="fl"><span class="star"></span>我的收藏</a>
+                <a href="#" class="fl"><span class="jl"></span>记录</a>
+                <a href="#" class="fl kh"><span class="kh"></span>客户端</a>
+                <a href="#" class="fl"><span class="app"></span>APP</a>
+            </div>
+        </div>
+    </div>
+    <!--nav-->
+    <div class="nav w clear">
+    	<div class="nav_l fl clear">
+        	<a href="#">首页</a>
+            <a href="#">看看出品</a>
+            <a href="#">电视剧</a>
+            <a href="#">电影</a>
+            <a href="#">网络电影</a>
+            <a href="#">综艺</a>
+            <a href="#">动漫</a>
+            <a href="#">资讯</a>
+            <a href="#">娱乐</a>
+            <a href="#">搞笑</a>
+            <a href="#">时尚</a>
+            <a href="#">纪录片</a>
+            <a href="#">音乐</a>
+            <a href="#">游戏</a>
+        </div>
+        <div class="nav_r fr clear">
+        	<a href="#" class="hy clear"><i></i>会员</a>
+            <a href="#">明星空间</a>
+            <a href="#">创星空间</a>
+            <a href="#">看看钱包</a>
+        </div>
+    </div>
+    <!--focus-->
+    <div class="focus w">
+    	<div class="focus_in">
+        	<a href="#"><img src="img/t0.png" /></a>
+            <div class="focus_d clear">
+            	<a href="#"><img src="img/Z(YFY}H4UNKGYU~OY7AUQY2.png" /></a>
+                <a href="#"><img src="img/Z(YFY}H4UNKGYU~OY7AUQY2.png" /></a>
+                <a href="#"><img src="img/Z(YFY}H4UNKGYU~OY7AUQY2.png" /></a>
+                <a href="#" class="cut"><img src="img/Z(YFY}H4UNKGYU~OY7AUQY2.png" /></a>
+                <a href="#"><img src="img/Z(YFY}H4UNKGYU~OY7AUQY2.png" /></a>
+                <a href="#"><img src="img/Z(YFY}H4UNKGYU~OY7AUQY2.png" /></a>
+                <a href="#"><img src="img/Z(YFY}H4UNKGYU~OY7AUQY2.png" /></a>
+                <a href="#"><img src="img/Z(YFY}H4UNKGYU~OY7AUQY2.png" /></a>
+            </div>
+        </div>
+    </div>
+    <!--supstar-->
+    <div class="supstar w clear">
+    	<div class="star_l fl">
+        	<h2>明星空间</h2>
+            <div class="star_lin clear">
+            	<div class="fsf fl">
+                	<a href="#"><img src="img/fsf.png" /></a>
+                    <div class="fst_list clear">
+                    	<span class="fl"></span>
+                        <div class="fl list_in">
+                        	<h4>《明星空间》感受偶像的呼吸</h4>
+                            <p>封会员价与苦也口语酷原价哦空流泪了恶气额我认为宽容和宽容级</p>
+                            <a href="#">下载app</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="fl lwh clear">
+                	<li class="lwh_in cent-l cent-b fl">
+                		<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="lwh_ind">
+                        	<p>[独家]李文和在向你告白</p>
+                            <div class="lwh_gz clear">
+                            	<span class="fl">BTOB</span>
+                                <a href="#" class="fl">关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lwh_in cent-l cent-b fl">
+                		<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="lwh_ind">
+                        	<p>[独家]李文和在向你告白</p>
+                            <div class="lwh_gz clear">
+                            	<span class="fl">BTOB</span>
+                                <a href="#" class="fl">关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lwh_in cent-l fl">
+                		<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="lwh_ind">
+                        	<p>[独家]李文和在向你告白</p>
+                            <div class="lwh_gz clear">
+                            	<span class="fl">BTOB</span>
+                                <a href="#" class="fl">关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lwh_in cent-l fl">
+                		<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="lwh_ind">
+                        	<p>[独家]李文和在向你告白</p>
+                            <div class="lwh_gz clear">
+                            	<span class="fl">BTOB</span>
+                                <a href="#" class="fl">关注</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="star_r fr">
+        	<h4>入住明星（19名）</h4>
+            <div class="rzstar clear">
+            	<a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+                <a href="#" class="fl"><span></span>BTOB<i></i></a>
+            </div>
+        </div>
+    </div>
+    <!--teleplay-->
+    <div class="teleplay w clear">
+    	<div class="tele_l fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">电视剧</h3>
+               	<div class="tong clear fl">
+                	<a href="#" class="fl hot">同步热播</a>
+                    <a href="#" class="fl">偶像言情</a>
+                    <a href="#" class="fl">军旅谍战</a>
+                </div>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj fl">
+                	<a href="#"><img src="img/shj.jpg" /></a>
+                    <div class="text">
+                    	<p class="hd">山海经之赤影传说</p>
+                        <p class="down">分海廷加好放入红糖就于家园 个人</p>
+                        <span>更新至25集</span>
+                    </div>
+                </div>
+                <ul class="fl clear tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tele_r fr">
+        	<h4>电视剧榜</h4>
+            <ul class="tele_rin">
+            	<li class="rin_list">
+            		<a href="#"><img src="img/lwh.png" /></a>
+                    <div class="qqh clear">
+                    	<b class="fl">1</b>
+                        <span class="fl">青丘狐传说未删减</span>
+                        <i class="fl"></i>
+                    </div>
+                </li>
+                <li class="rin_listin top">
+                	<a href="#" class="clear">
+                    	<b class="fl">2</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">3</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">4</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">5</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl down"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">6</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl down"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">7</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl"></i>
+                    </a>
+                </li>
+            </ul>
+            <a href="#"><img src="img/bq.png" /></a>
+        </div>
+    </div>
+    <!--look-->
+    <div class="teleplay look w clear">
+    	<div class="tele_l look_in fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">看看出品</h3>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj fl">
+                	<a href="#"><img src="img/shj.jpg" /></a>
+                    <div class="text">
+                    	<p class="hd">山海经之赤影传说</p>
+                        <p class="down">分海廷加好放入红糖就于家园 个人</p>
+                        <span>更新至25集</span>
+                    </div>
+                </div>
+                <ul class="fl clear look_inr tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--space-->
+    <div class="teleplay w cent-bb clear">
+    	<div class="tele_l fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">创星空间</h3>
+               	<div class="tong clear fl">
+                    <p href="#" class="fl">国内唯一实现演绎梦想的线上平台</p>
+                </div>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj fl">
+                	<a href="#"><img src="img/shj.jpg" /></a>
+                    <div class="text">
+                    	<p class="hd">辛玉曼</p>
+                        <p class="down">分海廷加好放入红糖就于家园 个人</p>        
+                    </div>
+                </div>
+                <ul class="fl clear tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fr space">
+        	<div class="space_hd clear">
+            	<h3 class="fl">热门学员</h3>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <ul class="space_in">
+            	<li class="cx clear cent-bs">
+                	<a href="#" class="fl"><img src="img/bb.jpg" /></a>
+                    <div class="cx_in fl">
+                    	<p>陈勋</p>
+                        <span class="clear"><i class="fl"></i>5万</span>
+                    </div>
+                </li>
+                <li class="cx clear cent-bs">
+                	<a href="#" class="fl"><img src="img/bb.jpg" /></a>
+                    <div class="cx_in fl">
+                    	<p>陈勋</p>
+                        <span class="clear"><i class="fl"></i>5万</span>
+                    </div>
+                </li>
+                <li class="cx clear cent-bs">
+                	<a href="#" class="fl"><img src="img/bb.jpg" /></a>
+                    <div class="cx_in fl">
+                    	<p>陈勋</p>
+                        <span class="clear"><i class="fl"></i>5万</span>
+                    </div>
+                </li>
+                <li class="cx clear cent-bs">
+                	<a href="#" class="fl"><img src="img/bb.jpg" /></a>
+                    <div class="cx_in fl">
+                    	<p>陈勋</p>
+                        <span class="clear"><i class="fl"></i>5万</span>
+                    </div>
+                </li>
+                <li class="cx clear cent-bs">
+                	<a href="#" class="fl"><img src="img/bb.jpg" /></a>
+                    <div class="cx_in fl">
+                    	<p>陈勋</p>
+                        <span class="clear"><i class="fl"></i>5万</span>
+                    </div>
+                </li>
+                <li class="cx clear">
+                	<a href="#" class="fl"><img src="img/bb.jpg" /></a>
+                    <div class="cx_in fl">
+                    	<p>陈勋</p>
+                        <span class="clear"><i class="fl"></i>5万</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--gg-->
+    <a href="#" class="w gg"><img src="img/gg.png" /></a>
+    <!--money-->
+    <div class="w money">
+    	<div class="money_hd clear">
+        	<h3 class="fl">看看钱包</h3>
+            <a href="#" class="fl">马上赚钱 &gt;</a>
+        </div>
+        <div class="money_in clear">
+        	<div class="fl red">
+            	<a href="#"><img src="img/red.jpg" /></a>
+                <div class="num clear">
+                	<span>1</span>
+                    <span class="hui">2</span>
+                </div>
+            </div>
+            <div class="fl money_r clear">
+            	<a href="#" class="one"><img src="img/o.jpg" /></a>
+                <a href="#"><img src="img/t.jpg" /></a>
+                <a href="#"><img src="img/eig.jpg" /></a>
+            </div>
+        </div>
+    </div>
+    <!--center-->
+    <div class="center w">
+    	<div class="center_hd clear">
+        	<h3 class="fl">个人中心</h3>
+            <div class="fl clear">
+            	<a href="#" class="love">猜你喜欢</a>
+                <a href="#">观看记录</a>
+                <a href="#">我的收藏</a>
+            </div>
+        </div>
+        <div class="center_in clear">
+        	<div class="fl girl cent-r">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+            </div>
+            <div class="fl girl cent-r">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+            </div>
+            <div class="fl girl cent-r">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+            </div>
+            <div class="fl girl cent-r">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+            </div>
+            <div class="fl girl">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+            </div>
+        </div>
+        <div class="center_down clear">
+        	<span class="fl">你可能感兴趣的标签</span>
+            <a href="#" class="fl">动作</a>
+            <a href="#" class="fl">喜剧</a>
+            <a href="#" class="fl">恐怖</a>
+            <a href="#" class="fl">爱情</a>
+            <a href="#" class="fl">剧情</a>
+            <a href="#" class="fl">周星驰</a>
+            <a href="#" class="fl">甄子丹</a>
+            <a href="#" class="fl">香港</a>
+            <a href="#" class="fl">台湾</a>
+            <p class="fr">点击标签可以切换对应推送内容</p>
+        </div>
+    </div>
+    <!--vip-->
+    <div class="center w">
+    	<div class="center_hd clear">
+        	<h3 class="fl">会员</h3>
+            <div class="fl clear">
+            	<a href="#" class="love">热片抢先看</a>
+                <a href="#">荷尔蒙影院</a>
+            </div>
+            <a href="#" class="fr">更多&gt;</a>
+        </div>
+        <div class="center_in clear">
+        	<div class="fl girl cent-r">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+                <b>VIP</b>
+            </div>
+            <div class="fl girl cent-r">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+                <b>VIP</b>
+            </div>
+            <div class="fl girl cent-r">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+                <b>VIP</b>
+            </div>
+            <div class="fl girl cent-r">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+                <b>VIP</b>
+            </div>
+            <div class="fl girl">
+            	<a href="#"><img src="img/gir.jpg" /></a>
+                <div class="infor">
+                	<p class="for clear">两个女人的战争<span>41集全</span></p>
+                    <p class="fore">两个女人的纠葛</p>
+                </div>
+                <b>VIP</b>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="teleplay w clear">
+    	<div class="tele_l fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">电影</h3>
+               	<div class="tong clear fl">
+                	<a href="#" class="fl hot">重磅推荐</a>
+                    <a href="#" class="fl">片花预告</a>
+                    <a href="#" class="fl">午夜放映</a>
+                </div>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj fl">
+                	<a href="#"><img src="img/shj.jpg" /></a>
+                    <div class="text">
+                    	<p class="hd">山海经之赤影传说</p>
+                        <p class="down">分海廷加好放入红糖就于家园 个人</p>
+                        <span>更新至25集</span>
+                    </div>
+                </div>
+                <ul class="fl clear tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tele_r fr">
+        	<h4>电影榜</h4>
+            <ul class="tele_rin">
+            	<li class="rin_list">
+            		<a href="#"><img src="img/lwh.png" /></a>
+                    <div class="qqh clear">
+                    	<b class="fl">1</b>
+                        <span class="fl">青丘狐传说未删减</span>
+                        <i class="fl"></i>
+                    </div>
+                </li>
+                <li class="rin_listin top">
+                	<a href="#" class="clear">
+                    	<b class="fl">2</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">3</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">4</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">5</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl down"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">6</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl down"></i>
+                    </a>
+                </li>
+                <li class="rin_listin">
+                	<a href="#" class="clear">
+                    	<b class="fl">7</b>
+                        <span class="fl">俩个女人的战争</span>
+                        <i class="fl"></i>
+                    </a>
+                </li>
+            </ul>
+            <a href="#"><img src="img/bq.png" /></a>
+        </div>
+    </div>
+    <!--film-->
+    <div class="center w">
+    	<div class="center_hd film_hd clear">
+        	<h3 class="fl">网络电影</h3>
+            <a href="#" class="fr clear"><span></span>换一批</a>
+        </div>
+        <div class="film_in clear">
+        	<div class="fl film_inr cent-r">
+            	<a href="#"><img src="img/kk.png" /></a>
+                <div class="film_down">
+                	<p class="st">神探笔记</p>
+                    <p>高中生破连环少女傻凶案</p>
+                </div>
+            </div>
+            <div class="fl film_inr cent-r">
+            	<a href="#"><img src="img/kk.png" /></a>
+                <div class="film_down">
+                	<p class="st">神探笔记</p>
+                    <p>高中生破连环少女傻凶案</p>
+                </div>
+            </div>
+            <div class="fl film_inr cent-r">
+            	<a href="#"><img src="img/kk.png" /></a>
+                <div class="film_down">
+                	<p class="st">神探笔记</p>
+                    <p>高中生破连环少女傻凶案</p>
+                </div>
+            </div>
+            <div class="fl film_inr cent-r">
+            	<a href="#"><img src="img/kk.png" /></a>
+                <div class="film_down">
+                	<p class="st">神探笔记</p>
+                    <p>高中生破连环少女傻凶案</p>
+                </div>
+            </div>
+            <div class="fl film_inr">
+            	<a href="#"><img src="img/kk.png" /></a>
+                <div class="film_down">
+                	<p class="st">神探笔记</p>
+                    <p>高中生破连环少女傻凶案</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--mation-->
+    <div class="teleplay look w clear">
+    	<div class="tele_l look_in fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">资讯</h3>
+                <div class="tong clear fl">
+                	<a href="#" class="fl hot">热点</a>
+                    <a href="#" class="fl">社会</a>
+                    <a href="#" class="fl">猎奇</a>
+                </div>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj mation fl">
+                	<a href="#"><img src="img/jl.jpg" /></a>
+                    <div class="mation_down">
+                    	<p class="jl">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                        <p class="zd">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                    </div>
+                    <div class="ber clear">
+                    	<span class="fl cur">1</span>
+                        <span class="fl">2</span>
+                    </div>
+                </div>
+                <ul class="fl clear look_inr tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="teleplay look w clear">
+    	<div class="tele_l look_in fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">娱乐</h3>
+                <div class="tong clear fl">
+                	<a href="#" class="fl hot">劲爆八卦</a>
+                    <a href="#" class="fl">明星影视</a>
+                </div>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj mation fl">
+                	<a href="#"><img src="img/jl.jpg" /></a>
+                    <div class="mation_down">
+                    	<p class="jl">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                        <p class="zd">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                    </div>
+                    <div class="ber clear">
+                    	<span class="fl cur">1</span>
+                        <span class="fl">2</span>
+                    </div>
+                </div>
+                <ul class="fl clear look_inr tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="teleplay look w clear">
+    	<div class="tele_l look_in fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">综艺</h3>
+                <div class="tong clear fl">
+                	<a href="#" class="fl hot">最新更新</a>
+                    <a href="#" class="fl">真人秀场</a>
+                    <a href="#" class="fl">幽默搞笑</a>
+                </div>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj mation fl">
+                	<a href="#"><img src="img/jl.jpg" /></a>
+                    <div class="mation_down">
+                    	<p class="jl">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                        <p class="zd">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                    </div>
+                    <div class="ber clear">
+                    	<span class="fl cur">1</span>
+                        <span class="fl">2</span>
+                    </div>
+                </div>
+                <ul class="fl clear look_inr tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="teleplay look w clear">
+    	<div class="tele_l look_in fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">资讯</h3>
+                <div class="tong clear fl">
+                	<a href="#" class="fl hot">热点</a>
+                    <a href="#" class="fl">社会</a>
+                    <a href="#" class="fl">猎奇</a>
+                </div>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj mation fl">
+                	<a href="#"><img src="img/jl.jpg" /></a>
+                    <div class="mation_down">
+                    	<p class="jl">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                        <p class="zd">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                    </div>
+                    <div class="ber clear">
+                    	<span class="fl cur">1</span>
+                        <span class="fl">2</span>
+                    </div>
+                </div>
+                <ul class="fl clear look_inr tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="teleplay look w clear">
+    	<div class="tele_l look_in fl">
+        	<div class="tele_lhd clear">
+            	<h3 class="fl">动漫</h3>
+                <div class="tong clear fl">
+                	<a href="#" class="fl hot">人气强档</a>
+                    <a href="#" class="fl">少儿亲子</a>
+                    <a href="#" class="fl">热力新番</a>
+                </div>
+                <a href="#" class="fr">更多》</a>
+            </div>
+            <div class="tele_lin clear">
+            	<div class="shj mation fl">
+                	<a href="#"><img src="img/jl.jpg" /></a>
+                    <div class="mation_down">
+                    	<p class="jl">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                        <p class="zd">人聚一块 会突然回家团圆巨款ukulele哭 额我认为</p>
+                    </div>
+                    <div class="ber clear">
+                    	<span class="fl cur">1</span>
+                        <span class="fl">2</span>
+                    </div>
+                </div>
+                <ul class="fl clear look_inr tv">
+                	<li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-bs cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                    <li class="fl tv_in cent-l">
+                    	<a href="#"><img src="img/lwh.png" /></a>
+                        <div class="tv_list">
+                        	<p class="tow">两个女人的战争</p>
+                            <p class="ren">留言挑战有缺陷的普通人</p>
+                        </div>
+                        <span>41集全</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   	<!--partner-->
+    <div class="partner w clear">
+    	<div class="par_l fl">
+        	<h3>合作专区</h3>
+            <div class="par_ld clear">
+            	<a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                <a href="#" class="fl">盛世骄阳</a>
+               	<span class="fl">|</span>
+                 <a href="#" class="fl">盛世骄阳</a>
+            </div>
+            <a href="#"><img src="img/sbb.png" /></a>
+        </div>
+        <div class="par_r fr">
+        	<h3>媒体关注</h3>
+            <div class="par_rl">
+            	<a href="#">新华：陆军一号独播破亿</a>
+                <a href="#">新华：陆军一号独播破亿</a>
+                <a href="#">新华：陆军一号独播破亿</a>
+                <a href="#">新华：陆军一号独播破亿</a>
+                <a href="#">新华：陆军一号独播破亿</a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+   		<div class="w clear">
+            <div class="footer_t">
+                <a href="#">关于响巢看看</a>
+                <span>|</span>
+                <a href="#">关于响巢看看</a>
+                <span>|</span>
+                <a href="#">关于响巢看看</a>
+                <span>|</span>
+                <a href="#">关于响巢看看</a>
+                <span>|</span>
+            </div>
+            <div class="footer_d">
+            	<p>得瑟教育课与苦亏得瑟教育课与苦亏刻录ilkiukl uikuikug热帖 恶风刻录ilkiukl uikuikug热帖 恶风</p>
+                <p>得瑟教育课与苦亏刻录ilkiukl uikuikug热帖 恶风</p>
+                <p>得瑟教育课与苦亏刻i个人合同已经居右k与苦ikug热帖 恶风</p>
+                <p>得瑟教育课与苦个人黑体原价亏刻与苦与苦亏亏录ilkiukl uikuikug热帖 恶风</p>
+                <p>得瑟教育课与苦亏刻与苦亏与苦亏录ilkiukl uikuikug热帖 恶风</p>
+            </div>
+            <a href="#"><img src="img/ddd.png" /></a>
+      	</div>
+    </div>
+    <div class="fix">
+    	<a href="#" class="fh"></a>
+    	<a href="#" class="dh"></a>
+        <a href="#" class="sj"></a>
+        <a href="#" class="dn"></a>
+    </div>
+</body>
+</html>

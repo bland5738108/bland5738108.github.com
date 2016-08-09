@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,i,input,textarea{margin:0; padding:0;}
+li{list-style:none;}
+a{color:#000; text-decoration:none;}
+img{ vertical-align:top; border:none;}
+body{font-size:12px;}
+/*重用*/
+.fl{ float:left;}
+.fr{float:right;}
+.clear:after{ content:''; display:block; clear:both;}
+.cent-r{margin-right:20px;}
+.cent-t{margin-top:10px;}
+.cent-b{margin-bottom:20px;}
+.cent-bt{padding-bottom:50px;}
+.cent-bs{padding-bottom:10px;}
+.w{width:990px; margin:0 auto;}
+input{padding:0; background:none; border:0; outline:none; margin:0;} 
+textarea{outline:none; border:0; padding:0; resize:none;}
+select{background:none;}
+body{font-size:12px; color:#666;}
