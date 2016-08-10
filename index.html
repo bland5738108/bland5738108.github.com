@@ -5,10 +5,10 @@
 <title>无标题文档</title>
 <link rel="stylesheet" href="stylesheets/css.css" />
 <style>
-body{ height:5000px; }
-.header{ height:900px; min-width:1400px; background:#033; background:url(img/1.jpg) no-repeat; overflow:hidden;}
+body{ height:5000px; background:url(img/bg.png); }
+.header{ height:900px; min-width:1400px; background:#033; background:url(img/header.jpg) no-repeat; overflow:hidden;}
 .header_in{ width:100%; height:900px; border:1px solid #ccc; position:relative; margin:0 auto;}
-.header_in h1 a{ width:100px; height:100px; border-radius:50%; background:url(img/logo.png) no-repeat; margin:0 auto; position:absolute; left:50%; margin-left:-50px; top:50px; text-indent:-999em; -webkit-transition:1s all ease; transform:rotate(-150deg);}
+.header_in h1 a{ width:128px; height:128px; border-radius:50%; background:url(img/logo.png) no-repeat; margin:0 auto; position:absolute; left:50%; margin-left:-64px; top:50px; text-indent:-999em; -webkit-transition:1s all ease;}
 .header_in h1 a:hover{ -webkit-transform:rotate(32deg);}
 .list{ width:1000px; height:450px; position:absolute; left:50%; top:50%; margin-top:-225px; margin-left:-500px; overflow:hidden;}
 .list_in{ width:1000px; height:400px; position:absolute; left:0; top:50%; margin-top:-200px;}
@@ -19,10 +19,10 @@ body{ height:5000px; }
 .list_left h2{ font-size:50px; font-weight:bold; font-family:微软雅黑; line-height:240px; color:#fff; text-align:center; text-shadow:5px 5px 10px #000;}
 .list_left a{ display:block; margin:0 auto; text-align:center; width:80px; height:50px; background:#066; border-radius:5px; box-shadow:5px 5px 8px #000; line-height:50px; font-size:30px; color:#fff;}
 .list_left a:hover{ background:#000; box-shadow:0 0 5px #fff;}
-.prev{ position:absolute; left:30px; top:50%; margin-top:-20px; width:60px; height:45px; background:#ccc; border-radius:50%; text-align:center; padding-top:15px;}
-.prev:hover{ background:#066;}
-.next{ position:absolute; right:30px; top:50%; margin-top:-20px; width:60px; height:45px; background:#ccc; border-radius:50%; text-align:center; padding-top:15px;}
-.next:hover{ background:#066;}
+.prev{ position:absolute; left:30px; top:50%; margin-top:-20px; width:60px; height:45px; background:#ccc url(img/icon.png) no-repeat; border-radius:50%; text-align:center; padding-top:15px; transition:0.5s all ease;}
+.prev:hover{background-position:-60px 0; }
+.next{ position:absolute; right:30px; top:50%; margin-top:-20px; width:60px; height:45px; background:#ccc url(img/icon.png) -176px 0 no-repeat; border-radius:50%; text-align:center; padding-top:15px; transition:0.5s all ease;}
+.next:hover{background-position:-126px 0; }
 /*导航条*/
 .nav{ width:100%; height:50px; background:rgba(0,0,0,0.9); min-width:1400px; top:0;left:0; z-index:9;}
 .nav_in{ width:100%; line-height:50px; text-align:center;}
@@ -31,9 +31,8 @@ body{ height:5000px; }
 .nav_in li a:hover{ background:#fff; color:#000; text-shadow:2px 2px #fff;}
 #navd{ height:50px; width:100%; display:none;}
 /*sites*/
-.sites{ padding-top:20px; -webkit-transition:1s all ease;}
-.sites h2{ font-size:40px; line-height:60px; font-family:微软雅黑; color:#630; text-shadow:2px 2px 5px #000;}
-.sites p{ font-size:18px; line-height:40px; color:#633; border-bottom:1px dashed #000; margin-bottom:20px;}
+.sites{ padding-top:20px; margin-bottom:30px;}
+.sites h2{ font-size:40px; line-height:80px; font-family:微软雅黑; color:#630; text-shadow:2px 2px 5px #000; margin-bottom:30px; border-bottom:1px dashed #000;}
 .sites .present{ width:1000px; height:520px; background:#ccc; border:5px solid #933;}
 .present div{ width:33.33%; height:520px; float:left; overflow:hidden; position:relative;}
 .oppo a{ width:100%; display:block; position:absolute; top:0; left:0;}
@@ -42,11 +41,51 @@ body{ height:5000px; }
 .bdl a img{ width:100%;}
 .bdl a{ width:100%; display:block; position:absolute; top:0; left:0;}
 .jd a img{ width:100%;}
-/*ddddddd*/
+/*运动*/
+.move{}
+.move h2{ font-size:40px; line-height:80px; font-family:微软雅黑; color:#C96; text-shadow:2px 2px 5px #000; border-bottom:1px dashed #000; margin-bottom:30px;}
+.move_up{ width:1000px;}
+.move_up .up_in{ width:1000px; height:50px; }
+.up_in .up_ind{ display:inline-block; line-height:50px; font-size:30px; font-family:微软雅黑; font-weight:bold;}
+.up_in .up_inde{ display:inline-block; width:30px; height:30px; background:url(img/icon.png) -12px -130px; margin-left:20px; cursor:pointer;}
+.up_in .up_inde:active{ background-position:-75px -130px;}
+.move_list{ width:1000px; height:50px;}
+.move_list li{ float:left;}
+.move_list li a{ display:block; padding:15px; margin:10px; background:#f40;}
+#move_in{ width:948px; height:672px; overflow:hidden; margin:0 auto;}
+#ul1 {width:948px; float:left; overflow:hidden;}
+#ul1 li {float:left; width:296px; height:204px; box-shadow:0 0 5px #999; margin:10px; position:relative; overflow:hidden;}
+
+#ul1 li img {width:296px; height:204px;}
+#ul1 li div {height:80px; width:100%; position:absolute; left:0; bottom:-80px; opacity:0; filter:alpha(opacity:0);}
+#ul1 li div .bg {height:80px; border-top:1px solid white; width:100%; background:black; position:absolute; left:0; top:0; opacity:0.6; filter:alpha(opacity:60); z-index:1;}
+#ul1 li div em {position:absolute; left:0; top:0; color:white; z-index:2;}
+#ul1 li h2 {padding:4px; font-family:'\65B0\5B8B\4F53', '\5B8B\4F53', Verdana; font-weight:bold;}
+#ul1 li p {padding:4px; line-height:22px;}
+/*无缝滚动*/
+#roll{ float:left; width:948px; margin:200px auto; border:1px solid black; overflow:hidden;height:200px; position:relative;}
+#roll_in{height:200px; position:absolute;}
+#roll_in li{ float:left; width:133px;height:200px; padding:0 10px; }
+
+/*个人信息*/
+.footer{ height:469px; background:url(img/footer.png); min-width:1400px; margin-top:20px;}
+.footer .infor{ width:1400px; height:469px; margin:0 auto;}
+.infor .me{ width:600px; height:300px; margin-top:80px; border-right:3px dashed #000; font-size:80px; font-weight:bold; font-family:微软雅黑; text-align:center; line-height:300px; background:-webkit-linear-gradient(-62deg,red,orange,yellow,green,aqua,blue,purple); -webkit-background-clip:text; color:rgba(0,0,0,0); transform:skew(-30deg,5deg);}
+.infor .person{ width:590px; height:280px; margin-top:100px; padding-left:200px; padding-top:20px; text-align:center; }
+.person p{ width:320px; height:70px; font-size:18px; font-family:微软雅黑; font-weight:bold; color:#333; overflow:hidden; transition:1s all ease; margin-bottom:15px; text-shadow:3px 3px 3px #036;}
+.person p:hover{ transform:scale(2,2);}
+.person p .icon{ float:left; width:40px; height:35px; background:#fff; border-radius:50%; margin-top:5px; margin-right:10px; text-align:center; padding-top:5px;}
+.person p .icon3{ background:url(img/icon.png) -10px -70px no-repeat;}
+.person p .icon2{ background:url(img/icon.png) -130px -70px no-repeat;}
+.person p .icon1{ background:url(img/icon.png) -72px -70px no-repeat;}
+.person p .call{ float:left; line-height:50px;}
 </style>
 <script src="javascripts/addWheel.js"></script>
+<script src="javascripts/move.js"></script>
+<script src="javascripts/through.js"></script>
 <script>
 window.onload=function(){
+	//主界面
 	;(function(){
 		var	oPrev=document.querySelector('.prev');
 		var	oNext=document.querySelector('.next');
@@ -91,6 +130,7 @@ window.onload=function(){
 				tab();
 			};		
 	})();
+	//HTML滚动条
 	;(function(){
 		var oP=document.querySelector('.present');
 		var aDiv=document.getElementsByClassName('div');
@@ -114,9 +154,8 @@ window.onload=function(){
 			});
 
 		}
-									
-
 	})();
+	//导航条
 	;(function(){
 		function getPos(obj){
 			var l = 0;
@@ -145,6 +184,7 @@ window.onload=function(){
 			}
 		};	
 	})();
+	//锚点运动
 	;(function(){
 		function up(start,end){
 			var oDiv = document.getElementById(start);
@@ -153,7 +193,7 @@ window.onload=function(){
 			var bSys = false;
 			oDiv.onclick = function(){
 				var start = document.documentElement.scrollTop||document.body.scrollTop;	
-				var dis =oTow.offsetTop-start;
+				var dis =oTow.offsetTop-start-50;
 				var count = Math.round(2000/30);
 				var n = 0;			
 				clearInterval(timer);
@@ -167,13 +207,49 @@ window.onload=function(){
 						clearInterval(timer);
 					}
 				},30);
-				
 			};
 		}
-		up('one','tow');
-		up('three','tow');
+		up('html','html2');
+		up('html1','html2');
 		up('home','header');
+		up('move','move2');
+		up('move1','move2');
+		up('infor','footer');
 	})();
+	//运动板块
+	;(function(){
+		var oUl=document.getElementById('ul1');
+		var aLi=oUl.children;
+		for(var i=0;i<aLi.length;i++){
+			aLi[i].onmouseover=function (){
+				var oDiv=this.children[1];
+				move(oDiv, {bottom: 0, opacity: 1});
+			};
+			aLi[i].onmouseout=function (){
+				var oDiv=this.children[1];
+				move(oDiv, {bottom: -80, opacity: 0});
+			};
+			aLi[i].onclick=function(){
+				move(oUl,{marginLeft:-948})	
+			};
+		}
+	})();
+	;(function(){
+		var	oUl = document.getElementById('roll_in');
+		var aLi = oUl.children;
+		oUl.innerHTML += oUl.innerHTML ;
+		oUl.style.width = aLi.length*aLi[0].offsetWidth+'px';
+		var W = oUl.offsetWidth/2;
+		var l = 0;
+		setInterval(function(){
+			l-=3;
+			oUl.style.left 	= l%W+'px';
+		},16);
+	
+	})();
+	/*滚动加载*/
+
+
 };
 </script>
 </head>
@@ -186,14 +262,14 @@ window.onload=function(){
                 <li class="list_in">
                 	<div class="list_left show_l">
                     	<h2>HTML页面展示</h2>
-                        <a href="##" id="one">GO</a>
+                        <a href="##" id="html">GO</a>
                     </div>
                     <div class="list_right show_r"></div>
                 </li>
                 <li class="list_in">
                 	<div class="list_left">
-                    	<h2>css2效果展示</h2>
-                        <a href="##">GO</a>
+                    	<h2>运动效果展示</h2>
+                        <a href="##" id="move">GO</a>
                     </div>
                     <div class="list_right"></div>
                 </li>
@@ -205,8 +281,8 @@ window.onload=function(){
                     <div class="list_right"></div>
                 </li>
             </ul>
-            <a href="##" class="prev"><img src="img/previous.png" /></a>
-            <a href="##" class="next"><img src="img/next.png" /></a>
+            <a href="##" class="prev"></a>
+            <a href="##" class="next"></a>
         </div>
     </div>
     <!--导航条-->
@@ -216,7 +292,10 @@ window.onload=function(){
             	<a href="#" id="home">HOME</a>
             </li>
         	<li>
-            	<a href="##" id="three">HTML</a>
+            	<a href="##" id="html1">HTML</a>
+            </li>
+        	<li>
+            	<a href="##" id="move1">Movement</a>
             </li>
         	<li>
             	<a href="##">主页</a>
@@ -225,18 +304,14 @@ window.onload=function(){
             	<a href="##">主页</a>
             </li>
         	<li>
-            	<a href="##">主页</a>
-            </li>
-        	<li>
-            	<a href="##">主页</a>
+            	<a href="##" id="infor">Infor</a>
             </li>
         </ul>
     </div>
     <div id="navd"></div>
     <!--静态页面-->
-    <div class="sites w" id="tow">
+    <div class="sites w" id="html2">
     	<h2>静态页面效果</h2>
-        <p>静态页面效果展示</p>
         <div class="present" >
         	<div class="oppo div">
             	<a href="oppo/OPPO.html" class="div2" target="_blank"><img src="img/oppo.png" /></a>
@@ -246,9 +321,139 @@ window.onload=function(){
         </div>
     </div>
     <!--运动-->	
-    <div class="w move">
-    
+    <div class="w move" id="move2">
+    	<h2>Movement</h2>
+        <div class="move_up">
+        	<div class="up_in"><span class="up_ind">运动效果展示</span><span class="up_inde"></span></div>
+            <ul class="move_list clear">
+                <li><a href="##">ddsa</a></li>
+                <li><a href="##">dasdsa</a></li>
+                <li><a href="##">dsadsa</a></li>
+                <li><a href="##">dsadas</a></li>
+                <li><a href="##">dsadsa</a></li>
+                <li><a href="##">dsadas</a></li>
+                <li><a href="##">dsadas</a></li>
+                <li><a href="##">dsadas</a></li>
+                <li><a href="##">dsadsa</a></li>
+            </ul>
+        </div>
+        <div id="move_in">
+            <ul id="ul1">
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/1585694089514eb70f10622.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/13976230595143f37d393b0.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/1401570516513a10525dca5.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/1598020238511210cf5537c.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/8134259755112092a3f649.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/488247430508baf8ca3794.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/495066053500e0dd65d8e9.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/461032892500d6ca1a8da3.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.zhinengshe.com/images/product_pic/935671004ff6bb6011c5c.jpg" />
+                    <div>
+                        <em>
+                            <h2>CSS3的IOS6密码解锁界面</h2>
+                            <p>随手写的一个css3的IOS解锁界面</p>
+                        </em>
+                        <span class="bg"></span>
+                    </div>
+                </li>
+            </ul>
+            <div id="roll">
+                <ul id="roll_in">
+                    <li><img src="img/0.jpg"></li>
+                    <li><img src="img/1.jpg"></li>
+                    <li><img src="img/2.jpg"></li>
+                    <li><img src="img/3.jpg"></li>
+                    <li><img src="img/4.jpg"></li>
+                    <li><img src="img/5.jpg"></li>
+                    <li><img src="img/6.jpg"></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
+    <!--个人信息-->
+	<div class="footer" id="footer">
+    	<div class="infor clear">
+        	<div class="me fl">联系我</div>
+            <div class="person fl">
+            	<p><span class="icon icon1"></span><span class="call">13520309422</span></p>
+            	<p><span class="icon icon2"></span><span class="call">www.cqj5738108@sina.com</span></p>
+            	<p><span class="icon icon3"></span><span class="call">532656878</span></p>
+            </div>
+        </div>
+    </div>
+ 
 </body>	
 </html>
