@@ -5,8 +5,8 @@
 <title>无标题文档</title>
 <link rel="stylesheet" href="stylesheets/css.css" />
 <style>
-body{ height:5000px; background:url(img/bg.png); }
-.header{ height:900px; min-width:1400px; background:#033; background:url(img/header.jpg) no-repeat; overflow:hidden;}
+body{ height:5000px; background:#6CC; }
+.header{width:100%; height:900px; min-width:1400px; background:#033; background:url(img/header.jpg) no-repeat; overflow:hidden;}
 .header_in{ width:100%; height:900px; border:1px solid #ccc; position:relative; margin:0 auto;}
 .header_in h1 a{ width:128px; height:128px; border-radius:50%; background:url(img/logo.png) no-repeat; margin:0 auto; position:absolute; left:50%; margin-left:-64px; top:50px; text-indent:-999em; -webkit-transition:1s all ease;}
 .header_in h1 a:hover{ -webkit-transform:rotate(32deg);}
@@ -19,10 +19,10 @@ body{ height:5000px; background:url(img/bg.png); }
 .list_left h2{ font-size:50px; font-weight:bold; font-family:微软雅黑; line-height:240px; color:#fff; text-align:center; text-shadow:5px 5px 10px #000;}
 .list_left a{ display:block; margin:0 auto; text-align:center; width:80px; height:50px; background:#066; border-radius:5px; box-shadow:5px 5px 8px #000; line-height:50px; font-size:30px; color:#fff;}
 .list_left a:hover{ background:#000; box-shadow:0 0 5px #fff;}
-.prev{ position:absolute; left:30px; top:50%; margin-top:-20px; width:60px; height:45px; background:#ccc url(img/icon.png) no-repeat; border-radius:50%; text-align:center; padding-top:15px; transition:0.5s all ease;}
-.prev:hover{background-position:-60px 0; }
-.next{ position:absolute; right:30px; top:50%; margin-top:-20px; width:60px; height:45px; background:#ccc url(img/icon.png) -176px 0 no-repeat; border-radius:50%; text-align:center; padding-top:15px; transition:0.5s all ease;}
-.next:hover{background-position:-126px 0; }
+.header_in .prev{ position:absolute; left:30px; top:50%; margin-top:-20px; width:60px; height:45px; background:#ccc url(img/icon.png) no-repeat; border-radius:50%; text-align:center; padding-top:15px; transition:0.5s all ease;}
+.header_in .prev:hover{background-position:-60px 0; }
+.header_in .next{ position:absolute; right:30px; top:50%; margin-top:-20px; width:60px; height:45px; background:#ccc url(img/icon.png) -176px 0 no-repeat; border-radius:50%; text-align:center; padding-top:15px; transition:0.5s all ease;}
+.header_in .next:hover{background-position:-121px 0; }
 /*导航条*/
 .nav{ width:100%; height:50px; background:rgba(0,0,0,0.9); min-width:1400px; top:0;left:0; z-index:9;}
 .nav_in{ width:100%; line-height:50px; text-align:center;}
@@ -66,7 +66,33 @@ body{ height:5000px; background:url(img/bg.png); }
 #roll{ float:left; width:948px; margin:200px auto; border:1px solid black; overflow:hidden;height:200px; position:relative;}
 #roll_in{height:200px; position:absolute;}
 #roll_in li{ float:left; width:133px;height:200px; padding:0 10px; }
-
+/*APP*/
+.ces{ background:url(img/grid1.png); width:100%;   height: 50px; }
+.APP{background:url(img/grid1.png); width:100%; overflow:hidden; padding-bottom:50px;}
+.apps{}
+.apps h2{ font-size:62px; line-height:84px; font-family:微软雅黑; color:#fff;}
+.apps h2 em{ color:#f40; font-style:normal; }
+.apps>p{font-size: 20px; margin-bottom:20px; line-height: 1.5em; color:#fff; font-family:微软雅黑; border-bottom:1px dotted #fff;}
+.app_in{ width:1000px; padding-top:80px;}
+.app_in .app_infor{ width:328px; padding-top:80px; text-align:right; padding-right:15px;}
+.app_infor h3{ font-size:28px; color:#fff; font-weight:bold; line-height:68px;}
+.app_infor p{ line-height:22px; font-size:18px; color:#fff; margin-bottom:15px;}
+.app_infor a{ display:block; margin-bottom:20px;}
+.app_in .ipon{ width:657px; position:relative;}
+.ipon .icon{ background:url(img/iPhone.png) no-repeat; width:314px; height:614px; position:relative;}
+.icon .app_list{ width:270px; height:404px; position:absolute; top:106px; left:24px; background:#ccc; overflow:hidden;}
+.app_list img{ width:100%; height:100%;}
+.ipon .app_icon{ width:303px; padding-top:420px; padding-left:15px;}
+.ipon .app_icon p{ font: 14px '微软雅黑'; color:#fff; line-height:18px; margin-bottom:10px;}
+.app_icon a{ display:inline-block; width:42px; height:42px; background: #fff url(img/icon.png) no-repeat; border-radius:50%; -webkit-transition:0.5s all ease;}
+.app_icon a:hover{ background-color:#f40;}
+.app_icon .prev{ background-position:-9px -10px; margin-right:8px;}
+.app_icon .next{ background-position:-185px -12px;}
+.app_show{ width:495px;  position:absolute;  overflow:hidden; top:54px; left:1400px; }
+.app_show li{ width:145px; height:216px; float:left; margin:10px; background:#09C; }
+.app_show li a{ display:block; width:100%; height:100%;}
+.app_show li a img{ display:block; width:100%; height:100%;}
+.close{ position:absolute; top:18px; left:1400px; width:30px; height:30px; background:rgba(0,0,0,.5); text-align:center; line-height:30px;}
 /*个人信息*/
 .footer{ height:469px; background:url(img/footer.png); min-width:1400px; margin-top:20px;}
 .footer .infor{ width:1400px; height:469px; margin:0 auto;}
@@ -203,10 +229,12 @@ window.onload=function(){
 					var a = 1- n/count;
 					var cur = start +dis*(1-Math.pow(a,3));
 					document.documentElement.scrollTop = document.body.scrollTop = cur;
-					if (n == count) {
+					if (n == count) {	
 						clearInterval(timer);
 					}
 				},30);
+									
+
 			};
 		}
 		up('html','html2');
@@ -214,6 +242,9 @@ window.onload=function(){
 		up('home','header');
 		up('move','move2');
 		up('move1','move2');
+		up('app1','app3');
+		up('app2','app3');
+		
 		up('infor','footer');
 	})();
 	//运动板块
@@ -248,7 +279,38 @@ window.onload=function(){
 	
 	})();
 	/*滚动加载*/
+	/*APP*/
+	;(function(){
+		var	oPrev=document.querySelector('.app_icon .prev');
+		var	oNext=document.querySelector('.app_icon .next');
+		var oImg=document.querySelector('.app_list img');
+		var iNow=0;
+		oNext.onclick=function(){
+			iNow++;
+			oImg.src='img/app'+iNow%3+'.png';
+		};
+		oPrev.onclick=function(){
+			iNow--;
+						if(iNow<0){
+				iNow=2;	
+			}
 
+			oImg.src='img/app'+iNow+'.png';
+		};
+			//
+		var oApp_show=document.querySelector('.app_show');
+		oImg.onclick=function(){
+			move(oApp_show, { top: 54,left:-73});
+			move(oClose, { top:64,left:412});
+
+		};
+		var oClose=document.querySelector('.close');
+		oClose.onclick=function(){
+			move(oApp_show, { top: 54,left:1400});
+			move(oClose, { top:64,left:1400});
+		};
+	})();
+	
 
 };
 </script>
@@ -276,7 +338,14 @@ window.onload=function(){
                 <li class="list_in">
                 	<div class="list_left">
                     	<h2>css3效果展示</h2>
-                        <a href="##">GO</a>
+                        <a href="##" id="css2">GO</a>
+                    </div>
+                    <div class="list_right"></div>
+                </li>
+                <li class="list_in">
+                	<div class="list_left">
+                    	<h2>APP效果展示</h2>
+                        <a href="##" id="app2">GO</a>
                     </div>
                     <div class="list_right"></div>
                 </li>
@@ -298,10 +367,10 @@ window.onload=function(){
             	<a href="##" id="move1">Movement</a>
             </li>
         	<li>
-            	<a href="##">主页</a>
+            	<a href="##" id="css1">CSS3</a>
             </li>
         	<li>
-            	<a href="##">主页</a>
+            	<a href="##" id="app1">APP</a>
             </li>
         	<li>
             	<a href="##" id="infor">Infor</a>
@@ -443,6 +512,57 @@ window.onload=function(){
             </div>
         </div>
     </div>
+    <!--APPS-->
+    <div class="ces"></div>
+    <div class="APP" id="app3">
+    	<div class="apps w">
+        	<h2><em>APP</em> SHOWCASE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis magna a erat varius laoreet. Sed facilisis, urna sed pulvinar euismod, velit ante ullamcorper quam, at auctor erat justo idea lacusuma.</p>
+            <div class="app_in clear">
+            	<div class="app_infor fl">
+                	<h3>APP</h3>
+                    <p>Concept & UI Design</p>
+                    <a href="##"><img src="img/google.png" /></a>
+                    <a href="##"><img src="img/apple.png" /></a>
+                </div>
+                <div class="ipon fl clear">
+                	<div class="icon fl">
+                    	<a href="##" class="app_list clear">
+							<img src="img/app0.png" />
+                        </a>
+                    </div>
+                    <div class="app_icon fl">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit varius laoreet.</p>
+                        <a href="##" class="prev"></a>
+                        <a href="##" class="next"></a>
+                    </div>
+					<ul class="app_show">
+                    	<li>
+                        	<a href="juhuasuan/jhs.html" target="_blank"><img src="img/app0.png" /></a>
+                        </li>
+                    	<li>
+                        	<a href="jus/jhs.html" target="_blank"><img src="img/app1.png" /></a>
+                        </li>
+                    	<li>
+                        	<a href="geren/index.html" target="_blank"><img src="img/app2.png" /></a>
+                        </li>
+                    	<li>
+                        	<a href="juhuasuan/jhs.html" target="_blank"><img src="img/app0.png" /></a>
+                        </li>
+                    	<li>
+                        	<a href="jus/jhs.html" target="_blank"><img src="img/app1.png" /></a>
+                        </li>
+                    	<li>
+                        	<a href="geren/index.html" target="_blank"><img src="img/app2.png" /></a>
+                        </li>
+                    </ul>
+                    <a href="##" class="close">关闭</a>
+                </div>
+               
+            </div>
+        </div>		
+    </div>
+
     <!--个人信息-->
 	<div class="footer" id="footer">
     	<div class="infor clear">
@@ -454,6 +574,5 @@ window.onload=function(){
             </div>
         </div>
     </div>
- 
 </body>	
 </html>
