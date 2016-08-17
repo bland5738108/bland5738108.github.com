@@ -4,7 +4,7 @@ function getStyle(obj,name){
 function move(obj,json,options){
 	options = options||{};
 	options.easing = options.easing||'ease-out';
-	options.duration = options.duration||1000;
+	options.duration = options.duration||1200;
 	var start = {};
 	var dis = {};
 	for(var name in json){
