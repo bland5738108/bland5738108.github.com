@@ -49,13 +49,14 @@ body{ height:5000px; background:url(img/bjt.png) }
 .bdl a{ width:100%; display:block; position:absolute; top:0; left:0;}
 .jd a img{ width:100%;}
 /*运动*/
-.move_back{ background:url(img/move.png); background-size:100%; width:100%; overflow:hidden;}
+.move_back{ width:100%; overflow:hidden; position:relative;}
+.move_back>img{ position:absolute; left:0; top:0; width:100%; height:100%;}
 .move{ position:relative; height:1000px; margin-bottom:30px; } 
 .move>h2{ font-size:40px; line-height:80px; font-family:微软雅黑; color:#C96; text-shadow:2px 2px 5px #000; border-bottom:5px dashed #606; margin-bottom:30px; text-align:center;}
 .move #start{position:absolute; top:100px; left:50%; margin-left:-40px;  width:80px; height:80px; border-radius:50%; border:5px solid #0CF; background:#093; text-align:center; line-height:80px; transition:.5s all ease; color:#fff; font-size:20px; font-weight:bold; font-family:微软雅黑; z-index:5;}
 .move #start:hover{border:5px solid #fff;}
 #move_in{width:500px;height:500px;  border-radius:50%; position:absolute; left:50%; margin-left:-250px;top:300px;}
-#move_in>span{width:100px;height:100px; border:5px solid #fff; background:#9CC; position:absolute;left:50%;margin-left:-50px; top:0; margin-top:-50px;border-radius:50%; display:none; text-align:center; line-height:100px; color:#fff; font-size:18px; cursor:pointer;} 
+#move_in>span{width:100px;height:100px; border:5px solid #fff; background:#9CC; position:absolute;left:50%;margin-left:-50px; top:0; margin-top:-50px;border-radius:50%; display:none; text-align:center; line-height:100px; color:#630; font-weight:bold; font-size:18px; cursor:pointer;} 
 #move_in>span:hover{border:5px solid #666;}
 #move_in>a{ position:absolute; left:50%; margin-left:-40px; top:-500px; width:80px; height:80px; border-radius:50%; border:5px solid #0CF; background:#093; text-align:center; line-height:80px; transition:.5s all ease; color:#fff; font-size:20px; font-weight:bold; font-family:微软雅黑; }
 #move_in>a:hover{ background:#0CF; border:5px solid #093; color:#000;}
@@ -75,7 +76,16 @@ body{ height:5000px; background:url(img/bjt.png) }
 /*无缝滚动*/
 #seaml{overflow:hidden;position:relative;width:612px;margin:50px auto; height:200px;}
 #seaml_in{ position:absolute; left:0; top:0;height:200px; overflow:hidden;}
-#seaml_in li{width:133px;height:200px; padding:0 10px; float:left;}
+#seaml_in>li{width:133px;height:200px; padding:0 10px; float:left;}
+/*幻灯片*/
+#slide{width:600px; height:400px; margin:100px auto; position:relative; top:0; left:0; overflow:hidden;}
+.slide_pic{position:absolute; top:0; left:0; width:2400px; height:400px;}
+.slide_pic li{width:600px;height:400px; float:left; font-size:50px; text-align:center; line-height:400px; font-weight:bold; color:#fff;}
+.slide_pic li img{ width:100%; height:100%;}
+.slide_ic{position:absolute; bottom:20px; width:400px; left:50%; margin-left:-200px;}
+.slide_ic li{float:left; width:80px; height:20px; background:#ccc; margin:10px;}
+.slide_ic li span{float:left; width:0; height:20px; background:#399;}
+
 /*打字效果*/
 #dzxg{ width:520px; height:300px; position:absolute; top:80px; left:50%; margin-left:-260px; color:#fff; background:#000; border-radius:5px; font-size:18px; line-height:22px; padding:20px;}
 #dzxg>span{ opacity:0;}
@@ -103,6 +113,12 @@ body{ height:5000px; background:url(img/bjt.png) }
 /*拖拽-圆*/
 #drag{ width:690px; height:490px; border:5px solid #fff; margin:50px auto; position:relative; padding:5px;}
 #drag_ball{width:50px; height:50px; background:pink; position:absolute; bottom:0; left:50px; border-radius:50%; background:url(img/qiu.png) no-repeat;}
+/*放大镜*/
+.zoom{ width:700px; height:400px; margin:50px auto; overflow:hidden; position:relative;}
+#zoom_sl{width:310px;height:310px; position:relative;  position:absolute; top:0; left:0;}
+#zoom_bg{width:310px;height:310px; position:relative; position:absolute; overflow:hidden; display:none; right:0; top:0;}
+#zoom_sl #mask{width:100px;height:100px; background:yellow; opacity:.6; position:absolute;left:0; top:0;display:none;}
+#zoom_bg>img{ position:absolute;left:0; top:0;}
 /*css3*/
 .css3{ margin-bottom:50px;}
 .css3 h2{  font-size:62px; line-height:120px; font-family:微软雅黑; color:#fff; border-bottom:5px dotted #669; margin-bottom:30px; }
@@ -152,8 +168,9 @@ span.big_scale{height:15px; width:6px; margin-left:-3px;}
 .cap{ position:absolute; width:20px; height:20px; left:50%; top:50%; margin-left:-10px; margin-top:-10px; background:-webkit-radial-gradient(#fff,#000); border-radius:50%;}
 /*3D切换*/
 .switch{ width:700px; height:400px; }
-.switch .switch_in{ width:300px; height:300px; position:relative; margin:50px auto; margin-bottom:20px; background:#000;}
-.switch .switch_in>li{ position:absolute; left:0; top:0; width:100%; height:100%; background:#399; text-align:center; line-height:300px; font-size:40px; font-weight:bold; opacity:0; border:1px solid #000; -webkit-transform:perspective(800px) translate(0,0) rotateY(0deg); -webkit-transition:1s all ease;}
+.switch .switch_in{ width:300px; height:300px; position:relative; margin:50px auto; margin-bottom:20px; }
+.switch .switch_in>li{ position:absolute; left:0; top:0; width:100%; height:100%; background:#399; opacity:0;  -webkit-transform:perspective(800px) translate(0,0) rotateY(0deg); -webkit-transition:1s all ease;}
+.switch .switch_in>li>img{ width:100%; height:100%;}
 .switch .switch_in .l2{opacity:0; -webkit-transform:perspective(800px) translate(-250px,0) rotateY(45deg); z-index:1;}
 .switch .switch_in .l1{opacity:0.8; -webkit-transform:perspective(800px) translate(-200px,0) rotateY(45deg); z-index:3;}
 .switch .switch_in .cur{ opacity:1; z-index:5;}
@@ -210,50 +227,50 @@ span.big_scale{height:15px; width:6px; margin-left:-3px;}
 window.onload=function(){
 	//主界面
 	(function(){
-		var oBox = document.getElementById('head_infor');
-		var oBtn=document.querySelector('.css_sidebar');
-		var aBtn = document.querySelectorAll('.head_infor_l li');
-		var aDiv = document.querySelectorAll('.head_infor_r li');
+		var oHead_infor = document.getElementById('head_infor');
+		var oCss_sidebar=document.querySelector('.css_sidebar');
+		var aHead_infor_l = document.querySelectorAll('.head_infor_l li');
+		var aHead_infor_r = document.querySelectorAll('.head_infor_r li');
 		var iNow = 0;
 		var timer = null;
 		function tab(){
-			for(var i = 0;i<aBtn.length;i++){
-				move(aBtn[i],{top:-600,left:0,opacity:0});
-				move(aDiv[i],{top:600,left:0,opacity:0});
+			for(var i = 0;i<aHead_infor_l.length;i++){
+				move(aHead_infor_l[i],{top:-600,left:0,opacity:0});
+				move(aHead_infor_r[i],{top:600,left:0,opacity:0});
 			}	
-			move(aBtn[iNow],{top:0,left:0,opacity:1});
-			move(aDiv[iNow],{top:0,left:0,opacity:1});
+			move(aHead_infor_l[iNow],{top:0,left:0,opacity:1});
+			move(aHead_infor_r[iNow],{top:0,left:0,opacity:1});
 			
 		}
-		var oNext = document.getElementById('head_next');
-		oNext.onclick = function(){
+		var oHead_next = document.getElementById('head_next');
+		oHead_next.onclick = function(){
 			iNow ++;
-			if(iNow == aBtn.length){
+			if(iNow == aHead_infor_l.length){
 				iNow = 0;
 			}
 			tab();
 		};	
-		var oPrev = document.getElementById('head_prev');
-		oPrev.onclick = function(){
+		var oHead_prev = document.getElementById('head_prev');
+		oHead_prev.onclick = function(){
 			iNow --;
 			if(iNow == -1){
-				iNow = aBtn.length-1;
+				iNow = aHead_infor_l.length-1;
 			}			
 			tab();
 		};		
 		function next(){
 			iNow ++;
-			if(iNow == aBtn.length){
+			if(iNow == aHead_infor_l.length){
 				iNow = 0;
 			}
 			tab();
 		}
 		clearInterval(timer);
 		timer = setInterval(next,3000);
-		oBox.onmouseover=oPrev .onmouseover=oNext.onmouseover= function(){
+		oHead_infor.onmouseover=oHead_prev.onmouseover=oHead_next.onmouseover= function(){
 			clearInterval(timer);	
 		};
-		oBox.onmouseout =oPrev .onmouseout=oNext.onmouseout= function(){
+		oHead_infor.onmouseout =oHead_prev.onmouseout=oHead_next.onmouseout= function(){
 			timer = setInterval(next,3000);
 		};
 	})();
@@ -350,8 +367,8 @@ window.onload=function(){
 		up('html','html2');
 		up('html1','html2');
 		up('home','header');
-		up('move','move2');
-		up('move1','move2');
+		up('Sports','Sports2');
+		up('Sports1','Sports2');
 		up('app1','app3');
 		up('app2','app3');
 		up('css1','css3');
@@ -390,16 +407,15 @@ window.onload=function(){
 			oDiv.appendChild(oS);
 		}
 		var aSpan = oDiv.getElementsByTagName('span');
-		var str=['手风琴','网易幻灯片','无缝滚动','打字效果','提示框','上下幻灯片','弹性碰撞','网易幻灯片','无缝滚动'];
-		var str2=['','','','','','','',''];
+		var str=['手风琴','无缝滚动','幻灯片','打字效果','提示框','上下幻灯片','弹性碰撞','放大镜'];
+		var str2=[1,2,3,4,1,2,3,4];
 		var oStart=document.getElementById('start');
-
 		oClick.onclick = function(){
 			if(bOk){
 				for(var i = 0;i<aSpan.length;i++){
 					move(aSpan[i],i*360/N);	
 					aSpan[i].innerHTML=str[i];
-					
+					aSpan[i].style.background='url(img/ng'+str2[i]+'.png)';
 					aSpan[i].style.display='block';	
 
 				}	
@@ -498,23 +514,47 @@ window.onload=function(){
 		}
 	})();
 	//无缝滚动
-	/*;(function(){
-		var oUl = document.getElementById('smale_in');
-		var aLie =document.querySelectorAll('#smale_in li');	
+	/*(function(){
+		var oSmale_in = document.getElementById('smale_in');
+		var aSmale_in =document.querySelectorAll('#smale_in li');
+		var timer=null;	
 		//复制一份儿
-		oUl.innerHTML += oUl.innerHTML;
-		oUl.style.width = aLie[0].offsetWidth *aLie.length+'px';
-		
-		var W = oUl.offsetWidth/2;
-		var l = 0;
-		setInterval(function(){
+		oSmale_in.innerHTML += oSmale_in.innerHTML;
+		oSmale_in.style.width = aSmale_in[0].offsetWidth *aSmale_in.length+'px';
+		//var W = oSmale_in.offsetWidth/2;
+		//var l = 0;
+		clearInterval(timer);
+		timer=setInterval(function(){
 			l -=10;
 			if(l<-W){
 				l = 0;
 			}
-			oUl.style.left = l + 'px';
+			oSmale_in.style.left = l + 'px';
 		},30);
 	})();*/
+	;(function(){
+		var oSlide = document.getElementById('slide');
+		var oUl = oSlide.children[0];
+		var aLi = oUl.children;
+		//oUl.style.width = aLi[0].offsetWidth*aLi.length+'px';
+		var aSpan = oSlide.children[1].getElementsByTagName('span');
+			var iNow = 0;
+			function next(){
+				move(aSpan[iNow],{width:80},{complete:function(){
+					iNow++;
+					if(iNow == aSpan.length){
+						iNow = 0;
+					}
+					move(oUl,{left:-iNow*aLi[0].offsetWidth},{complete:function(){
+						for(var i = 0;i<aSpan.length;i++){
+							aSpan[i].style.width = 0 ;
+						}
+						next();
+					}});
+				}});
+			}
+			next();
+	})();
 	//打字效果
 	;(function(){
 		var str = '以及UBCS成于是卡洛斯便到安布雷拉公司旗下的附属医院寻找解药。';
@@ -543,6 +583,7 @@ window.onload=function(){
 			},200);
 		};
 	})();
+	//网易幻灯片
 	;(function(){
 		var oUl=document.getElementById('hint');
 		var aLi=oUl.children;
@@ -714,6 +755,63 @@ window.onload=function(){
 				}
 			},30);
 		}
+	})();
+	//放大镜
+	;(function(){
+		var oZoom=document.getElementById('zoom');
+		var oZoom_sl = document.getElementById('zoom_sl');	
+		var oZoom_bg = document.getElementById('zoom_bg');	
+		var oMask = document.getElementById('mask');	
+		var oImg = oZoom_bg.children[0];
+		oZoom_sl.onmouseover = function(ev){
+			var oEvent = ev||event;
+			var oFrom = oEvent.fromElement||oEvent.relatedTarget;
+			if(oZoom_sl.contains(oFrom)){
+				return;
+			}
+			oZoom_bg.style.display = 'block';	
+			oMask.style.display = 'block';	
+		};	
+		oZoom_sl.onmouseout = function(ev){
+			var oEvent = ev||event;
+			var oTo = oEvent.toElement||oEvent.relatedTarget;
+			if(oZoom_sl.contains(oTo)){
+				return ;
+			}
+			oZoom_bg.style.display = 'none';	
+			oMask.style.display = 'none';	
+		};	
+		oZoom_sl.onmousedown = function(ev){
+			var oEvent = ev||event;
+			var disX = oEvent.pageX-oMask.offsetLeft;
+			var disY = oEvent.pageY-oMask.offsetTop;
+			document.onmousemove=function(ev){
+				var oEvent = ev||event;
+				var l=oEvent.pageX-disX;
+				var t=oEvent.pageY-disY;
+				if(l<0){
+					l = 0;
+				}else if(l>oZoom_sl.offsetWidth - oMask.offsetWidth){
+					l=oZoom_sl.offsetWidth - oMask.offsetWidth;
+				}
+				if(t<0){
+					t = 0;
+				}else if(t>oZoom_sl.offsetHeight - oMask.offsetHeight){
+					t=oZoom_sl.offsetHeight - oMask.offsetHeight;
+				}
+				oMask.style.left = l +'px';
+				oMask.style.top = t +'px';
+				oImg.style.left = -l*(oImg.offsetWidth - oZoom_bg.offsetWidth)/(oZoom_sl.offsetWidth - oMask.offsetWidth ) +'px';
+				oImg.style.top = -t*(oImg.offsetHeight - oZoom_bg.offsetHeight)/(oZoom_sl.offsetHeight - oMask.offsetHeight ) +'px';
+			};
+			document.onmouseup=function(){
+				document.onmousemove = null;
+				document.onmouseup=null;				
+				oBox.releaseCapture&&oBox.releaseCapture();
+			};
+			oBox.setCapture&&oBox.setCapture();
+			return false;
+		};
 	})();
 	/*滚动加载*/
 	/*css3*/
@@ -1046,7 +1144,7 @@ KEEP IN TOUCH</p>
                     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis magna a erat varius laoreet.
 
 KEEP IN TOUCH</p>
-                        <a href="##" id="move">GO</a>
+                        <a href="##" id="Sports">GO</a>
                     </li>
                 	<li>
                     	<h3>CSS3 Effect Display</h3>
@@ -1076,7 +1174,7 @@ KEEP IN TOUCH</p>
             	<a href="##" id="html1">HTML</a>
             </li>
         	<li>
-            	<a href="##" id="move1">Movement</a>
+            	<a href="##" id="Sports1">Movement</a>
             </li>
         	<li>
             	<a href="##" id="css1">CSS3</a>
@@ -1105,8 +1203,9 @@ KEEP IN TOUCH</p>
         </div>
     </div>
     <!--运动-->
-    <div class="move_back">
-        <div class="w move" id="move2">
+    <div class="move_back" id="Sports2">
+    	<img src="img/move.png" />
+        <div class="w move" >
             <h2>Movement</h2>
             <a href="##" id="start">START</a>
             <div id="move_in">
@@ -1141,8 +1240,23 @@ KEEP IN TOUCH</p>
                         </ul>
                     </div>
                 </li>
+                <!--幻灯片-->
             	<li>
                 	<a href="##">x</a>
+                    <div id="slide">
+                        <ul class="slide_pic">
+                            <li><img src="img/slider1.jpg" /></li>
+                            <li><img src="img/slider2.jpeg" /></li>
+                            <li><img src="img/slider3.jpg" /></li>
+                            <li><img src="img/slider4.jpg" /></li>
+                        </ul>
+                        <ol class="slide_ic">
+                            <li><span></span></li>
+                            <li><span></span></li>
+                            <li><span></span></li>
+                            <li><span></span></li>
+                        </ol>
+                    </div>
                 </li>
             	<li>
                     <a href="##">x</a>
@@ -1153,7 +1267,7 @@ KEEP IN TOUCH</p>
                 	<a href="##">x</a>
                     <ul id="hint">
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/1585694089514eb70f10622.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1163,7 +1277,7 @@ KEEP IN TOUCH</p>
                             </div>
                         </li>
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/13976230595143f37d393b0.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1173,7 +1287,7 @@ KEEP IN TOUCH</p>
                             </div>
                         </li>
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/1401570516513a10525dca5.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1183,7 +1297,7 @@ KEEP IN TOUCH</p>
                             </div>
                         </li>
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/1598020238511210cf5537c.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1193,7 +1307,7 @@ KEEP IN TOUCH</p>
                             </div>
                         </li>
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/8134259755112092a3f649.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1203,7 +1317,7 @@ KEEP IN TOUCH</p>
                             </div>
                         </li>
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/488247430508baf8ca3794.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1213,7 +1327,7 @@ KEEP IN TOUCH</p>
                             </div>
                         </li>
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/495066053500e0dd65d8e9.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1223,7 +1337,7 @@ KEEP IN TOUCH</p>
                             </div>
                         </li>
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/461032892500d6ca1a8da3.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1233,7 +1347,7 @@ KEEP IN TOUCH</p>
                             </div>
                         </li>
                         <li>
-                            <img src="http://www.zhinengshe.com/images/product_pic/935671004ff6bb6011c5c.jpg" />
+                            <img src="img/slider2.jpeg" />
                             <div>
                                 <em>
                                     <h2>CSS3的IOS6密码解锁界面</h2>
@@ -1270,8 +1384,18 @@ KEEP IN TOUCH</p>
                    		<div id="drag_ball"></div>
                     </div>
                 </li>
-            	<li><a href="##">x</a></li>
-            	<li><a href="##">x</a></li>
+            	<li>
+                	<a href="##">x</a>
+                    <div class="zoom" id="zoom">
+                        <div id="zoom_sl">
+                            <img src="img/m1.png">
+                            <span id="mask"></span>
+                        </div>
+                        <div id="zoom_bg">
+                            <img src="img/b1.jpg">
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -1332,19 +1456,14 @@ KEEP IN TOUCH</p>
 					<!--3D切换-->
                     <li class="switch scroll">
                         <ul class="switch_in">
-                            <li class="l2">1</li>
-                            <li class="l1">2</li>
-                            <li class="cur">3</li>
-                            <li class="r1">4</li>
-                            <li class="r2">5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>13</li>
+                            <li class="l2"><img src="img/th0.jpg" /></li>
+                            <li class="l1"><img src="img/th1.jpg" /></li>
+                            <li class="cur"><img src="img/th2.jpg" /></li>
+                            <li class="r1"><img src="img/th3.jpg" /></li>
+                            <li class="r2"><img src="img/th4.jpg" /></li>
+                            <li><img src="img/th5.jpg" /></li>
+                            <li><img src="img/th6.jpg" /></li>
+                            <li><img src="img/th7.jpg" /></li>
                         </ul>
                         <a href="javascript:;" class="prev">上一张</a>
                         <a href="javascript:;" class="next">下一张</a>
@@ -1415,5 +1534,6 @@ KEEP IN TOUCH</p>
             </div>
         </div>
     </div>
+
 </body>	
 </html>
