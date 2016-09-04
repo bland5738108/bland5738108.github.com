@@ -61,7 +61,7 @@ body{ height:5000px; background:url(img/bjt.png) }
 #move_in>a{ position:absolute; left:50%; margin-left:-40px; top:-500px; width:80px; height:80px; border-radius:50%; border:5px solid #0CF; background:#093; text-align:center; line-height:80px; transition:.5s all ease; color:#fff; font-size:20px; font-weight:bold; font-family:微软雅黑; }
 #move_in>a:hover{ background:#0CF; border:5px solid #093; color:#000;}
 #move_show {width:1000px;height:600px; }
-#move_show>li{width:800px;height:600px; border:5px solid #063; background:rgba(0,0,0,.8); position:relative; border-radius:15px; margin:160px auto; text-align:right;-webkit-transform:scale(5,4); opacity:0; display:none;}
+#move_show>li{width:800px;height:600px; border:5px solid #063; background:rgba(0,0,0,.8); position:relative; border-radius:15px; margin:160px auto; -webkit-transform:scale(5,4); opacity:0; display:none;}
 #move_show>li>a{ position:absolute; top:5px; right:5px; width:30px; height:25px; text-align:center; line-height:25px; background:rgba(0,0,0,.5);}
 #move_show>li h3{ color:#fff; font-size:22px; text-align:center; line-height:56px; font-weight:bold; text-shadow:2px 2px 0 #39F; position:absolute; left:50%; margin-left:-2em; bottom:5px;}
 /*手风琴*/
@@ -222,7 +222,6 @@ span.big_scale{height:15px; width:6px; margin-left:-3px;}
 </style>
 <script src="javascripts/addWheel.js"></script>
 <script src="javascripts/move.js"></script>
-<script src="javascripts/through.js"></script>
 <script>
 window.onload=function(){
 	//主界面
@@ -390,7 +389,7 @@ window.onload=function(){
 		var oS = oDiv.children[0];	
 		var R = oDiv.offsetWidth/2;
 		var bOk = true;
-		var N = 8;
+		var N = 7;
 		var timer = null;
 		//角度转弧度
 		function d2a(n){
@@ -407,8 +406,8 @@ window.onload=function(){
 			oDiv.appendChild(oS);
 		}
 		var aSpan = oDiv.getElementsByTagName('span');
-		var str=['手风琴','无缝滚动','幻灯片','打字效果','提示框','上下幻灯片','弹性碰撞','放大镜'];
-		var str2=[1,2,3,4,1,2,3,4];
+		var str=['手风琴','幻灯片','打字效果','提示框','上下幻灯片','弹性碰撞','放大镜'];
+		var str2=[1,2,3,4,1,2,3];
 		var oStart=document.getElementById('start');
 		oClick.onclick = function(){
 			if(bOk){
@@ -532,6 +531,7 @@ window.onload=function(){
 			oSmale_in.style.left = l + 'px';
 		},30);
 	})();*/
+	//幻灯片
 	;(function(){
 		var oSlide = document.getElementById('slide');
 		var oUl = oSlide.children[0];
@@ -557,7 +557,7 @@ window.onload=function(){
 	})();
 	//打字效果
 	;(function(){
-		var str = '以及UBCS成于是卡洛斯便到安布雷拉公司旗下的附属医院寻找解药。';
+		var str = '以及UBCS成于是卡洛斯便到安布雷拉公司旗下的附属医院寻找解药以及UBCS成于是卡洛斯便到安布雷拉公司旗下的附属医院寻找解药。';
 		var oDzxg=document.getElementById('dzxg');
 		var oPrint=document.getElementById('print');
 		for(var i = 0;i<str.length;i++){
@@ -583,7 +583,7 @@ window.onload=function(){
 			},200);
 		};
 	})();
-	//网易幻灯片
+	//提示框
 	;(function(){
 		var oUl=document.getElementById('hint');
 		var aLi=oUl.children;
@@ -1225,7 +1225,7 @@ KEEP IN TOUCH</p>
                     <h3>手风琴</h3>
                 </li>
                 <!-无缝滚动-->
-            	<li>
+            	<!--<li>
                 	<a href="##">x</a>
                     <div id="seaml">
                         <ul id="seaml_in">
@@ -1239,7 +1239,7 @@ KEEP IN TOUCH</p>
                             <li><img src="img4/7.jpg"></li>
                         </ul>
                     </div>
-                </li>
+                </li>-->
                 <!--幻灯片-->
             	<li>
                 	<a href="##">x</a>
