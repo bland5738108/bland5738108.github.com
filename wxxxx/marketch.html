@@ -64,12 +64,47 @@ $(document).ready(function(){
 		$('.choice').eq(2).show();
 	});
 	
-	
+	$('.reg_infor li').on('click',function(){
+		ind=$(this).index();
+		val=$(this).html();
+		$('.reg_infor li').css({'border':'none'});
+		$(this).css({'border-top':'1px solid #ccc','border-bottom':'1px solid #ccc'});
+		
+		$('.qd_o').on('click',function(){
+			$('.show_o').html(val);
+			$('.choice').hide();
+		});
+		$('.qd_t').on('click',function(){
+			$('.show_t').html(val);
+			$('.choice').hide();
+		});
+		$('.qd_th').on('click',function(){
+			$('.show_th').html(val);
+			$('.choice').hide();
+		});
+	});
+	$('.show input').on('click',function(){
+		$(this).val('');
+		
+			
+	});
+	$('input[name=username]').blur(function(){
+		val=this.value;
+		if(!(val<=150&&val>=0)){
+			alert('请输入正确成绩')
+		}
+	});
+	$('input[name=usernamed]').blur(function(){
+		val=this.value;
+		if(!(val<=150&&val>=0)){
+			alert('请输入正确成绩')
+		}
+	});
 	var mySwiper = new Swiper('.swiper-container-v',{
 		pagination: '.swiper-pagination-v',    
-       paginationClickable: false,    
+       paginationClickable: true,    
        direction: 'vertical',    
-       spaceBetween: 7    
+       spaceBetween: 7   
 	});
 });
 
@@ -88,35 +123,35 @@ $(document).ready(function(){
         	<div class="reg">
             	<span class="sel">选择所在的省份</span>
                 <div class="reg_r">
-                    <span class="show"></span>
+                    <span class="show show_o"></span>
                     <span class="btn one"><img src="img/sec.png"</span>
                 </div>
             </div>
         	<div class="reg">
             	<span class="sel">选择科目</span>
                 <div class="reg_r">
-                    <span class="show"></span>
+                    <span class="show show_t"></span>
                     <span class="btn two"><img src="img/sec.png"</span>
                 </div>
             </div>
         	<div class="reg">
             	<span class="sel">选择年级</span>
                 <div class="reg_r">
-                    <span class="show"></span>
+                    <span class="show show_th"></span>
                     <span class="btn three"><img src="img/sec.png"</span>
                 </div>
             </div>
         	<div class="reg">
             	<span class="sel">目前成绩</span>
                 <div class="reg_r">
-                    <span class="show"><input type="text" value="000" /></span>
+                    <span class="show"><input name="username" type="number" value="000" /></span>
                     <span class="btn">分</span>
                 </div>
             </div>
         	<div class="reg">
             	<span class="sel">希望成绩</span>
                 <div class="reg_r">
-                    <span class="show"><input type="text" value="000" /></span>
+                    <span class="show"><input type="number" name="usernamed" value="000" /></span>
                     <span class="btn">分</span>
                 </div>
             </div>
@@ -126,7 +161,7 @@ $(document).ready(function(){
             <div class="reg_show">
                 <div class="reg_header">
                     <a class="qx" href="javascript:;">取消</a>
-                    <a class="qd" href="javascript:;">确定</a>
+                    <a class="qd qd_o" href="javascript:;">确定</a>
                 </div>
                 <div class="wm swiper-container swiper-container-v">
                     <ul class="reg_infor swiper-wrapper">
@@ -142,7 +177,6 @@ $(document).ready(function(){
                         <li class="swiper-slide blue-slide">黑龙江省</li>
                         <li class="swiper-slide blue-slide">辽宁省</li>
                     </ul>
-                    <div class="line"></div>
                 </div>
             </div>
         </div>
@@ -151,7 +185,7 @@ $(document).ready(function(){
             <div class="reg_show sub">
                 <div class="reg_header">
                     <a class="qx" href="javascript:;">取消</a>
-                    <a class="qd" href="javascript:;">确定</a>
+                    <a class="qd qd_t" href="javascript:;">确定</a>
                 </div>
                 <div class="wm swiper-container swiper-container-v">
                     <ul class="reg_infor swiper-wrapper">
@@ -171,7 +205,7 @@ $(document).ready(function(){
             <div class="reg_show grade">
                 <div class="reg_header">
                     <a class="qx" href="javascript:;">取消</a>
-                    <a class="qd" href="javascript:;">确定</a>
+                    <a class="qd qd_th" href="javascript:;">确定</a>
                 </div>
  				<div class="wm swiper-container swiper-container-v">
                     <ul class="reg_infor swiper-wrapper">
