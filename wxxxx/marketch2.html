@@ -78,12 +78,17 @@ $(document).ready(function(){
 		});
 	});
 	$('.reg_inforc li').on('click',function(){
+		var _this=$(this);
 		var val=$(this).html();
 		$('.reg_inforc li').css({'border':'none'});
 		$(this).css({'border-top':'1px solid #ccc','border-bottom':'1px solid #ccc'});
 		$('.qd_th').on('click',function(){
-			$('.show_th').html(val);
-			$('.choice').hide();
+			if(!val==''){
+				$('.show_th').html(val);
+				$('.choice').hide();
+			}else{
+				alert('请选择')	
+			}
 		});
 	});
 	
@@ -106,10 +111,7 @@ $(document).ready(function(){
 	});
 	var mySwiper = new Swiper('.swiper-container-h',{
 		pagination: '.swiper-pagination-h', 
-		autoplay: 5000,
 		slidesPerView : 'auto',
-		loopedSlides :8,   
-       paginationClickable: false,    
        direction: 'vertical'    
 	});
 });
@@ -203,11 +205,11 @@ $(document).ready(function(){
                         <a class="qx" href="javascript:;">取消</a>
                         <a class="qd qd_th" href="javascript:;">确定</a>
                     </div>
-                    <div class="wm swiper-container swiper-container-h">
-                        <ul class="reg_infor reg_inforc swiper-wrapper">
-                            <li class="swiper-slide">高一</li>
-                            <li class="swiper-slide">高二</li>
-                            <li class="swiper-slide ">高三</li>
+                    <div class="wm ">
+                        <ul class="reg_infor reg_inforc">
+                            <li>高一</li>
+                            <li>高二</li>
+                            <li>高三</li>
                         </ul>
                     </div>
                 </div>
