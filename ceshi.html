@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+#cun{ width:170px; height:30px; font-size:20px;}
+</style>
+</head> 
+
+<body>
+	<input id="cun" type="date" value="aaa"/>
+    <input type="datetime" />
+    <input id="btn" type="datetime-local" />
+    <script>
+	var inp=document.getElementById('btn');
+	var inp=document.getElementById('cun');
+	inp.onblur=function(){
+		alert(inp.value);
+	};
+	cun.onblur=function(){
+		alert(inp.value);
+	};
+</script>
+
+</body>
+</html>
