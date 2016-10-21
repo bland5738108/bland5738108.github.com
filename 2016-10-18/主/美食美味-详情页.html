@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>xxx</title>
+<link rel="stylesheet" href="../css/base.css" />
+<style>
+html,body{ font-size:20px;}
+a{ text-decoration:none; color:#ccc;}
+/*头部*/
+header{ width:18.75rem; height:2.25rem;}
+header .back{ width:0.45rem; height:0.75rem; margin-left:0.75rem; margin-top:0.75rem; margin-right:6.375rem;}
+header .menu{ width:0.9rem; height:0.85rem; margin-top:0.7rem; margin-right:0.775rem;}
+header h2{height:2.25rem; font-size:0.85rem; color:#666; line-height:2.25rem;}
+</style>
+<script>
+;(function(win,doc){
+	function change(){
+		doc.documentElement.style.fontSize = 20*doc.documentElement.clientWidth/375+'px';
+	}
+	change();
+	win.addEventListener('resize',change,false);
+})(window,document);
+</script>
+
+</head>
+
+<body>
+	<!--头部-->
+	<header>
+    	<a class="back fl" href="javascript:;">
+        	<img src="../imgages/return.png" />
+        </a>
+		<h2 class="fl">缅甸柚子</h2>
+        <a class="menu fr" href="javascript:;"><img src="../imgages/foot_shop.png" /></a>
+    </header>
+    <div>
+    	<ul>
+        	<li></li>
+        </ul>
+    </div>
+</body>
+</html>

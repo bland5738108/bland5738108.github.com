@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>xxx</title>
+<link rel="stylesheet" href="../css/base.css" />
+<style>
+html,body{ font-size:20px;}
+.tick_infor{ width:18.75rem;}
+/*头部*/
+header{ width:18.75rem; height:2.25rem; border-bottom:1px solid #e0e0e0;}
+header .back{ width:0.45rem; height:0.75rem; margin-left:0.75rem; margin-top:0.75rem; margin-right:6.375rem;}
+header .back img{ width:0.45rem; height:0.75rem; }
+header .menu{  height:2.25rem; line-height:2.25rem; font-size:0.7rem; margin-right:0.75rem; color:#666; }
+header h2{height:2.25rem; font-size:0.85rem; color:#666; line-height:2.25rem; font-weight:normal;}
+/*地址*/
+.action{ width:18.75rem; height:4.5rem; border-top:0.5rem solid #f5f5f5;}
+.action>img{ width:0.6rem; height:0.8rem; transform:translate(0.75rem,1.45rem);}
+.action .action_infor{width:14.75rem; transform:translate(2.25rem,-0.8rem); padding:0.4rem 0 0.4rem 0;}
+.action_infor p:nth-child(1){ font-size:0.75rem; color:#666; line-height:1.425rem;}
+.action_infor p:nth-child(2){ font-size:0.75rem; color:#d6d6d6; line-height:1rem; overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.action_infor p:nth-child(1) span{ margin-right:1rem;}
+/*order*/
+.order{ width:18.75rem; height:5.75rem; border-top:0.5rem solid #f5f5f5;}
+.order_num{ width:18rem; height:1.725rem; border-bottom:1px solid #ebebeb; margin-left:0.75rem; line-height:1.725rem; font-size:0.75rem; color:#333;}
+.order_num p:nth-child(2){ color:#d9232a; margin-right:0.75rem;}
+.order_inf{ width:18.75rem; height:3.55rem; border-bottom:1px solid #e0e0e0; margin-top:0.45rem;}
+.order_inf>img{ width:3.1rem; height:3.1rem; margin-left:0.725rem; margin-right:0.425rem;}
+.order_inf .inf_txt{ width:10.05rem; font-size:0.6rem; padding-top:0.075rem;}
+.inf_txt p:nth-child(1){ line-height:1.05rem; color:#000; overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.inf_txt p:nth-child(2){ line-height:1.3rem; color:#666;}
+.order_march{ font-size:0.6rem; color:#222; margin-right:0.75rem; line-height:1.05rem;}
+.user_infor{ width:18.75rem; border-top:0.5rem solid #f5f5f5;}
+.user_infor li{ width:18rem; height:1.95rem; line-height:1.95rem; border-bottom:1px solid #ebebeb; margin-left:0.75rem; font-size:0.7rem; color:#333;}
+.user_infor li P:nth-child(2){ margin-right:0.75rem; color:#666;}
+/*支付*/
+.total{ width:18.75rem; height:2.2rem; position:fixed; left:0; bottom:0; background:#fff;}
+.total span{ line-height:2.2rem; font-size:0.75rem; color:#666; margin-left:0.75rem;}
+.total a{ width:7.5rem; height:2.2rem; line-height:2.2rem; text-align:center; font-size:0.75rem; background:#d6131c; color:#fff;}
+.null_d{ width:18.75rem; height:2.25rem; background:#f5f5f5; margin-bottom:2.2rem;}
+</style>
+<script>
+;(function(win,doc){
+	function change(){
+		doc.documentElement.style.fontSize = 20*doc.documentElement.clientWidth/375+'px';
+	}
+	change();
+	win.addEventListener('resize',change,false);
+})(window,document);
+</script>
+</head>
+
+<body>
+	<div class="tick_infor">
+        <!--头部-->
+        <header>
+            <a class="back fl" href="javascript:;">
+                <img src="../imgages/return.png" />
+            </a>
+            <h2 class="fl">订单详情</h2>
+            <a class="menu fr" href="javascript:;">首页</a>
+        </header>
+        <div class="zinfor">
+            <div class="action">
+                <img src="../imgages/coor_c.png" />
+                <div class="action_infor">
+                    <p class="clearfix">
+                        <span class="fl">张北</span>
+                        <span class="fl">15000000000</span>
+                    </p>
+                    <p>北京&nbsp;北京市&nbsp;海淀区&nbsp;上地三街金隅嘉华E座201A</p>
+                </div>
+            </div>
+            <div class="order">
+                <div class="order_num">
+                    <p class="fl">订单号<span>12345648978</span></p>
+                    <p class="fr">未付款</p>
+                </div>
+                <div class="order_inf clearfix">
+                    <img class="fl" src="../imgages/li.png" />
+                    <div class="fl inf_txt">
+                        <p>双肩包男韩版户外旅行背包&nbsp;帆布男士背包大容量&nbsp;潮学生双肩背包</p>
+                        <p>型号：<span>0000</span></p>
+                    </div>
+                    <div class="fr order_march">
+                        <p><span>45.00</span>分</p>
+                        <p>x<span>2</span></p>
+                    </div>
+                </div>
+            </div>
+            <ul class="user_infor">
+                <li class="clearfix">
+                    <p class="fl">支付方式</p>
+                    <p class="fr">会员卡</p>
+                </li>
+                <li class="clearfix">
+                    <p class="fl">下单日期</p>
+                    <p class="fr">2016-09-23&nbsp;17:45:31</p>
+                </li>
+                <li class="clearfix">
+                    <p class="fl">配送时间</p>
+                    <p class="fr">2016-09-26&nbsp;10:00~12:00</p>
+                </li>
+                <li class="clearfix">
+                    <p class="fl">运费</p>
+                    <p class="fr"><span>20</span>分</p>
+                </li>
+                <li class="clearfix">
+                    <p class="fl">实际付款</p>
+                    <p class="fr"><span>85.00</span>分</p>
+                </li>
+            </ul>
+        </div>
+    	<div class="null_d"></div>
+        <div class="clearfix total">
+        	<span class="fl">总计：<b>999</b>分</span>
+            <a class="fr" href="javascript:;">去支付</a>
+        </div>
+    </div>
+</body>
+</html>
