@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>xxx</title>
+<link rel="stylesheet" href="css/pre.css" />
+<script src="js/change.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/mggScrollImg.js"></script>
+<script>
+$(document).ready(function(){
+;(function(){
+	var scrollNav = $.mggScrollImg('nav ul',{
+			loop : true,
+			auto : false,
+			callback : function(ind){
+				$('.nav_act li').eq(ind).addClass('show').siblings().removeClass('show');
+			}
+	   });
+	
+	})();
+$('.nav_list a').click(function(ind){
+	$('.nav_list a').removeClass('nav_show');
+	$(this).addClass('nav_show')
+});
+});
+
+</script>
+
+</head>
+
+<body>
+	<div class="cate_last">
+        <!--头部-->
+	<header class="header">
+    	<a class="bar" href="javascript:;">
+        	<img src="imgages/return.png" />
+        </a>
+		<h2>粮油杂货</h2>
+        <a class="person" href="javascript:;"><img src="imgages/foot_shop.png" /></a>
+    </header>
+        <!--排序-->
+        <ul class="order clearfix">
+            <li class="fl down_b">
+                <a href="javascript:;">默认</a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">销量</a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">价格</a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">新品</a>
+            </li>
+        </ul>
+        <!--导航-->
+        <nav>
+            <ul class="nav_list clearfix">
+            	<li class="fl clearfix">
+                    <a class="fl" href="javascript:;">全部</a>
+                    <a class="fl nav_show" href="javascript:;">粮油</a>
+                    <a class="fl" href="javascript:;">野山菌</a>
+                    <a class="fl" href="javascript:;">蜂蜜</a>
+                </li>
+                <li class="fl clearfix">
+                    <a class="fl" href="javascript:;">干果</a>
+                    <a class="fl" href="javascript:;">熟食</a>
+                    <a class="fl" href="javascript:;">地方特产</a>
+                    <a class="fl" href="javascript:;">酒水饮料</a>
+                </li>
+                <li class="fl clearfix">
+                    <a class="fl" href="javascript:;">茶叶</a>
+                    <a class="fl" href="javascript:;">营养保健</a>
+                </li>
+            </ul>
+            <ol class="clearfix nav_act" >
+            	<li class="fl show"></li>
+            	<li class="fl"></li>
+            	<li class="fl"></li>
+            </ol>
+        </nav>
+        <ul class="comm">
+            <li class="clearfix">
+                <a class="fl list_pic" href="javascript:;">
+                    <img src="imgages/orange.png" />
+                </a>
+                <div class="fl list_rt">
+                    <a class="list_text" href="javascript:;">凤凰传奇2016跨年演唱会工人体育馆演唱国宝级歌唱家</a>
+                    <div class="price clearfix">
+                        <span class="fl">399分</span>
+                        <a class="fr" href="javascript:;"><img src="imgages/foot_car.png" />加入购物车</a>
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a class="fl list_pic" href="javascript:;">
+                    <img src="imgages/orange.png" />
+                </a>
+                <div class="fl list_rt">
+                    <a class="list_text" href="javascript:;">凤凰传奇2016跨年演唱会工人体育馆演唱国宝级歌唱家</a>
+                    <div class="price clearfix">
+                        <span class="fl">399分</span>
+                        <a class="fr" href="javascript:;"><img src="imgages/foot_car.png" />加入购物车</a>
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a class="fl list_pic" href="javascript:;">
+                    <img src="imgages/orange.png" />
+                </a>
+                <div class="fl list_rt">
+                    <a class="list_text" href="javascript:;">凤凰传奇2016跨年演唱会工人体育馆演唱国宝级歌唱家</a>
+                    <div class="price clearfix">
+                        <span class="fl">399分</span>
+                        <a class="fr" href="javascript:;"><img src="imgages/foot_car.png" />加入购物车</a>
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a class="fl list_pic" href="javascript:;">
+                    <img src="imgages/orange.png" />
+                </a>
+                <div class="fl list_rt">
+                    <a class="list_text" href="javascript:;">凤凰传奇2016跨年演唱会工人体育馆演唱国宝级歌唱家</a>
+                    <div class="price clearfix">
+                        <span class="fl">399分</span>
+                        <a class="fr" href="javascript:;"><img src="imgages/foot_car.png" />加入购物车</a>
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a class="fl list_pic" href="javascript:;">
+                    <img src="imgages/orange.png" />
+                </a>
+                <div class="fl list_rt">
+                    <a class="list_text" href="javascript:;">凤凰传奇2016跨年演唱会工人体育馆演唱国宝级歌唱家</a>
+                    <div class="price clearfix">
+                        <span class="fl">399分</span>
+                        <a class="fr" href="javascript:;"><img src="imgages/foot_car.png" />加入购物车</a>
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a class="fl list_pic" href="javascript:;">
+                    <img src="imgages/orange.png" />
+                </a>
+                <div class="fl list_rt">
+                    <a class="list_text" href="javascript:;">凤凰传奇2016跨年演唱会工人体育馆演唱国宝级歌唱家</a>
+                    <div class="price clearfix">
+                        <span class="fl">399分</span>
+                        <a class="fr" href="javascript:;"><img src="imgages/foot_car.png" />加入购物车</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <p class="download">加载更多...</p>
+        <p class="download_no">已无更多</p>
+        <div class="shopcar">已加入购物车</div>
+    </div>
+</body>
+</html>
