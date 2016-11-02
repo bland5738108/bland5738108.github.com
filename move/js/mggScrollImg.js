@@ -4,7 +4,7 @@ function mggScrollImg(box,config){
     this.config = $.extend({},config||{});
     this.width = this.config.width||this.box.children().eq(0).width();//一次滚动的宽度
     this.size = this.config.size||this.box.children().length;
-    this.loop = this.config.loop||true;//默认能循环滚动
+    this.loop = this.config.loop||false;//默认能循环滚动
     this.auto = this.config.auto||false;//默认自动滚动
     this.auto_wait_time = this.config.auto_wait_time||3000;//轮播间隔
     this.scroll_time = 300;//滚动时长

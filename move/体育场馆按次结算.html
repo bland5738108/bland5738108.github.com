@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx</title>
+		<link rel="stylesheet" href="css/pre.css" />
+		<script src="js/change.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/touch.js"></script>
+		<script src="js/mggScrollImg.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.date li').click(function(){
+					$('.date li').removeClass('cur');
+					$(this).addClass('cur');
+				});
+				$('.ver_btn').bind('click',function(){
+					$(this).children().toggle();
+				});
+				$('.buy_notice').bind('click',function(){
+					$('.buycar_notice').show();
+				});
+				$('.close').bind('click',function(){
+					$('.buycar_notice').hide();
+				});
+			});
+		</script>
+	</head>
+	<body style="background: #F5F5F5;">
+		<div class="stadium_num">
+			<header class="header">
+		    	<a class="bar" href="javascript:;"><img src="imgages/return.png" /></a>
+		        <h2>预定详情</h2>
+		        <a class="person" href="javascript:;">首页</a>
+		   </header>
+			<div class="once_car clearfix">
+				<span class="fl">一米瑜伽单次卡</span>
+				<span class="fr">已售<i>100</i></span>
+			</div>
+			<ul class="date">
+				<li class="cur">
+					<p>今天<span>周三</span></p>
+					<p><span>100</span>积分</p>
+				</li>
+				<li>
+					<p>明天<span>周三</span></p>
+					<p><span>100</span>积分</p>
+				</li>
+				<li>
+					<p>后天<span>周三</span></p>
+					<p><span>100</span>积分</p>
+				</li>
+			</ul>
+			<div class="more">
+				<a href="javascript:;">选择更多时间</a>
+			</div>
+			<div class="shop_num">
+				<h5>购买数量</h5>
+				<p><span><img src="imgages/minus.png" /></span><span>0</span><span><img src="imgages/plus.png" /></span></p>
+			</div>
+			<div class="buy_notice">
+				<h5>购买须知</h5>
+				<p>购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知</p>
+				<span class="look">查看</span>
+			</div>
+			<div class="verify">
+				<ul>
+					<li class="clearfix">
+						<p class="fl"><span>手机号：</span><input type="text" placeholder="输入手机号" /></p>
+						<!--<span class="fr">获取验证码</span>-->
+						<input type="button" id="btn" value="获取验证码" onclick="settime(this)" /> 
+					</li>
+					<li class="clearfix">
+						<p class="fl"><span>验证码：</span><input type="text" placeholder="输入验证码" /></p>					
+					</li>
+					<li class="clearfix">
+						<p class="fl">使用会员卡积分进行付款</p>	
+						<span class="fr ver_btn">
+							<img src="imgages/wxz.png"  />
+							<img style="display: none;" src="imgages/xz.png"  />
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix footer_total">
+           		<span class="fl">总计：<b>999</b>积分</span>
+            	<a class="fr" href="javascript:;">立即支付</a>
+        	</div>
+			<div class="buycar_notice">
+				<div class="buycar_txt">
+					<h4>购票须知</h4>
+					<p>门票包含：第十一届中国国际航空航天博览会（珠海航展）1日上午开幕，中国新一代隐形战机歼-20惊艳登场，并做通场飞行展示。这是中国自主研制的新一代隐身战斗机首次公开亮相。日本各大媒体纷纷予以关注，并认为歼-20的出现象征着中美之间的技术代差得到进一步缩小。</p>
+					<p>门票不包含：第十一届中国国际航空航天博览会（珠海航展）1日上午开幕，中国新一代隐形战机歼-20惊艳登场，并做通场飞行展示。这是中国自主研制的新一代隐身战斗机首次公开亮相。日本各大媒体纷纷予以关注，并认为歼-20的出现象征着中美之间的技术代差得到进一步缩小。</p>
+					<p>支付方式：第十一届中国国际航空航天博览会（珠海航展）1日上午开幕，中国新一代隐形战机歼-20惊艳登场，并做通场飞行展示。这是中国自主研制的新一代隐身战斗机首次公开亮相。日本各大媒体纷纷予以关注，并认为歼-20的出现象征着中美之间的技术代差得到进一步缩小。</p>
+				</div>
+				<span class="close"><img src="imgages/close.png" /></span>
+			</div>
+		</div>
+	</body>
+	<script>
+		var countdown=60; 
+function settime(obj) { 
+    if (countdown == 0) { 
+        obj.removeAttribute("disabled");    
+        obj.value="免费获取验证码"; 
+        countdown = 60; 
+        return;
+    } else { 
+        obj.setAttribute("disabled", true); 
+        obj.value="重新发送(" + countdown + ")"; 
+        countdown--; 
+    } 
+setTimeout(function() { 
+    settime(obj) }
+    ,1000) 
+}
+	</script>
+</html>

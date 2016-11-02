@@ -11,6 +11,8 @@
 <script src="js/change.js"></script>
 <script src="js/zepto.min.js"></script>
 <script src="js/touch.js"></script>
+<script type="text/javascript" src="js/fx_methods.js" ></script>
+<script type="text/javascript" src="js/fx.js" ></script>
 <script src="js/mggScrollImg.js"></script>
 <script>
 $(document).ready(function(){
@@ -27,6 +29,11 @@ $(document).ready(function(){
 $('.nav_list a').click(function(ind){
 	$('.nav_list a').removeClass('nav_show');
 	$(this).addClass('nav_show')
+});
+$('.price a').live('click',function(){
+	$('.shopcar').fadeIn(2000,function(){
+		$('.shopcar').fadeOut('fast');
+	});
 });
 });
 
@@ -91,7 +98,7 @@ $('.nav_list a').click(function(ind){
                     <img src="imgages/orange.png" />
                 </a>
                 <div class="fl list_rt">
-                    <a class="list_text" href="javascript:;">凤凰传奇2016跨年演唱会工人体育馆演唱国宝级歌唱家</a>
+                    <a class="list_text" href="javascript:;">凤凰传奇2016跨年演唱会工人体育馆演唱国宝级歌唱家跨年演唱会工人体育馆演唱国宝级歌唱家跨年演唱会工人体育馆演唱国宝级歌唱家</a>
                     <div class="price clearfix">
                         <span class="fl">399分</span>
                         <a class="fr" href="javascript:;"><img src="imgages/foot_car.png" />加入购物车</a>

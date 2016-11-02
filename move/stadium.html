@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx</title>
+		<link rel="stylesheet" href="css/pre.css" />
+		<script src="js/change.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/touch.js"></script>
+		<script src="js/mggScrollImg.js"></script>
+		<script>
+			$(document).ready(function(){
+				//轮播图	
+				;(function(){
+				var scrollImg = $.mggScrollImg('.banner ul',{
+				        loop : true,//循环切换
+				        auto : true,//自动切换
+				        callback : function(ind){//这里传过来的是索引值
+				            $('ol li').eq(ind).addClass('cur').siblings().removeClass('cur');
+				        }
+				    });
+				})();
+				;(function(){
+					var scrollImg = $.mggScrollImg('nav ul',{
+					        loop : false,//循环切换
+					        auto : false,//自动切换
+					        callback : function(ind){//这里传过来的是索引值
+					            $('.nav_btn li').eq(ind).addClass('nav_cur').siblings().removeClass('nav_cur');
+					        }
+					    });
+				})();
+			});
+		</script>
+
+	</head>
+	<body>
+		<div class="stadium">
+			<header class="header">
+		    	<a class="bar" href="javascript:;"><img src="imgages/return.png" /></a>
+		        <h2>体育场馆</h2>
+		        <a class="person" href="javascript:;"><img src="imgages/foot_shop.png" /></a>
+		   	</header>	
+		   	<div class="banner slide">
+		    	<ul class="banner_car slide-box">
+		        	<li class="sMain"><a href="javascript:;"><img src="imgages/h_ban.png" /></a></li>
+		        	<li class="sMain"><a href="javascript:;"><img src="imgages/h_ban.png" /></a></li>
+		        	<li class="sMain"><a href="javascript:;"><img src="imgages/h_ban.png" /></a></li>
+		        	<li class="sMain"><a href="javascript:;"><img src="imgages/h_ban.png" /></a></li>
+		        	<li class="sMain"><a href="javascript:;"><img src="imgages/h_ban.png" /></a></li>
+		        </ul>
+		        <ol class="banner_btn slide-item clearfix">
+		        	<li class="cur"></li>
+		        	<li></li>
+		        	<li></li>
+		        	<li></li>
+		        	<li></li>
+		        </ol>
+		   </div>		 
+			<nav class="slide">
+				<ul class="nav slide-box">
+					<li class="sMain clearfix">
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>羽毛球</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>游泳</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>健身</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>户外</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>高尔夫</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>篮球</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>足球</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>网球</i>
+						</a>
+					</li>
+					<li class="sMain clearfix">
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>台球</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>跆拳道</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>击剑</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>保龄球</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>乒乓球</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>瑜伽</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>综合舞蹈</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>射箭</i>
+						</a>
+					</li>
+					<li class="sMain clearfix">
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>垂钓</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>剑道</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>武术</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>排球</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>温泉</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>潜水</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>壁球</i>
+						</a>
+						<a class="fl" href="javascript:;">
+							<img src="imgages/bad.png"  />
+							<i>滑雪</i>
+						</a>
+					</li>	
+				</ul>
+		        <ol class="nav_btn slide-item clearfix">
+		        	<li class="nav_cur"></li>
+		        	<li></li>
+		        	<li></li>
+		        </ol>
+			</nav>
+			<div class="activity clearfix">
+				<a class="fl" href="javascript:;"><img src="imgages/ao.png" /></a>
+				<a class="fl" href="javascript:;"><img src="imgages/yyjs.png" /></a>
+				<a class="fl" href="javascript:;"><img src="imgages/rmxg.png" /></a>
+			</div>
+			<div class="venue">
+				<ul class="venue_list">
+					<li>
+						<a class="clearfix" href="javascript:;">
+							<div class="list_pic fl">
+								<img src="imgages/jp.png"  />
+								<span class="hot">
+									<img src=""  />
+								</span>
+							</div>
+							<div class="fl infor">
+								<h5>澳新室外篮球馆</h5>
+								<p class="star"><span><img src="imgages/star.png" /><img src="imgages/star.png" /><img src="imgages/star.png" /><img src="imgages/star_c.png" /><img src="imgages/star_c.png" /></span><i><b>4.0</b>分</i></p>
+								<p class="old"><span>299</span>积分</p>
+								<p class="new"><span>299</span>积分</p>
+								<div class="coupon clearfix">
+									<p class="fl"><img src="imgages/first.png" />首单立减10元</p>
+									<p class="fl"><img src="imgages/quan.png" />可使用优惠券</p>
+								</div>
+							</div>
+							<span class="distance"><i>3.4</i>km</span>
+						</a>
+					</li>
+						<li>
+						<a class="clearfix" href="javascript:;">
+							<div class="list_pic fl">
+								<img src="imgages/jp.png"  />
+								<span class="hot">
+									<img src=""  />
+								</span>
+							</div>
+							<div class="fl infor">
+								<h5>澳新室外篮球馆</h5>
+								<p class="star"><span><img src="imgages/star.png" /><img src="imgages/star.png" /><img src="imgages/star_c.png" /><img src="imgages/star_c.png" /><img src="imgages/star_c.png" /></span><i><b>4.0</b>分</i></p>
+								<p class="old"><span>299</span>积分</p>
+								<p class="new"><span>299</span>积分</p>
+							</div>
+							<span class="distance">[奥林匹克公园站]</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:;" class="down_load">点击加载更多</a>
+		</div>
+	</body>
+</html>

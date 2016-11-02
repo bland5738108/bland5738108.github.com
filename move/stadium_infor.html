@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx</title>
+		<link rel="stylesheet" href="css/pre.css" />
+		<script src="js/change.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/touch.js"></script>
+		<script src="js/mggScrollImg.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.referral_txt span').children().click(function(){
+					$(this).css('display','none');
+					$(this).next().css('display','block');
+					$('.referral_txt p').addClass('open');			
+				});
+				$('.referral_txt span').children().next().click(function(){
+					$(this).css('display','none');
+					$(this).prev().css('display','block');
+					$('.referral_txt p').removeClass('open');
+					
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="stadium_infor">
+			<header class="header">
+		    	<a class="bar" href="javascript:;"><img src="imgages/return.png" /></a>
+		        <h2>泰山饭店游泳馆</h2>
+		        <a class="person" href="javascript:;"><img src="imgages/foot_shop.png" /></a>
+		   	</header>	
+			<div class="live">
+				<a href="javascript:;">
+					<img src="imgages/staut.png" />
+					<span><i>1</i>张实景图</span>
+				</a>
+			</div>
+			<div class="bask">
+				<h3><em>澳新室外篮球馆</em><span><i>4.3</i>分</span></h3>
+				<ul class="bask_infor">
+					<li class="clearfix">
+						<div class="phone fl">
+							<span>电话</span>
+							<span>15012345678</span>
+						</div>
+						<a class="fl phone_pic" href="javascript:;"><img  src="imgages/phone.png" /></a>
+					</li>
+					<li class="clearfix">
+						<div class="phone fl">
+							<span>地址</span>
+							<span>朝阳区天辰东路2号（奥雅会展）</span>
+						</div>
+						<a class="fl phone_pic" href="javascript:;"><img  src="imgages/coor_c.png" /></a>
+					</li>
+					<li class="traffic clearfix">
+						<p class="fl">交通方式</p>
+						<div class="fl line">
+							<p><span>奥运村-公交站416米途径公交车：</span><span>机场大巴上地，奥运村线</span></p>
+							<p><span>洼里南口-公交站456米途径公交车：</span><span>311路，328路，573路629路，112路</span></p>							
+						</div>
+					</li>
+					<li>
+						<p>营业时间<span>8:00-22:00</span></p>
+					</li>
+					<li>
+						<p>温馨提示<span>起订时长1小时</span></p>
+					</li>
+				</ul>
+			</div>
+			<div class="facility">
+				<h4>场馆设施</h4>
+				<ul class="clearfixt">
+					<li>室内</li>
+					<li>装备租赁</li>
+					<li>驻场教练</li>
+					<li>课程培训</li>
+					<li>休息区</li>
+					<li>食品饮料</li>
+					<li>热水淋浴</li>
+					<li>柜子</li>
+					<li>停车场</li>
+				</ul>
+			</div>
+			<div class="referral">
+				<h4>场馆介绍</h4>
+				<div class="referral_txt">
+					<p>驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练驻场教练</p>
+					<span><i>展开</i><i style="display: none;">收起</i></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

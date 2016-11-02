@@ -1,15 +1,17 @@
 /* CSS Document */
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,input,textarea{ margin:0; padding:0;}
 li{ list-style:none;}
-i{ font-style:normal;}
+i,em{ font-style:normal;}
 img{ vertical-align:top; border:none;}
 a{ text-decoration:none; color:#3c3c3c;}
-input,textarea{ outline:none; border:none;}
+input,textarea,select{ outline:none; border:none;  background:transparent;  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;}
 textarea{ resize:none;}
 .fl{ float:left;}
 .fr{ float:right;}
 .clearfix:after{ content:''; display:block; clear:both;}
-html,body{ font-size:20px;}
+html,body{ font-size:20px; width: 100%;height: 100%;}
 
 /*register*/
 .register{ width:18.75rem; height:33.35rem; position:relative;}
@@ -145,7 +147,7 @@ html,body{ font-size:20px;}
 .cate_last .comm li .list_pic{ width:5.5rem; height:5.5rem; padding-left:0.1rem; padding-top:0.4rem;}
 .cate_last .comm li .list_pic img{ width:5rem; height:5rem; margin-left:0.4rem; margin-top:0.25rem;}
 .cate_last .comm li .list_rt{width:13.15rem; height:6rem;}
-.cate_last .list_rt .list_text{ display:block; width:11.5rem; font-size:0.7rem; padding-left:0.85rem; padding-right:0.8rem; padding-top:0.65rem; padding-bottom:0.85rem; line-height:0.9rem; color:#333; }
+.cate_last .list_rt .list_text{ display:block; width:11.5rem; height:1.8rem; font-size:0.7rem; margin:0.65rem 0.8rem 0.55rem 0.85rem; line-height:0.9rem; color:#333; overflow: hidden; text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .cate_last .price{ height:2.7rem; width:13.15rem;}
 .cate_last .price span{ margin-left:0.875rem; color:#db323a; font-size:0.7rem; line-height:2.6rem;}
 .cate_last .price a{ color:#74c9ee; font-size:0.7rem; line-height:2.6rem; margin-right:0.75rem;}
@@ -153,16 +155,16 @@ html,body{ font-size:20px;}
 /**/
 .cate_last .download{ width:18.75rem; line-height:1.8rem; font-size:0.7rem; color:#999; text-align:center;}
 .cate_last .download_no{ width:18.75rem; line-height:1.8rem; font-size:0.7rem; color:#999; text-align:center;}
-.cate_last .shopcar{ width:13.6rem; height:1.6rem; background:#3f3f3f; border:0.2rem solid #7f7f7f; color:#fff; text-align:center; line-height:1.6rem; position:fixed; bottom:3rem; left:50%; margin-left:-6.8rem; display:none;}
+.cate_last .shopcar{ width:6rem; height:1.2rem;font-size: 0.6rem; background:rgba(0,0,0,.5); color: #fff;  text-align:center; line-height:1.2rem; position:fixed; top:75%; left:50%; margin-left:-3rem; display: none;}
 
 /*cate_refer*/
 .cate_refer { width:18.75rem;}
 /*订单*/
-.cate_refer .code{ width:18.75rem; height:13.4rem; border-top:0.5rem solid #f5f5f5; border-bottom:1px solid #e0e0e0; background:#fff;}
+.cate_refer .code{ width:18.75rem; border-top:0.5rem solid #f5f5f5; border-bottom:1px solid #e0e0e0; background:#fff;}
 .cate_refer .code_t{ width:18rem; height:5rem; padding-left:0.75rem; padding-top:0.5rem;}
 .cate_refer .code_t img{ width:4.5rem; height:4.5rem;}
 .cate_refer .code_infor{ width:13.05rem; padding-left:0.45rem; padding-top:0.4rem;}
-.cate_refer .code_infor .text{ width:11.425rem; font-size:0.65rem; line-height:0.85rem; color:#333; margin-bottom:1.6rem;}
+.cate_refer .code_infor .text{ width:11.425rem; font-size:0.65rem; line-height:0.85rem; color:#333; margin-bottom:1.6rem; text-overflow: -o-ellipsis-lastline;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
 .cate_refer .code_infor .number{ font-size:0.65rem; }
 .cate_refer .code_infor .number span:nth-child(1){ color:#666; width:1.45rem;}
 .cate_refer .code_infor .number span:nth-child(2){ color:#e60013;}
@@ -170,7 +172,7 @@ html,body{ font-size:20px;}
 .cate_refer .center{ width:18rem; height:7.9rem; padding-left:0.75rem;}
 .cate_refer .center li{ width:18rem; height:1.95rem; border-top:1px solid #ebebeb;}
 .cate_refer .center li p{ height:1.95rem; line-height:1.95rem; font-size:0.7rem;}
-.cate_refer .center li p:nth-child(1){ margin-right:1rem;}
+.cate_refer .center li p:nth-child(1){ margin-right:1rem; }
 .cate_refer .center li p:nth-child(2){ width:10.75rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .cate_refer .center li a { width:0.35rem; height:0.7rem;  margin-right:0.75rem; margin-top:0.65rem;}
@@ -192,7 +194,7 @@ html,body{ font-size:20px;}
 .cate_shop .commodity_list_t .switch .cur{ display:block;}
 .cate_shop .commodity_list_t>img{ width:4.5rem; height:4.5rem;  margin-top:0.5rem; margin-right:0.5rem;}
 .cate_shop .commodity_infor{ width:11.5rem; height:5.125rem; padding-top:0.375rem;}
-.cate_shop .commodity_infor p:nth-child(1){ width:100%; font-size:0.7rem; line-height:0.9rem; color:#414141; margin-bottom:0.4rem;}
+.cate_shop .commodity_infor p:nth-child(1){ width:100%; font-size:0.7rem; line-height:0.9rem; color:#414141; margin-bottom:0.4rem; overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;}
 .cate_shop .commodity_infor p:nth-child(2){ width:100%; font-size:0.7rem; line-height:1.5rem; color:#666;}
 .cate_shop .commodity_infor p:nth-child(3) span i{ font-style:normal; margin-right:0.2rem;}
 .cate_shop .commodity_infor p:nth-child(3){ width:100%; height:0.75rem; line-height:0.75rem; font-size:0.7rem; color:#e60013;}
@@ -268,7 +270,7 @@ html,body{ font-size:20px;}
 .concert .film li a{ display:block; width:100%; height:100%;}
 .concert .film li img{ width:5rem; height:5rem; margin-top:0.5rem;}
 .concert .film_rl{ width:12.3rem; padding-left:0.95rem; padding-top:0.65rem;}
-.concert .film_rl .film_rltext{ width:11.8rem; line-height:0.9rem; font-size:0.7rem; color:#333; margin-bottom:0.375rem;}
+.concert .film_rl .film_rltext{ width:10.8rem; line-height:0.9rem; font-size:0.7rem; color:#333; margin-bottom:0.375rem; overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;}
 .concert .film_rl p{ font-size:0.7rem; color:#9e9e9e; line-height:1.25rem;}
 .concert .download{ width:18.75rem; line-height:1.8rem; font-size:0.7rem; color:#999; text-align:center;}
 .concert .download_no{ width:18.75rem; line-height:1.8rem; font-size:0.7rem; color:#999; text-align:center;}
@@ -374,12 +376,16 @@ html,body{ font-size:20px;}
 .consignee_add .content-block .three{ color:#f40; position:absolute; left:0.25rem; top:0.4rem; font-size:0.85rem;}
 .consignee_add .consignee_add .person_infor .action{ height:2.175rem; font-size:0.7rem; font-weight:bold; line-height:2.175rem;}
 .consignee_add .content-block{ position:relative;}
-.consignee_add .person_infor .row{ line-height:1.2rem; padding-top:0.5rem; color:#333; font-size:0.7rem;}
+.consignee_add .person_infor .row{ line-height:1.2rem; color:#333; font-size:0.7rem;}
 .consignee_add .person_infor .row span{ color:#f40; margin-right:0.15rem; margin-left:0.275rem; font-size:0.75rem;}
 .consignee_add .person_infor textarea{width:16.6rem; height:2.85rem; border:1px solid #999; border-radius:0.2rem; font-size:0.75rem; padding:0.3rem;}
 .consignee_add .person_infor .hint{ line-height:0.975rem; font-size:0.5rem; color:#666; margin-bottom:0.5rem;}
 .consignee_add .person_infor .submit{ width:17.25rem; height:2.5rem; background:#e60013; color:#fff; font-size:0.75rem; margin-bottom:2.5rem;}
-
+.consignee_add .person_infor .province{width:17.2rem; height:1.7rem; border:1px solid #999; position:relative; margin-bottom:0.75rem;}
+.consignee_add .person_infor .province select{width:16.45rem; height:1.7rem; padding-left:0.95rem; color:#666; font-size:0.7rem; position: relative; z-index: 999;}
+.consignee_add .person_infor .province select option{width:2rem; height:1.7rem; line-height:1.2rem; font-size:0.7rem; color:#666;}
+.consignee_add .person_infor .province span{ position:absolute; left:0.25rem; top:0; font-size:0.8rem; color:#f40; line-height:1.7rem;}
+.consignee_add .person_infor .province img{ position:absolute; right:0.75rem; top:0.5rem; width:0.45rem; height:0.75rem; transform:rotate(-90deg);}
 /*my*/
 .my .username{ width:18.75rem; height:5.05rem; background:#fff;}
 .my .username>div{ width:17.45rem; height:2.5rem; padding:0 0.675rem 0 0.625rem; border-bottom:1px solid #e0e0e0; line-height:2.5rem; font-size:0.75rem; color:#666;}
@@ -429,14 +435,14 @@ html,body{ font-size:20px;}
 .concert_detail .site_infor .name span:nth-child(2){ margin-right:0.5rem;}
 .concert_detail .site_infor .name span:nth-child(3){ width:1.75rem; height:0.75rem; background:#d6131c; text-align:center; line-height:0.75rem; font-size:0.575rem; display:inline-block; color:#fff; margin-top:0.25rem;}
 .concert_detail .site_infor .action{width:14.75rem; font-size:0.75rem; line-height:1.25rem; color:#666;}
-.concert_detail .site_infor .action span{overflow: hidden;text-overflow: ellipsis; display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp:2;}*/
+.concert_detail .site_infor .action span{overflow: hidden;text-overflow: ellipsis; display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp:2;}
 /*order_inofor*/
 .concert_detail .order_inofor{ width:18.75rem; height:12.15rem; background:#fff;}
 .concert_detail .order_inofor h4{ width:18.1rem; height:1.7rem; background:#f5f5f5; line-height:1.7rem; font-size:0.7rem; color:#666; padding-left:0.65rem; font-weight:normal; }
 .concert_detail .order_state{ width:17.45rem; height:3.575rem;  border-bottom:1px solid #ebebeb; margin:0.55rem 0.65rem 0.3rem 0.65rem;}
 .concert_detail .order_state li{ width:100%; height:1.2rem; line-height:1.2rem; font-size:0.7rem; color:#666;}
 .concert_detail .order_state li span{ margin-right:0.2rem;}
-.concert_detail .order_state li p{color:#333;}
+.concert_detail .order_state li p{color:#333; overflow: hidden;text-overflow: ellipsis; white-space:nowrap; width:12rem;}
 .concert_detail .order_state li .n_money{ color:#d6131c;}
 /*order_state*/
 .concert_detail .order_inofor .order_infor{  width:17.45rem; height:6rem; border-bottom:none;}
@@ -489,7 +495,7 @@ html,body{ font-size:20px;}
 .concert_refor_order .hint span{ color:#d6131c;}
 /*配送*/
 .concert_refor_order .express{ width:18.75rem; height:6.5rem; background:#fff;}
-.concert_refor_order .express h4{ width:17.25rem; margin-left:0.75rem; line-height:2.475rem; line-height:2.225rem; font-size:0.725rem; border-bottom:1px solid #e0e0e0;}
+.concert_refor_order .express h4{ width:17.25rem; margin-left:0.75rem; line-height:2.225rem; font-size:0.725rem; border-bottom:1px solid #e0e0e0;}
 .concert_refor_order .express h4 span{ margin-left:0.65rem; color:#d6131c; font-weight:normal;}
 .concert_refor_order .express_in{ width:17.25rem; margin-left:0.75rem;}
 .concert_refor_order .express_in li{ float:left; width:4.9rem; height:2.4rem; border:2px solid #d6131c; 
@@ -497,8 +503,8 @@ margin-top:0.75rem; margin-right:1rem; text-align:center;}
 .concert_refor_order .express_in li img{ width:1.1rem; height:0.8rem; margin-right:0.5rem; margin-top:0.8rem;}
 .concert_refor_order .express_in li span{ font-size:0.65rem; color:#db323a; margin-top:0.7rem; display:inline-block;}
 /*地址*/
-.concert_refor_order .site{ width:18rem; height:4.5rem; padding-left:0.75rem; background:#fff;}
-.concert_refor_order .site a{ width:18rem; height:4.5rem; padding-left:0.75rem; display:block;}
+.concert_refor_order .site{ width:18.75rem; height:4.5rem;background:#fff;}
+.concert_refor_order .site a{ width:18rem; height:4.5rem; padding-left:0.75rem;  display:block;}
 .concert_refor_order .site img:nth-child(1){ width:0.6rem; height:0.8rem; margin-top:1.45rem; margin-right:0.9rem; margin-bottom:2rem;}
 .concert_refor_order .site img:nth-child(3){ width:0.4rem; height:0.7rem; margin-top:2rem; margin-right:1.2rem;}
 .concert_refor_order .site_infor{ width:14.75rem; padding-top:0.5rem;}
@@ -516,7 +522,7 @@ margin-top:0.75rem; margin-right:1rem; text-align:center;}
 .concert_particulars .cover{ width:100%; height:100%; background:rgba(0,0,0,.5); position:absolute; left:0; top:0;}
 .concert_particulars .concert{ width:18.75rem;}
 .concert_particulars .concert li{ width:18rem; height:2rem; border-bottom:1px solid #ebebeb; font-size:0.7rem; line-height:2rem; padding-left:0.75rem;}
-.concert_particulars .concert .one{ font-weight:bold;}
+.concert_particulars .concert .one{ font-weight:bold; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .concert_particulars .infor{ width:17.15rem; padding:0 0.8rem 1.15rem 0.8rem; background:#f5f5f5;}
 .concert_particulars .infor h4{ font-size:0.7rem; line-height:2.2rem; text-align:center; width:100%;}
 .concert_particulars .infor p{ font-size:0.6rem; line-height:1.1rem; color:#666; }
@@ -528,3 +534,259 @@ margin-top:0.75rem; margin-right:1rem; text-align:center;}
 .concert_particulars .buy_none{width:17.15rem; padding:1rem 0.8rem 1.15rem 0.8rem; background:#f5f5f5; font-size:0.7rem; line-height:1.1rem; color:#666; display:none;}
 .concert_particulars .note{ width:18.75rem; height:0.85rem;}
 .concert_particulars .note img{ width:18.75rem; height:0.85rem;}
+/*cate_details*/
+.cate_details .banner{ height:18rem; overflow:hidden;  position:relative; border-bottom:1px solid #ccc;}
+.cate_details .banner .banner_car{ height:100%; overflow:hidden;}
+.cate_details .banner .banner_car .sMain{ width:18.75rem; height:18rem; float:left;}
+.cate_details .banner .banner_car .sMain img{ width:18.75rem; height:18rem;}
+.cate_details .banner .banner_btn{ width:3.4rem; height:0.6rem; position:absolute; right:0.6rem; bottom:0.2rem;}
+.cate_details .banner_btn li{ width:0.6rem; height:0.6rem; background:url(../imgages/cate_d.png) no-repeat; background-size:100%; margin-right:0.25rem; float:left;}
+.cate_details .banner_btn .cate_cur{ background:url(../imgages/cate_dd.png) no-repeat; background-size:100%;}
+.cate_details .product{width:18.125rem; height:6.6rem; padding-left:0.625rem; border-bottom:1px solid #ccc; padding-top:0.4rem;}
+.cate_details .product h4{ font-size:0.75rem; line-height:1.45rem; color:#333;}
+.cate_details .product p{ font-size:0.7rem; line-height:1.3rem; color:#333; width:17rem;}
+.cate_details .product p .jf{ font-size:0.9rem; line-height:1rem; color:#f40;}
+.cate_details .product .text{ line-height:1rem; margin-bottom:0.2rem; text-overflow: -o-ellipsis-lastline;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.cate_details .distribution{width:18.125rem; height:6.5rem; padding-left:0.625rem; padding-top:0.55rem; border-bottom:1px solid #ccc;}
+.cate_details .distribution p{font-size:0.65rem; color:#333; line-height:1rem;}
+.cate_details .distribution p span{ color:#fb6264;}
+.cate_details .distribution .infor{ color:#f0ae00;}
+.cate_details .norms{ width:18.125rem; height:4.75rem; padding-left:0.625rem; border-bottom:1px solid #ccc;}
+.cate_details .norms p{ margin-top:0.75rem; font-size:0.7rem; color:#333;}
+.cate_details .norms p .tacitly{ display:inline-block; width:3.6rem; height:1.1rem; border:2px solid #999; text-align:center; line-height:1.1rem;}
+.cate_details .norms .num span{width:1.1rem; height:1.1rem; border:2px solid #999; font-size:0.85rem; color:#333; margin-right:0.6rem; display:inline-block;}
+.cate_details .norms .num span:nth-child(2){width:3.6rem; height:1.1rem; border:2px solid #999; display:inline-block; text-align:center; line-height:1.1rem;} 
+.cate_details .norms .num span img{width:1.1rem; height:1.1rem;}
+.cate_details .politique{ width:18.75rem; padding-bottom:0.625rem; border-bottom:1px solid #ccc;}
+.cate_details .politique .referral{height:2.85rem; width:14.2rem; padding-left:4.55rem; border-bottom:1px solid #ccc;}
+.cate_details .politique .referral span{ width:2.4rem; height:1.4rem; border-bottom:3px solid #ccc;}
+.cate_details .politique .referral h4{ width:4.85rem; text-align:center; line-height:2.85rem;}
+.cate_details .politique .pic{ margin-top:1.25rem; margin-left:1.625rem;}
+.cate_details .politique .pic img{ border-bottom:1px solid #b5b5b5; width:15.5rem;}
+.cate_details footer{width:18.75rem; height:2.5rem; position:fixed; left:0; bottom:0; background:#fff;}
+.cate_details footer a{ width:6.25rem; height:2.5rem; text-align:center; line-height:2.5rem; font-size:0.75rem; color:#fff;}
+.cate_details footer a:nth-child(1){ color:#333;}
+.cate_details footer a:nth-child(2){ background:#f0ae00;}
+.cate_details footer a:nth-child(3){ background:#e60013;}
+
+/*stadium*/
+.stadium .banner{width: 18.75rem; height:9rem; overflow:hidden;  position:relative;}
+.stadium .banner .banner_car{ height:100%; overflow:hidden;}
+.stadium .banner .banner_car .sMain{ width:18.75rem; height:9rem; float:left;}
+.stadium .banner .banner_car .sMain img{ width:18.75rem; height:9rem;}
+.stadium .banner .banner_btn{ width:5.7rem; height:0.425rem; position:absolute; right:0rem; bottom:0.4rem;}
+.stadium .banner_btn li{ width:0.425rem; height:0.425rem; border-radius:100%;  border:1px solid #fff; margin-right:0.55rem; float:left;}
+.stadium .banner_btn .cur{ background:#fff;}
+.stadium nav{width: 18.75rem; height:10rem; overflow:hidden;  position:relative;}
+.stadium nav .nav{ height:100%; overflow:hidden;}
+.stadium nav .nav li{ width:18.75rem; height:9.375rem; padding-top: 0.625rem; float:left; background: #fff;}
+.stadium nav .nav li a{width: 4.6875rem; height: 4.375rem;text-align: center;}
+.stadium nav .nav li a img{width: 2.6rem; height: 2.6rem; margin-left: 1.0375rem; margin-right: 1.0375rem;}
+.stadium nav .nav li a i{line-height: 1.825rem;text-align: center;font-size: 0.75rem; color: #333;}
+.stadium .nav_btn{ width:2rem; height:0.5rem; position:absolute; left:50%; margin-left: -1rem; bottom:0.1rem;}
+.stadium .nav_btn li{ width:0.3rem; height:0.3rem; border-radius:100%;  border:1px solid #00CCFF; margin-right:0.2rem; float:left;}
+.stadium .nav_btn .nav_cur{ background:#00CCFF;}
+.stadium .activity{width: 18.75rem; height: 10.25rem; border-top: 0.25rem solid #f5f5f5;border-bottom: 0.25rem solid #f5f5f5;}
+.stadium .activity a:nth-child(1){width: 9.25rem;height: 10.25rem;border-right: 0.25rem solid #f5f5f5;}
+.stadium .activity a:nth-child(1) img{width: 9.25rem;height: 10.25rem; }
+.stadium .activity a:nth-child(2) img{width: 9.25rem;height:5rem;border-bottom: 0.25rem solid #f5f5f5;}
+.stadium .activity a:nth-child(3){width: 9.25rem;height:5rem;}
+.stadium .activity a:nth-child(3) img{width: 9.25rem;height:5rem;}
+.stadium .venue{width: 18.75rem;}
+.stadium .venue .venue_list{width: 18.25rem; padding-left: 0.5rem;}
+.stadium .venue .venue_list li{width: 18.25rem; border-bottom: 1px solid #ebebeb;}
+.stadium .venue .venue_list li a{width: 18.25rem; display: block; position: relative;}
+.stadium .venue .venue_list li a .list_pic{width: 5rem;height: 4.05rem;padding: 0.5rem 0.5rem 0.5rem 0; position: relative;}
+.stadium .venue .venue_list li a .list_pic .hot{position: absolute;left: 0; top: 0.5rem; width: 2.35rem;height: 2.35rem;}
+.stadium .venue .venue_list li a .list_pic .hot img{width: 2.35rem;height: 2.35rem;}
+.stadium .venue .venue_list li a  .list_pic>img{width: 5rem;height: 4.05rem;border-radius:0.2rem;}
+.stadium .venue .venue_list li a  .infor{ padding-top: 0.375rem;}
+.stadium .venue .venue_list li a  .infor h5{line-height: 1.475rem; font-size: 0.75rem; color: #333;}
+.stadium .venue .venue_list li a  .infor .star{height: 0.85rem;}
+.stadium .venue .venue_list li a  .infor .star i{line-height: 0.85rem; color: #ed865b; font-size: 0.6rem; margin-left: 0.5rem;}
+.stadium .venue .venue_list li a  .infor .old{line-height: 0.725rem; color: #999; font-size: 0.6rem; text-decoration: line-through; margin-top: 0.15rem;}
+.stadium .venue .venue_list li a  .infor .new{line-height: 0.975rem; color: #d6131c; font-size: 0.7rem;}
+.stadium .venue .venue_list li a .distance{position: absolute;right: 0.7rem; top: 3.5rem; color: #999; font-size: 0.75rem;}
+.stadium .venue_list li .infor .coupon{width: 12.75rem;height: 1.75rem;border-top: 1px solid #ebebeb;}
+.stadium .venue_list li .infor .coupon p{line-height: 1.75rem; color: #999; font-size: 0.5rem; margin-right: 0.75rem;}
+.stadium .venue_list li .infor .coupon p img{margin: 0.55rem 0.25rem 0 0;}
+.stadium .down_load{width: 18.75rem; line-height: 1.75rem; font-size: 0.75rem; color: #999; text-align: center; display: block;}
+/*stadium_classify*/
+.stadium_classify .navig{width: 18.75rem; height: 2.075rem; border-bottom: 1px solid #e0e0e0;}
+.stadium_classify .navig a{width: 6.25rem; height: 2.075rem;line-height: 2.075rem;text-align: center; font-size: 0.6rem; background:url(../imgages/down.png) no-repeat 4.55rem 0.95rem; background-size: 0.525rem 0.25rem;}
+.stadium_classify .venue{width: 18.75rem;}
+.stadium_classify .venue .venue_list{width: 18.25rem; padding-left: 0.5rem;}
+.stadium_classify .venue .venue_list li{width: 18.25rem; border-bottom: 1px solid #ebebeb;}
+.stadium_classify .venue .venue_list li a{width: 18.25rem; display: block; position: relative;}
+.stadium_classify .venue .venue_list li a .list_pic{width: 5rem;height: 4.05rem;padding: 0.5rem 0.5rem 0.5rem 0; position: relative;}
+.stadium_classify .venue .venue_list li a .list_pic .hot{position: absolute;left: 0; top: 0.5rem; width: 2.35rem;height: 2.35rem;}
+.stadium_classify .venue .venue_list li a .list_pic .hot img{width: 2.35rem;height: 2.35rem;}
+.stadium_classify .venue .venue_list li a  .list_pic>img{width: 5rem;height: 4.05rem;border-radius:0.2rem;}
+.stadium_classify .venue .venue_list li a  .infor{ padding-top: 0.375rem;}
+.stadium_classify .venue .venue_list li a  .infor h5{line-height: 1.475rem; font-size: 0.75rem; color: #333;}
+.stadium_classify .venue .venue_list li a  .infor .star{height: 0.85rem;}
+.stadium_classify .venue .venue_list li a  .infor .star i{line-height: 0.85rem; color: #ed865b; font-size: 0.6rem; margin-left: 0.5rem;}
+.stadium_classify .venue .venue_list li a  .infor .old{line-height: 0.725rem; color: #999; font-size: 0.6rem; text-decoration: line-through; margin-top: 0.15rem;}
+.stadium_classify .venue .venue_list li a  .infor .new{line-height: 0.975rem; color: #d6131c; font-size: 0.7rem;}
+.stadium_classify .venue .venue_list li a .distance{position: absolute;right: 0.7rem; top: 3.5rem; color: #999; font-size: 0.75rem;}
+.stadium_classify .venue_list li .infor .coupon{width: 12.75rem;height: 1.75rem;border-top: 1px solid #ebebeb;}
+.stadium_classify .venue_list li .infor .coupon p{line-height: 1.75rem; color: #999; font-size: 0.5rem; margin-right: 0.75rem;}
+.stadium_classify .venue_list li .infor .coupon p img{margin: 0.55rem 0.25rem 0 0;}
+.stadium_classify .down_load{width: 18.75rem; line-height: 1.75rem; font-size: 0.75rem; color: #999; text-align: center; display: block;}
+/*stadium_infor*/
+.stadium_infor .live{width: 18.75rem;height: 7.5rem;}
+.stadium_infor .live a{width: 18.75rem;height: 7.5rem; display: block; position: relative;}
+.stadium_infor .live a{width: 18.75rem;height: 7.5rem; display: block; position: relative;}
+.stadium_infor .live a img{width: 18.75rem;height: 7.5rem;}
+.stadium_infor .live a span{width: 3.6rem;height: 0.95rem;border-top-left-radius: 5px;border-bottom-left-radius: 5px; line-height: 0.95rem; color: #fff; font-size: 0.6rem;padding-left: 0.375rem; background: rgba(0,0,0,.5);position: absolute;right: 0;top: 50%;margin-top: -0.45rem;}
+.stadium_infor .bask{width: 18.75rem; border-bottom: 0.25rem solid #f5f5f5;}
+.stadium_infor .bask h3{width: 18rem;height: 2.025rem;padding-left: 0.75rem; border-bottom: 1px solid #ccc;font-size: 0.8rem; line-height: 2.025rem;color: #414141;}
+.stadium_infor .bask h3 span{font-size: 0.6rem;color: #ed865b; margin-left: 0.25rem;}
+.stadium_infor .bask .bask_infor{width: 18.25rem; padding-left: 0.5rem; border-bottom:1px solid #ccc;}
+.stadium_infor .bask .bask_infor li{width: 18.25rem;height: 1.7rem; border-bottom:1px solid #ccc; border-top: 1px solid #fff;}
+.stadium_infor .bask .bask_infor li .phone{width: 15.925rem;height: 1rem;line-height: 1rem; margin-top: 0.35rem; border-right:1px solid #ccc;font-size: 0.7rem;}
+.stadium_infor .bask .bask_infor li .phone span:nth-child(1){color: #666;margin-right: 0.5rem;}
+.stadium_infor .bask .bask_infor li .phone span:nth-child(2){color: #333;}
+.stadium_infor .bask .bask_infor li .phone_pic{width: 0.75rem;height: 0.8rem; margin-top: 0.4rem;margin-left: 0.75rem;}
+.stadium_infor .bask .bask_infor li .phone_pic img{width: 0.75rem;height: 0.8rem;}
+.stadium_infor .bask .bask_infor .traffic{height: 4.85rem;}
+.stadium_infor .bask .bask_infor .traffic>p{width: 3.75rem; line-height: 1.7rem;font-size: 0.7rem;color: #666;}
+.stadium_infor .bask .bask_infor .traffic .line{width: 14.125rem;font-size: 0.7rem;color: #4e4e4e; padding-top: 0.3rem;}
+.stadium_infor .bask .bask_infor .traffic .line p{line-height: 1.05rem;  overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+.stadium_infor .bask .bask_infor li>p{line-height: 1.7rem;font-size: 0.7rem;color: #666;}
+.stadium_infor .bask .bask_infor li>p span{font-size: 0.7rem; color: #262525;margin-left: 0.625rem;}
+.stadium_infor .facility{width: 18.75rem; border-bottom: 0.25rem solid #f5f5f5;}
+.stadium_infor .facility h4{width: 18rem;height: 2.025rem;border-bottom: 1px solid #ccc;line-height: 2.025rem;font-size: 0.8rem;padding-left: 0.75rem;color: #333;}
+.stadium_infor .facility ul{height: 4.5rem; padding:0.75rem 0 0.25rem 1.125rem;}
+.stadium_infor .facility ul li{float: left;padding: 0 0.625rem; height: 0.95rem;font-size: 0.6rem; border: 1px solid #d6131c; border-radius: 8px; text-align: center;line-height: 0.95rem;color: #d6131c;margin: 0 0.5rem 0.5rem 0;}
+.stadium_infor .referral{border-bottom: 1px solid #e0e0e0;width: 18.75rem;}
+.stadium_infor .referral h4{width: 18rem;height: 2.025rem;border-bottom: 1px solid #ccc;line-height: 2.025rem;font-size: 0.8rem; padding-left: 0.75rem;color: #333;}
+.stadium_infor .referral .referral_txt{padding: 0.25rem 0.625rem 1.6rem 0.75rem;position: relative; }
+.stadium_infor .referral .referral_txt>p{font-size: 0.4rem;color: #333; line-height: 1.05rem;overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp: 3;}
+.stadium_infor .referral .referral_txt .open{-webkit-line-clamp: 100;}
+.stadium_infor .referral .referral_txt span{position: absolute;right: 0.75rem;bottom:0.5rem; color: #dc363e; font-size: 0.6rem;}
+
+/*stadium_details*/
+.stadium_details .live{width: 18.75rem;height: 7.5rem;}
+.stadium_details .live a{width: 18.75rem;height: 7.5rem; display: block; position: relative;}
+.stadium_details .live a{width: 18.75rem;height: 7.5rem; display: block; position: relative;}
+.stadium_details .live a img{width: 18.75rem;height: 7.5rem;}
+.stadium_details .live a span{width: 3.6rem;height: 0.95rem;border-top-left-radius: 5px;border-bottom-left-radius: 5px; line-height: 0.95rem; color: #fff; font-size: 0.6rem;padding-left: 0.375rem; background: rgba(0,0,0,.5);position: absolute;right: 0;top: 50%;margin-top: -0.45rem;}
+.stadium_details .have{width: 18.75rem;height: 3.325rem;border-bottom: 1px solid #ccc;}
+.stadium_details .have a{display: block;width: 18rem;height: 100%;padding-left: 0.75rem; position: relative;}
+.stadium_details .have h4{width: 18rem;height: 1.8rem; line-height: 1.8rem;font-size: 0.75rem;color: #333;}
+.stadium_details .have h4 i{margin-left: 0.375rem;color: #ed865b;font-size: 0.6rem;}
+.stadium_details .have a ul{width: 15.5rem;height: 1rem; overflow: hidden; }
+.stadium_details .have a ul li{float: left; height: 0.95rem;line-height: 0.95rem;border: 1px solid #d6131c;border-radius: 8px;padding: 0 0.5rem; color: #d6131c;margin-right: 0.25rem;font-size: 0.6rem;}
+.stadium_details .have a .arrow_r{position: absolute;right: 0.5rem;top: 1.475rem; width: 0.4rem;height: 0.7rem;}
+.stadium_details .have a .arrow_r{width: 0.4rem;height: 0.7rem;}
+.stadium_details .map{width: 18.75rem;height: 2.275rem;}
+.stadium_details .map a:nth-child(1){width:14.5rem;color: #666;height: 2.275rem; line-height: 2.275rem;padding-left: 1.9rem;font-size: 0.7rem;background: url(../imgages/coor_c.png) no-repeat 0.75rem 0.675rem; background-size: 0.6rem 0.8rem;}
+.stadium_details .map a:nth-child(2){width: 2.25rem;height: 1.25rem;margin-top: 0.5rem; background: url(../imgages/phone.png) no-repeat 0.75rem 0.175rem; background-size: 0.725rem 0.8rem; border-left: 2px solid #ebebeb;}
+.stadium_details .primary{width: 18.75rem;}
+.stadium_details .primary h4{width: 18.25rem;height: 1.675rem;padding-left: 0.5rem; line-height: 1.675rem;font-size: 0.6rem;color: #666; background: #f5f5f5;}
+.stadium_details .primary ul{width: 18.75rem;}
+.stadium_details .primary ul li{width: 18.75rem;height: 2.225rem; border-bottom: 1px solid #ebebeb; line-height: 2.225rem; font-size: 0.75rem;color: #333;}
+.stadium_details .primary ul li a{display: block;width: 18rem;height: 2.225rem;padding-left: 0.75rem; background: url(../imgages/arrow_r.png) no-repeat 17.85rem 0.75rem;background-size: 0.325rem 0.65rem;}
+.stadium_details .primary ul li a span{float: left; margin-right: 0.75rem;}
+.stadium_details .primary ul li a span:nth-child(2){margin-right: 3.3rem;}
+.stadium_details .primary ul li a span:nth-child(2) i{color: #d6131c;}
+.stadium_details .primary ul li a span:nth-child(3){text-decoration: line-through; color: #999; font-size: 0.5rem;}
+.stadium_details .primary ul li a span:nth-child(4){font-size: 0.75rem;color: #d6131c;}
+.stadium_details .more{display: block; width: 18.75rem;height: 2.225rem; font-size: 0.75rem;text-align: center;line-height: 2.225rem; color: #666;}
+.stadium_details .ticket{width: 18.75rem;}
+.stadium_details .ticket h4{width: 18.25rem;height: 1.675rem;padding-left: 0.5rem; line-height: 1.675rem;font-size: 0.6rem;color: #666; background: #f5f5f5;}
+.stadium_details .ticket ul{width: 18.75rem;}
+.stadium_details .ticket ul li{width: 18.75rem;height: 4.2rem;border-bottom: 1px solid #ebebeb;}
+.stadium_details .ticket ul li a{display: block; width: 18rem;padding-left: 0.75rem; height: 4.2rem;border-bottom: 1px solid #ebebeb; background: url(../imgages/arrow_r.png) no-repeat 17.85rem 2.1rem; background-size: 0.325rem 0.65rem; position: relative;}
+.stadium_details .ticket ul li a p:nth-child(1){width: 15.25rem; font-size: 0.75rem; color: #333; line-height: 1.575rem; padding-top: 0.325rem; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.stadium_details .ticket ul li a p:nth-child(2){font-size: 0.5rem;color: #999;line-height: 0.7rem; text-decoration: line-through;}
+.stadium_details .ticket ul li a p:nth-child(3){font-size: 0.75rem;color: #d6131c;line-height: 0.95rem;}
+.stadium_details .ticket ul li a .sell{position: absolute; right: 1.25rem; top: 2rem; color: #999;font-size: 0.5rem; line-height: 0.9rem;}
+/*stadium_num*/
+.stadium_num .once_car{width: 18.75rem;height: 3.1rem; background: #f7eddc url(../imgages/cl.png) repeat-x bottom; background-size: 0.5rem 0.8rem;}
+.stadium_num .once_car span:nth-child(1){font-size: 0.9rem;line-height: 2.225rem; color: #333; padding-left: 0.75rem;font-weight: bold;}
+.stadium_num .once_car span:nth-child(2){font-size: 0.6rem;color: #c6601d;line-height: 2.35rem; margin-right: 0.75rem;}
+.stadium_num .date{width: 18rem;height: 3.55rem;border-bottom: 1px solid #ebebeb; padding-left: 0.75rem;background: #fff;}
+.stadium_num .date li{width: 5.15rem; height: 2.25rem;border: 2px solid #ccc;border-radius: 4px;font-size: 0.65rem;color: #666; margin: 0.5rem 0.75rem 0 0; padding-top: 0.2rem;float: left;background: #fff;}
+.stadium_num .date li p{width: 5.15rem; line-height: 1.05rem; text-align: center;}
+.stadium_num .date li p:nth-child(1) span{margin-left: 0.35rem;}
+.stadium_num .date li p:nth-child(2) span{ margin-right: 0.35rem;}
+.stadium_num .date .cur{border: 2px solid #d6131c; color: #d6131c;}
+.stadium_num .more{width: 18.75rem;height: 1.975rem;border-bottom: 1px solid #e0e0e0;background: #fff;}
+.stadium_num .more a{display: block; width: 18rem;height: 1.975rem; font-size: 0.75rem; padding-left: 0.75rem;line-height: 1.975rem;color: #666;}
+.stadium_num .shop_num{width: 18rem;height: 4.975rem;padding-left: 0.75rem; border-bottom: 1px solid #e0e0e0; border-top: 0.25rem solid #f5f5f5;background: #fff;}
+.stadium_num .shop_num h5{line-height: 2.225rem;height: 2.225rem; color: #666;font-size: 0.75rem;}
+.stadium_num .shop_num p span{float: left; width: 1.9rem;height: 1.9rem;border: 2px solid #ccc;margin-right: 0.75rem;}
+.stadium_num .shop_num p span img{width: 1.9rem;height: 1.9rem;}
+.stadium_num .shop_num p span:nth-child(2){width: 11.65rem;text-align: center;line-height: 1.9rem;color: #666;font-size: 0.75rem;}
+.stadium_num .buy_notice{width: 18rem;height: 4.775rem;padding-left: 0.75rem;position: relative; border-top: 0.25rem solid #f5f5f5;border-bottom: 1px solid #ccc;background: #fff;}
+.stadium_num .buy_notice h5{height: 1.35rem;line-height: 1.35rem;font-size: 0.75rem;color: #666;margin-top: 0.45rem;}
+.stadium_num .buy_notice p{width: 17.5rem;line-height: 0.875rem;font-size: 0.6rem; color: #666; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+.stadium_num .buy_notice .look{position: absolute;right: 0.75rem;bottom: 0.5rem;color: #d6131c;font-size: 0.6rem;}
+.stadium_num .verify{width: 18.75rem;border-top: 0.25rem solid #f5f5f5;border-bottom: 1px solid #ccc;background: #fff;}
+.stadium_num .verify ul{width: 18.75rem;}
+.stadium_num .verify ul li{width: 18.75rem;height: 2.225rem;border-bottom: 1px solid #ccc; font-size: 0.7rem;line-height: 2.225rem;}
+.stadium_num .verify ul li p{margin-left: 0.75rem;}
+.stadium_num .verify ul li p input{font-size: 0.75rem; width: 6.5rem;}
+.stadium_num .verify ul li>span{width: 4.45rem;height: 1.25rem;border-left: 2px solid #ccc; text-align: center;line-height: 1.25rem;margin-top: 0.475rem; color: #333;margin-right: 0.125rem;}
+.stadium_num .verify ul li:nth-child(2) p input{width: 4rem;}
+.stadium_num .verify ul li:nth-child(3) span{width:0.9rem;height: 0.9rem;margin: 0.65rem 0.8rem 0 0; border-radius: 100%;}
+.stadium_num .verify ul li:nth-child(3) span img{width:0.9rem;height: 0.9rem;border-radius: 100%;}
+.stadium_num .buycar_notice{width: 18.75rem;height: 33.35rem;position: fixed;left: 0;top: 0;background: rgba(0,0,0,.4); display: none;}
+.stadium_num .buycar_txt{width: 16rem;height: 20.15rem;background: #fff; margin: 2.275rem 0 0 1.375rem; overflow:auto;}
+.stadium_num .buycar_txt h4{width: 15.5rem;height: 1.6rem;line-height: 1.6rem;font-size: 0.6rem;color: #666;padding-left: 0.5rem;border-bottom: 1px solid #e0e0e0;font-weight:normal;}
+.stadium_num .buycar_txt p{margin:0.2rem 0.5rem;font-size: 0.6rem; color: #333;line-height: 1.1rem;}
+.stadium_num .close{width: 18.75rem;height: 4.625rem;position: absolute;left: 8.875rem; position: absolute;bottom: 6.2rem;left: 0;}
+.stadium_num .close img{width: 1rem;height: 1rem;margin:1.25rem 0 0 8.875rem;}
+/*stadium_session*/
+.stadium_session .session{width: 18.75rem; background: #f7eddc url(../imgages/cl.png) repeat-x bottom; background-size: 0.5rem 0.8rem; padding-bottom: 1.625rem;}
+.stadium_session .session h4{width: 17.75rem;height: 2.35rem; font-size: 0.85rem;line-height: 2.35rem; padding-left: 1rem; margin-bottom: 0.3rem;}
+.stadium_session .session .site{width: 18.75rem; position: relative;}
+.stadium_session .session .site time{width: 4.8rem; text-align: center; font-size: 0.75rem; color: #333; position: absolute;left: 0;top: 50%; margin-top: -0.35rem;}
+.stadium_session .session .site ul{width: 13rem; border-left: 1px solid #c9692a; padding-left: 0.75rem;margin-left: 4.825rem;}
+.stadium_session .session .site ul li{width: 13rem; height:1rem; line-height: 1rem; }
+.stadium_session .session .site ul li>span{float: left;color: #c9692a; font-size: 0.6rem;margin-right: 1.45rem;}
+.stadium_session .session .site ul li>span:nth-child(1){width: 3.75rem;}
+/*stadium_reserve*/
+.stadium_reserve .date{width: 18.75rem;height: 3.375rem; background: #fff; overflow: hidden;overflow: auto;}
+.stadium_reserve .date ul{width: 26.825rem; height: 3.375rem; }
+.stadium_reserve .date ul li{width: 3.325rem; height: 3.25rem;padding-top: 0.1rem; border-bottom: 1px solid #ccc;border-right: 1px solid #ccc; float: left; color:#333; font-size: 0.75rem;}
+.stadium_reserve .date ul .cur{background: #d6131c; color: #fff;}
+.stadium_reserve .date ul li:nth-child(1){border-left: 1px solid #ccc;}
+.stadium_reserve .date ul li p{width: 100%; text-align: center;}1064
+.stadium_reserve .date ul li p:nth-child(1){font-size: 0.75rem;line-height: 1.225rem;}
+.stadium_reserve .date ul li p:nth-child(2){font-size: 0.6rem;line-height: 1rem;}
+.stadium_reserve .date ul li p:nth-child(3){font-size: 0.5rem;line-height: 0.75rem;}
+.stadium_reserve .date ul li:nth-child(8){text-align: center;line-height: 3.25rem;}
+.stadium_reserve .state{width: 17.625rem;height: 1.75rem; padding: 0.5rem 0 0 1.125rem;background: #fff;}
+.stadium_reserve .state span{float: left;}
+.stadium_reserve .state span:nth-last-child(2n){ width: 2.15rem;height: 1.2rem;background: #d6131c;border: 1px solid #ccc;margin-right: 0.5rem;}
+.stadium_reserve .state span:nth-last-child(2n-1){ width: 3.175rem;height: 1.25rem; line-height: 1.25rem; color: #333; font-size: 0.6rem;}
+.stadium_reserve .state span:nth-child(3){background: #fff;}
+.stadium_reserve .state span:nth-child(5){background: #ebebeb;}
+.stadium_reserve .place{width: 18.75rem;height: 16.9rem; background: #f5f5f5;position: relative; border-top: 1px solid #ebebeb;}
+.stadium_reserve .place .place_infor{width: 15.5rem;height: 12.8rem; background: #ebebeb;overflow: hidden; margin-left: 3.2rem;margin-top: 2.6rem;}
+.stadium_reserve .place .place_infor ul{border-top: 1px solid #ccc; border-left: 1px solid #ccc;}
+.stadium_reserve .place .place_infor li{height: 1.85rem; width: 19.65rem; background: #fff;}
+.stadium_reserve .place .place_infor li .blure{background: #ebebeb;}
+.stadium_reserve .place .place_infor li span{float: left;width: 3.25rem; height: 1.8rem;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc; text-align: center;line-height: 1.8rem;}
+.stadium_reserve .place .serial{position: absolute;width: 15.5rem;height: 2.075rem; left: 3.2rem;top: 0.525rem; overflow:hidden;}
+.stadium_reserve .place .serial ul{width:19.8rem;}
+.stadium_reserve .place .serial li{float: left; width: 3.3rem;height: 2.075rem;line-height: 2.075rem;text-align: center;}
+.stadium_reserve .time{width:2.05rem;height: 12.9rem;position: absolute;left: 1.15rem;top: 2.35rem; overflow:hidden;}
+.stadium_reserve .time ul{padding-bottom: 0.3rem;}
+.stadium_reserve .time ul li{width: 2.05rem;height: 1.835rem; color: #333;font-size: 0.5rem; text-align: center; background:url(../imgages/rr.png) no-repeat 1.75rem 0.2rem; background-size: 0.25rem 0.25rem;}
+
+/*more_date*/
+.more_date .date{width: 18.75rem;}
+.more_date .date .week{width: 18.75rem;padding-top: 0.45rem;height: 2.275rem;}
+.more_date .date .week li{width: 2.6785rem;height: 2.275rem;float: left;text-align: center; line-height: 2.275rem;font-size: 0.7rem;}
+.more_date .date .day{width: 18.75rem;}
+.more_date .date .day li{width: 18.75rem;height: 2.925rem;border-bottom: 1px solid #e0e0e0;}
+.more_date .date .day li .row li{float: left;width: 2.6785rem;height: 2.175rem;padding-top: 0.75rem; font-size: 0.6rem;color: #333; text-align: center;}
+.more_date .date .day li .row li p:nth-child(2){line-height: 1rem;}
+.more_date  .select{width: 18.75rem;height: 2.2rem; box-shadow: 0 -5px 5px #ececec; position: fixed; left: 0;bottom: 0;}
+.more_date  .select .left{position: absolute; width: 0.65rem;height: 0.75rem; left: 1rem; top: 50%; margin-top: -0.375rem;}
+.more_date  .select .right{position: absolute; width: 0.65rem;height: 0.75rem; right: 1rem; top: 50%; margin-top: -0.375rem;}
+.more_date  .select p{line-height: 2.2rem; width: 100%; font-size: 0.75rem; color: #333; text-align: center;}
