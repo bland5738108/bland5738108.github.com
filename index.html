@@ -33,86 +33,113 @@
 		<div class="list_in">
 			<ul class="classify">
 				<li>分类：</li>
-				<li><a class="active" hhref="##">全部</a></li>
-				<li><a hhref="##">js原生插件</a></li>
-				<li><a hhref="##">jq插件</a></li>
-				<li><a hhref="##">anglua框架资料</a></li>
+				<li ><a class="active all" href="##">全部</a></li>
+				<li ><a class="jssech" href="##">js原生插件</a></li>
+				<li ><a class="jqsech" href="##">jq插件</a></li>
+				<li><a class="css3sech" href="##">css3插件</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="container">
 		<ul class="container_in">
-			<li>
+			<li class="jq">
 				<a href="##">
 					<span>jq日期插件</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="js">
 				<a href="##">
 					<span>js日期插件</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="jq">
 				<a href="##">
 					<span>jq分页导航</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="js">
 				<a href="##">
 					<span>js分页导航</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="jq">
 				<a href="##">
 					<span>jqTab选项卡</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="js">
 				<a href="##">
 					<span>jsTab选项卡</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="jq">
 				<a href="##">
 					<span>jq日期插件</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="jq">
 				<a href="##">
 					<span>jq日期插件</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="jq">
 				<a href="##">
 					<span>jq日期插件</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
-			<li>
+			<li class="css3">
 				<a href="##">
-					<span>jq日期插件</span>
+					<span>css3小插件</span>
 					<p>jq日期插件包含年月日星期是一个依托jq插件编写的插件</p>
 					<b>大小10kb</b>
 				</a>
 			</li>
 		</ul>
 	</div>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script>
+		$('.jssech').click(function(){
+			$('.classify li a').removeClass('active');
+			$(this).addClass('active');
+			$('.container_in li').css({'display':'none'});
+			$('.container_in .js').css({'display':'block'});
+		});
+		$('.jqsech').click(function(){
+			$('.classify li a').removeClass('active');
+			$(this).addClass('active');
+			$('.container_in li').css({'display':'none'});
+			$('.container_in .jq').css({'display':'block'});
+		});
+		$('.css3sech').click(function(){
+			$('.classify li a').removeClass('active');
+			$(this).addClass('active');
+			$('.container_in li').css({'display':'none'});
+			$('.container_in .css3').css({'display':'block'});
+		});
+		$('.all').click(function(){
+			$('.classify li a').removeClass('active');
+			$(this).addClass('active');
+			$('.container_in li').css({'display':'block'});
+			
+		});
+	</script>
 </body>	
 </html>
