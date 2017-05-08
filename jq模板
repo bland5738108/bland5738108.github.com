@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>cookie插件</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://www.imooc.com/data/jquery-1.8.2.min.js"></script>
+        <style>
+        	*{margin: 0;padding:0;}
+        	#divtest{float: left;}
+        	.box{margin: 50px;overflow: hidden; float: left;}
+        	.count{float: left;}
+        	p{width: 200px;height: 40px;line-height: 40px;color: #fff;padding-left: 10px;box-sizing: border-box;background: linear-gradient(270deg,rgba(210,115,230,.7),#d273e6);}
+        	.pcss{background: linear-gradient(270deg,rgba(255,150,0,.7),#ff9600);}
+        	.pjs{background: linear-gradient(270deg,rgba(0,200,200,.7),#00c8c8);}
+        	.html{width: 200px;height: 600px;background: #000;color: #fff;}
+        	.html textarea{width: 100%;height: 100%;background: #000;color: #fff;}
+        </style>
+    </head>
+    
+    <body>
+    	<div class="box">
+    	<div class="count">
+    		<p>HTML</p>
+    		<div class="html">
+    			<textarea>
+			    	<!--HTML-->
+    			</textarea>   			   
+    		</div>
+    	</div>
+    	<div class="count">
+    		<p class="pcss">CSS</p>
+    		<div class="html">
+    			<textarea>
+    				<!--CSS-->
+   				</textarea>   			   
+    		</div>
+    	</div>
+    	<div class="count">
+    		<p class="pjs">JS</p>
+    		<div class="html">
+    			<textarea>
+					<!--JS-->
+    			</textarea>   			   
+    		</div>
+    	</div>
+    	</div>
+        
+        </script>
+    </body>
+</html>
