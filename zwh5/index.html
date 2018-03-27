@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/webMobile.css">
+</head>
+<body>
+    <div class="h5">
+        <!--音频播放-->
+        <span class="close btncont">
+            <img class="play" src="images/icon-audio.png" alt="">
+        </span>
+        <audio class="audio"  loop="loop">
+            <source src="mov/zgz.mp4" type="audio/mpeg" />
+        </audio>
+        <div class="content">
+            
+            <div class="content_in">
+                <img class="back_img one" src="images/img01.png" alt="">
+                <img class="back_img" src="images/img.png" alt="">
+                <img class="back_img tow" src="images/img02.png" alt="">
+            </div>
+            <div class="content_img">
+                <div class="img01">
+                        <img src="images/VCG111122785525.jpg" alt="">
+                </div>
+                <div class="img02">
+                        <img src="images/VCG111129263360.jpg" alt="">
+                </div>
+                <div class="img03">
+                        <img src="images/VCG111129275130.jpg" alt="">
+                </div>
+                <div class="img04">
+                        <img src="images/ballkid-5.jpg" alt="">
+                </div>
+                <div class="img05">
+                        <img src="images/ballkid-1.jpg" alt="">
+                </div>
+                <div class="img06">
+                        <img src="images/VCG111129263360.jpg" alt="">
+                </div>
+                <div class="img07">
+                        <img src="images/VCG111129263361.jpg" alt="">
+                </div>
+                <div class="img08">
+                        <img src="images/L1040304.JPG" alt="">
+                        <a class="linkA" href=" http://www.iqiyi.com/v_19rrbjo7oc.html"></a>
+                </div>
+                <div class="img09">
+                    <video class="video smvideo" src="mov/xc.mp4" ></video>
+                    </video>
+                    <div class="vplay">
+                        <img class="icon" src="images/icon-play.png" alt="">
+                    </div>
+                </div>
+                <div class="img10">
+                    <img src="images/WechatIMG5.jpeg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/webMobile.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded',function(){
+            var oV = document.querySelector('.video');
+            var oVplay = document.querySelector('.icon');
+            var oA = document.querySelector('audio');
+            var oBtn = document.querySelector('.btncont');
+            var oPlay = document.querySelector('.play');  
+            //自动播放音乐
+            var p=setInterval(function(){
+                if(oA.paused){
+                    play();      
+                }
+            },1000)
+            function play(){
+                oA.play();
+            }
+              
+            //音乐播放开关
+            oBtn.addEventListener('touchend',function(ev){
+                clearInterval(p);
+                if (oA.paused) {
+                 oA.play();
+                 oPlay.style['animationPlayState'] = 'running';
+                } else {
+                    oA.pause();
+                    oPlay.style['animationPlayState'] = 'paused';
+                }   
+                ev.preventDefault();
+            },false);
+            //视频播放
+            oVplay.addEventListener('touchend',function(ev){
+                this.parentNode.style['display']='none';
+                oV.play();
+                oA.pause();
+                oV.controls="controls"
+                oPlay.style['animationPlayState'] = 'paused';
+                ev.preventDefault();
+            },false);
+            //播放结束
+            oV.addEventListener("ended",function(){
+                oA.play();
+                oV.controls=""
+                oPlay.style['animationPlayState'] = 'running';
+                oVplay.parentNode.style['display']='block';
+            })
+            
+       });
+            
+    </script>
+</body>
+</html>

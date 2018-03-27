@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%; vertical-align:top;
+}
+html{
+    font-size: 20px;
+}
+.h5{
+    width: 16rem;
+    background: #fff;
+    
+}
+.content{
+    width: 16rem;
+    position: relative;
+}
+.content_img{
+    width: 100%;
+    padding-top: 25.867rem;
+}
+
+.content_img .img01{
+    width: 14.425rem;
+    height: 8.05rem;
+    margin-left: 0.925rem;
+    overflow: hidden;
+   
+}
+.content_img .img01>img{
+    transform:translate(-0.6rem,-2rem) rotate(-11deg) scale(1.1);
+}
+.content_img .img02{
+    width: 13.075rem;
+    height: 8.925rem;
+    margin-left: 2.4rem;
+    margin-bottom:5.53rem ;
+    overflow: hidden;
+   
+}
+.content_img .img02>img{
+    transform: translate(0.2rem,-0.8rem) rotate(10deg) scale(1.2);
+}
+.content_img .img03{
+    width: 8.225rem;
+    height: 8.225rem;
+    margin-left: 3.1rem;
+    margin-bottom: 4.25rem;
+   overflow: hidden;
+}
+.content_img .img03>img{
+    transform: translate(0.2rem,1.3rem) rotate(0deg) scale(1.6);
+}
+.content_img .img04{
+    width: 8.825rem;
+    height: 8.825rem;
+    margin-left: 0.65rem;
+    margin-bottom: 5.845rem;
+   overflow: hidden;
+}
+.content_img .img04>img{
+    transform: translate(0.2rem,1.3rem) rotate(0deg) scale(1.6);
+}
+.content_img .img05{
+    width: 14.25rem;
+    height: 9.775rem;
+    margin-left: 0.485rem;
+    margin-bottom: 22.475rem;
+   overflow: hidden;
+}
+.content_img .img05>img{
+    transform: translate(0.7rem,0.5rem) rotate(0deg) scale(1.1);
+}
+.content_img .img06{
+    width: 14.65rem;
+    height: 9.675rem;
+    margin-left: 0.7rem;
+    margin-bottom: 14.075rem;
+    overflow: hidden;
+   
+}
+.content_img .img06>img{
+    transform: translate(0.3rem,-2.8rem) rotate(10deg) scale(1.1);
+}
+
+.content_img .img07{
+    width: 14.575rem;
+    height: 9.975rem;
+    margin-left: 0.6rem;
+    margin-bottom: 19.05rem;
+    overflow: hidden;
+   
+}
+.content_img .img07>img{
+    transform: translate(0.3rem,0rem) rotate(2deg) scale(1.1);
+}
+.content_img .img08{
+    width: 14.365rem;
+    height: 21.63rem;
+    margin-left: 1.07rem;
+   position: relative;
+   overflow: hidden;
+}
+.content_img .img08>img{
+    transform: translate(0.3rem,0.5rem) rotate(-2deg) scale(1.1);
+}
+.content_img .img08 .linkA{
+    position: absolute;
+    width: 6.1rem;
+    height: 3.1rem;
+    right: -0.22rem;
+    bottom: 5.2rem;
+    z-index: 99;
+}
+.content_img .img09{
+    width: 12.5rem;
+    height: 7rem;
+    margin-left: 1.75rem;
+    margin-bottom: 22.19rem;
+   position: relative;
+}
+.content_img .img09 .bgvideo{
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    z-index: 10;
+    width: 100%;
+  border-radius: 0.5rem;
+}
+.content_img .img09 .smvideo{
+    width: 100%;
+  border-radius: 0.5rem;
+  transform: translate(0,-1.1rem);
+}
+.content_img .img09 .vplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    border-radius: 0.7rem;
+}
+.vplay .icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
+}
+.content_img .img10{
+    width: 13.775rem;
+    height: 9.15rem;
+    margin-left: 1.15rem;
+    margin-bottom: 19.8rem;
+   overflow: hidden;
+}
+.content_img .img10>img{
+    transform: translate(0.3rem,-0.7rem) rotate(-2deg) scale(1.1);
+}
+.content .content_in{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+
+}
+.content .content_in img{
+    width: 100%;
+}
+.content .back_img{
+    width: 16rem;
+}
+.one{
+    margin-bottom: -0.27rem;
+}
+.tow{
+    margin-top: -0.02rem;
+}
+.close{
+    position: fixed; 
+    right: 0.4rem;
+    top: 0.4rem;
+    z-index: 99;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: rgba(0,0,0,.4);
+    border-radius: 100%;
+    padding: 0.2rem;
+   
+}
+.close img{
+    width: 100%;
+    height: 100%;
+}
+.close img.play{
+    transition-property: -webkit-transform;
+    transition-duration: 1s;
+    animation: rotate 3s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+@keyframes rotate{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+
